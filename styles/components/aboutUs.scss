@@ -1,0 +1,123 @@
+@import '../base/reset';
+@import '../base/variables';
+
+.aboutUs-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+
+    .full-text {
+        display: none;
+    }
+
+    .uberUns-aboutUs-container {
+        color: $text-color-secondary;
+        font-size: 15px;
+        padding-left: 35px;
+        padding-right: 57px;
+        font-family: $kanit-medium;
+        letter-spacing: 0.75px;
+        line-height: 23px;
+        text-transform: uppercase;
+        margin-top: 74px;
+    }
+
+    h2 {
+        font-size: 25px;
+        color: $text-color-primary;
+        padding-left: 35px;
+        padding-right: 57px;
+        font-family: $kanit-semiBold;
+        letter-spacing: 2.7px;
+        line-height: 41px;
+        text-transform: uppercase;
+        margin-top: 13px;
+    }
+
+    .text-aboutUs-container {
+        font-size: 18px;
+        color: $text-color-primary;
+        padding-left: 35px;
+        padding-right: 36px;
+        font-family: $openSans-regular;
+        letter-spacing: 1.26px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    .class-readMore {
+        color: $element-color-primary;
+        font-family: $kanit-semiBold;
+        font-size: 16px;
+        padding-left: 151px;
+        padding-right: 150px;
+        letter-spacing: 0.54px;
+        line-height: 30px;
+        margin-top: 30px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+.readMore-aboutUs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.open-icon-readMore {
+    transform: rotate(90deg);
+    width: 16.16px;
+    height: 30px;
+
+}
+
+.button-full-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main-button-full-text {
+        margin-top: 20px;
+        background-color: $element-color-primary;
+        border-radius: 26px 26px 26px 26px;
+        width: 322px;
+        height: 52px;
+        color: $text-color-tertiary;
+        font-size: 18px;
+        font-family: $kanit-regular;
+        opacity: 80%;
+        letter-spacing: 1.26px;
+        line-height: 30px;
+        border: 1px solid $element-color-primary;
+    }
+
+    .secondary-button-full-text {
+        margin-top: 20px;
+        border-radius: 26px 26px 26px 26px;
+        width: 322px;
+        height: 52px;
+        color: $text-color-primary;
+        font-size: 16px;
+        font-family: $kanit-regular;
+        letter-spacing: 1.26px;
+        line-height: 30px;
+        border: 3px solid $text-color-primary;
+
+        
+    }
+
+    .secondary-button-full-text:hover {
+        background-color: $text-color-primary;
+        color: $text-color-tertiary;
+
+    }
+
+    .close-icon-readMore {
+        transform: rotate(270deg);
+        width: 16.16px;
+        height: 30px;
+    }
+}
