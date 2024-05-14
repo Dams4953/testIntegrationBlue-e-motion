@@ -1,5 +1,809 @@
 @import 'base/reset.css';
-@import 'components/videoIntroduction.css';
-@import 'components/aboutUs.css';
-@import 'components/technikAndFunktion.css';
-@import 'base/variables.css';/*# sourceMappingURL=styles.css.map */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 825px;
+  border: 1px solid #707070;
+  z-index: 1;
+}
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0;
+  color: black;
+}
+.video-container .text-overlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "Kanit Bold";
+  font-weight: 700;
+  text-align: left;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font-weight: bold;
+  z-index: 2;
+}
+.video-container .text-overlay h1 {
+  font-size: 29px;
+  letter-spacing: 3.4px;
+  line-height: 50px;
+  text-transform: uppercase;
+  width: 327px;
+  height: 50px;
+  margin-left: 23px;
+  margin-right: 50px;
+}
+.video-container .text-overlay h2 {
+  letter-spacing: 2.5px;
+  font-size: 22px;
+  line-height: 38px;
+  text-transform: uppercase;
+  width: 348px;
+  height: 38px;
+  margin-left: 23px;
+  margin-right: 19px;
+}
+.video-container .svg-overlay {
+  position: absolute;
+  bottom: 90px;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  pointer-events: none;
+}
+.video-container .svg-overlay .svg-overlay {
+  max-width: 100%;
+  height: auto;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.aboutUs-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.aboutUs-container .full-text {
+  display: none;
+}
+.aboutUs-container .uberUns-aboutUs-container {
+  color: #6D727B;
+  font-size: 15px;
+  padding-left: 35px;
+  padding-right: 57px;
+  font-family: "Kanit Medium";
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-top: 74px;
+}
+.aboutUs-container h2 {
+  font-size: 25px;
+  color: #333333;
+  padding-left: 35px;
+  padding-right: 57px;
+  font-family: "Kanit Semi-Bold";
+  font-weight: 600;
+  letter-spacing: 2.7px;
+  line-height: 41px;
+  text-transform: uppercase;
+  margin-top: 13px;
+}
+.aboutUs-container .text-aboutUs-container {
+  font-size: 18px;
+  color: #333333;
+  padding-left: 35px;
+  padding-right: 36px;
+  font-family: "Open Sans Regular";
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  line-height: 30px;
+  margin-top: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.aboutUs-container .class-readMore {
+  color: #E3000B;
+  font-family: "Kanit Semi-Bold";
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 151px;
+  padding-right: 150px;
+  letter-spacing: 0.54px;
+  line-height: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.readMore-aboutUs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.open-icon-readMore {
+  transform: rotate(90deg);
+  width: 16.16px;
+  height: 30px;
+}
+
+.button-full-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-full-text .main-button-full-text {
+  margin-top: 20px;
+  background-color: #E3000B;
+  border-radius: 26px 26px 26px 26px;
+  width: 322px;
+  height: 52px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Kanit Regular";
+  font-weight: 400;
+  opacity: 80%;
+  letter-spacing: 1.26px;
+  line-height: 30px;
+  border: 1px solid #E3000B;
+}
+.button-full-text .secondary-button-full-text {
+  margin-top: 20px;
+  border-radius: 26px 26px 26px 26px;
+  width: 322px;
+  height: 52px;
+  color: #333333;
+  font-size: 16px;
+  font-family: "Kanit Regular";
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  line-height: 30px;
+  border: 3px solid #333333;
+}
+.button-full-text .secondary-button-full-text:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+.button-full-text .close-icon-readMore {
+  transform: rotate(270deg);
+  width: 16.16px;
+  height: 30px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.technikAndFunktion-container {
+  position: relative;
+  margin-top: 30px;
+}
+.technikAndFunktion-container .img-technikAndFunktion {
+  max-width: 100%;
+  height: 459px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.technikAndFunktion-container .textImg-technikAndFunktion-container {
+  position: absolute;
+  top: 6%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 23px;
+  letter-spacing: 5px;
+  line-height: 38px;
+  font-family: "Kanit Bold";
+  font-weight: 700;
+  text-align: center;
+  width: 270px;
+}
+.technikAndFunktion-container .title-technikAndFunktion-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.technikAndFunktion-container .title-technikAndFunktion-container .leftIcon-title-technikAndFunktion-container {
+  transform: rotate(180deg);
+  width: 16.16px;
+  height: 30px;
+}
+.technikAndFunktion-container .title-technikAndFunktion-container h2 {
+  width: 184px;
+  height: 82px;
+  font-size: 27px;
+  letter-spacing: 2.7px;
+  line-height: 41px;
+  font-family: "Kanit Semi-Bold";
+  font-weight: 600;
+}
+.technikAndFunktion-container .title-technikAndFunktion-container .rightIcon-title-technikAndFunktion-container {
+  width: 16.16px;
+  height: 30px;
+}
+.technikAndFunktion-container .text-technikAndFunktion-container {
+  margin-top: 20px;
+  margin-left: 36.2px;
+  margin-right: 36.8px;
+  font-size: 16px;
+  letter-spacing: 1.12px;
+  line-height: 30px;
+  font-family: "Open Sans Semi-Bold";
+  font-weight: 600;
+  color: #333333;
+}
+.technikAndFunktion-container button {
+  margin-top: 20px;
+  background-color: #E3000B;
+  border-radius: 26px 26px 26px 26px;
+  width: 322px;
+  height: 52px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Kanit Regular";
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  line-height: 30px;
+  border: 1px solid #E3000B;
+  margin-top: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.DMax-container {
+  text-align: center;
+  margin-top: 50px;
+}
+.DMax-container h2 {
+  margin-top: 83px;
+  text-align: left;
+  font-size: 27px;
+  margin-left: 34px;
+  height: 41px;
+  font-family: "Kanit Bold";
+  font-weight: 700;
+  font-weight: bold;
+  color: #333333;
+  letter-spacing: 0.01px;
+  line-height: 44px;
+}
+.DMax-container .image-DMax-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.DMax-container .image-DMax-container .square {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  margin-right: 30px;
+  transition: transform 0.5s ease;
+  border: 1px solid #AFAFAF;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 23px;
+}
+.DMax-container .image-DMax-container img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 10px;
+}
+.DMax-container .display-image {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.DMax-container .display-image h3 {
+  letter-spacing: 0.01px;
+  line-height: 20px;
+  font-family: "Kanit Semi-Bold";
+  font-weight: 600;
+  font-weight: bold;
+  color: #333333;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.DMax-container .display-image p {
+  letter-spacing: 1.12px;
+  line-height: 30px;
+  font-family: "Open Sans Regular";
+  font-weight: 400;
+  color: #333333;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 37px;
+  margin-right: 52px;
+}
+.DMax-container .display-image img {
+  max-width: 300px;
+  transition: transform 0.5s ease;
+}
+.DMax-container .display-image img.hidden {
+  transform: translateX(-100%);
+}
+.DMax-container .button-DMax-container {
+  margin-top: 20px;
+  background-color: #E3000B;
+  border-radius: 26px 26px 26px 26px;
+  width: 325px;
+  height: 52px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Kanit Regular";
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  line-height: 30px;
+  border: 1px solid #E3000B;
+  margin-top: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.NSeries-container .img-NSeries-container {
+  max-width: 100%;
+  height: 459px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 69px;
+}
+.NSeries-container h3 {
+  margin-top: 21px;
+  font-size: 15px;
+  letter-spacing: 0.75px;
+  line-height: 23px;
+  color: #6D727B;
+  font-family: "Kanit Medium";
+  font-weight: 500;
+  margin-left: 37px;
+  margin-right: 57px;
+}
+.NSeries-container h2 {
+  margin-top: 13px;
+  font-size: 27px;
+  letter-spacing: 2.41px;
+  line-height: 41px;
+  color: #333333;
+  font-family: "Kanit Semi-Bold";
+  font-weight: 600;
+  margin-left: 35px;
+  margin-right: 57px;
+}
+.NSeries-container .text-NSeries-conainer {
+  font-size: 16px;
+  letter-spacing: 1.12px;
+  line-height: 30px;
+  color: #333333;
+  font-family: "Open Sans Regular";
+  font-weight: 600;
+  margin-left: 35px;
+  margin-right: 57px;
+}
+.NSeries-container .Button-NSeries-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.NSeries-container .Button-NSeries-container .main-button-NSeries-container {
+  margin-top: 20px;
+  background-color: #E3000B;
+  border-radius: 26px 26px 26px 26px;
+  width: 322px;
+  height: 52px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Kanit Regular";
+  font-weight: 400;
+  opacity: 80%;
+  letter-spacing: 1.26px;
+  line-height: 30px;
+  border: 1px solid #E3000B;
+}
+.NSeries-container .Button-NSeries-container .secondary-button-NSeries-container {
+  margin-top: 20px;
+  border-radius: 26px 26px 26px 26px;
+  width: 322px;
+  height: 52px;
+  color: #333333;
+  font-size: 16px;
+  font-family: "Kanit Regular";
+  font-weight: 400;
+  letter-spacing: 1.26px;
+  line-height: 30px;
+  border: 3px solid #333333;
+}
+.NSeries-container .Button-NSeries-container .secondary-button-NSeries-container:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.Kontak-container .information-kontak-container h2 {
+  margin-top: 55px;
+  margin-left: 35px;
+  margin-right: 36px;
+  font-size: 27px;
+  letter-spacing: 2.7px;
+  line-height: 41px;
+  color: #333333;
+  font-family: "Kanit Semi-Bold";
+  font-weight: 600;
+}
+.Kontak-container .information-kontak-container .kontact-information-kontak-container {
+  margin-top: 30px;
+  margin-left: 35px;
+  margin-right: 36px;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  line-height: 26px;
+  color: #333333;
+  font-family: "Kanit Bold";
+  font-weight: 700;
+  font-weight: bold;
+}
+.Kontak-container .information-kontak-container .details-information-kontak-container {
+  margin-top: 20px;
+  color: #333333;
+  font-size: 18px;
+  font-family: "Open Sans Regular";
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  line-height: 30px;
+  margin-left: 35px;
+}
+.Kontak-container .information-kontak-container .details-information-kontak-container .adress-details-information-kontak-container {
+  margin-bottom: 40px;
+}
+.Kontak-container .information-kontak-container .anfahrt-information-kontak-container {
+  margin-top: 30px;
+  margin-left: 35px;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  line-height: 26px;
+  color: #333333;
+  font-family: "Kanit Bold";
+  font-weight: 700;
+}/*# sourceMappingURL=styles.css.map */

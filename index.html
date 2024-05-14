@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISUZU</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -28,53 +33,39 @@
             </div>
         </div>
         <section class="aboutUs-container">
-            <p class="uberUns-aboutUs-container">ÜBER UNS</p>
-            <h2>AUTOHAUS WIENS, IHR ISUZU-HÄNDLER</h2>
-            <div class="hidden-text">
-                <p class="text-aboutUs-container">
+            <div>
+                <h3 class="uberUns-aboutUs-container">ÜBER UNS</h3>
+                <h2>AUTOHAUS WIENS, IHR ISUZU-HÄNDLER</h2>
+                <p class="text-aboutUs-container" id="textAboutUs">
                     Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer feugait. Enis feugiat minisi adiam quis
-                    esse nonsequi diat.
-                    Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio a duis. Eum magnis re.
-                    Amconsequis iriuscing, se, to
-                    iurem eum facillametum dit del odo. El atueraestrud vullutat, uipsuscidunt lortin rat commod commod
-                    luptat iusci…
-                </p>
-                <div class="readMore-aboutUs-container">
-                    <a href="#" class="class-readMore" id="open-id-readMorre">
-                        Read more
-                        <img src="assets/vectors/chevron.svg" alt="icone chevron pour read more"
-                            class="open-icon-readMore">
-                    </a>
-                </div>
-
-            </div>
-            <div class="full-text">
-                <p class="text-aboutUs-container">
-                    Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer feugait. Enis feugiat minisi adiam quis
-                    esse nonsequi diat.
-                    Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio a duis. Eum magnis re.
-                    Amconsequis iriuscing, se, to
-                    iurem eum facillametum dit del odo. El atueraestrud vullutat, uipsuscidunt lortin rat commod commod
-                    luptat iusci…
-                    Commy re del eui elesequisim nim amet lummy quip. Dionsenim, sustionsenim amconul am lum amconul
-                    lorem digniamet. Feuismo eum
-                    eummolortion consequi. Dolortin sustionsenim amconsequis iriustrud, min il, tio lor. Eummolortion
-                    dolortie feuguer lummolessi
-                    mod feuismo odo tem vullutat.
+                    esse nonsequi diat. Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio a duis. Eum
+                    magnis re. Amconsequis iriuscing, se, to iurem eum facillametum dit del odo. El atueraestrud
+                    vullutat, uipsuscidunt lortin rat commod commod luptat iusci. Commy re del eui elesequisim nim amet
+                    lummy quip. Dionsenim, sustionsenim amconul am lum amconul lorem digniamet. Feuismo eum eummolortion
+                    consequi. Dolortin sustionsenim amconsequis iriustrud, min il, tio lor. Eummolortion dolortie
+                    feuguer lummolessi mod feuismo odo tem vullutat..
                 </p>
                 <div class="button-full-text">
-                    <button class="main-button-full-text">Main CTA title</button>
-                    <button class="secondary-button-full-text">Secondary CTA title</button>
-                    <div class="readMore-aboutUs-container">
-                        <a href="#" class="class-readMore" id="close-id-readMorre">
+                    <div class="readMore-aboutUs-container" id="readMoreContainer">
+                        <button href="#" class="class-readmore" id="idReadMore">
                             Read more
                             <img src="assets/vectors/chevron.svg" alt="icone chevron pour read more"
                                 class="close-icon-readMore">
-                        </a>
+                        </button>
+                    </div>
+                    <div class="readLess-aboutUs-container" id="readLessContainer" style="display:none">
+                        <button href="#" class="class-readless" id="idReadLess">
+                            Read less
+                            <img src="assets/vectors/chevron.svg" alt="icone chevron pour read more"
+                                class="open-icon-readMore">
+                        </button>
+                        <button class="main-button-full-text">Main CTA title</button>
+                        <button class="secondary-button-full-text">Secondary CTA title</button>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="technikAndFunktion-container">
             <img src="assets/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp" class="img-technikAndFunktion"
                 alt="uber den d-max image">
@@ -97,6 +88,70 @@
                 sustionsenim amconsequis iriustrud, min il, tio lor. Eummolortion dolortie feuguer lummolessi mod
                 feuismo ddo tem vullutat.</p>
             <button>Main CTA title</button>
+        </section>
+        <section class="DMax-container">
+            <h2>D-MAX MODELLE</h2>
+            <div class="image-DMax-container">
+                <button class="square" onclick="displayImage(1)">
+                    <img src="assets/pictures/auto1.png" alt="Image 1">
+                </button>
+                <button class="square" onclick="displayImage(2)">
+                    <img src="assets/pictures/auto2.png" alt="Image 2">
+                </button>
+                <button class="square" onclick="displayImage(3)">
+                    <img src="assets/pictures/auto3.png" alt="Image 3">
+                </button>
+            </div>
+            <div class="display-image">
+                <h3 id="title"></h3>
+                <img id="displayed-image" src="assets/pictures/auto1.png" alt="">
+                <p id="paragraph"></p>
+            </div>
+            <button class="button-DMax-container">Main CTA title</button>
+        </section>
+
+
+        <section class="NSeries-container">
+            <img src="assets/pictures/04-home-bild_text-N-Serie 3,5t Koffer City Image.webp"
+                class="img-NSeries-container" alt="truck image">
+            <h3>FÜR MACHER GEMACHT</h3>
+            <h2>DIE ISUZU N-SERIE</h2>
+            <p class="text-NSeries-conainer">Das ideale Nutzfahrzeug ist wirtschaftlich, robust und flexibel. Aber vor
+                allem: ein Partner, der dir die Arbeit erleichtert. Die N-Serie leistet all das – jeden Tag, rund um den
+                Globus.</p>
+            <div class="Button-NSeries-container">
+                <button class="main-button-NSeries-container">N-Serie entdecken</button>
+                <button class="secondary-button-NSeries-container">Katalog downloaden</button>
+            </div>
+        </section>
+        <section class="Kontak-container">
+            <div class="information-kontak-container">
+                <h2>KONTAKTINFORMAATIONEN</h2>
+                <p class="kontact-information-kontak-container">KONTACT</p>
+                <div class="details-information-kontak-container">
+                    <p class="adress-details-information-kontak-container">
+                        Langbaurghstraße 12,<br>
+                        53842 Troisdorf</p>
+                    <p class="contact-details-information-kontak-container">
+                        Telefon : 02241-96020<br>
+                        Fax : 02241960296<br>
+                        E-Mail : info(at)autohaus-weidenbrueck.de</p>
+                </div>
+                <p class="anfahrt-information-kontak-container">ANFAHRT</p>
+                <div class="localisation-information-kontak-container">
+                    <div class="text-localisation-information-kontak-container">
+                        <p class="1-text-localisation-information-kontak-container">Wir benötigen Deine Einwilligung, um
+                            die Karte von Google Maps mit den Händlerstandorten anzuzeigen. </p>
+                        <p class="2-text-localisation-information-kontak-container">Ich bin damit einverstanden,
+                            dass mir die Google Maps-Karte angezeigt wird. Damit können personenbezogene Daten an Google
+                            übertragen werden.</p>
+                        <p class="3-text-localisation-information-kontak-container">Mehr dazu in unserer
+                            Datenschutzerklärung.</p>
+                    </div>
+                    <img src="" alt="">
+                    <button>Google Maps immer anzeigen</button>
+                </div>
+            </div>
         </section>
     </main>
 

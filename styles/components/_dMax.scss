@@ -1,0 +1,108 @@
+@import '../base/reset';
+@import '../base/variables';
+@import '../base/mixin.scss';
+
+
+
+.DMax-container {
+    text-align: center;
+    margin-top: 50px;
+
+    h2 {
+        margin-top: 83px;
+        text-align: left;
+        font-size: 27px;
+        margin-left: 34px;
+        height: 41px;
+        @include font-family('Kanit Bold', 700);
+        font-weight: bold;
+        color: $text-color-primary;
+        letter-spacing: 0.01px;
+        line-height: 44px;
+    }
+
+    .image-DMax-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .square {
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+            cursor: pointer;
+            margin-right: 30px;
+            transition: transform 0.5s ease;
+            border: 1px solid $border-color-img;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 23px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-top: 10px;
+        }
+    }
+
+   
+
+    .display-image {
+        margin-top: 20px;
+        overflow: hidden;
+
+        h3 {
+            letter-spacing: 0.01px;
+            line-height: 20px;
+            @include font-family('Kanit Semi-Bold', 600);
+            font-weight: bold;
+            color: $text-color-primary;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+
+        p{
+            letter-spacing: 1.12px;
+            line-height: 30px;
+            @include font-family('Open Sans Regular', 400);
+            color: $text-color-primary;
+            font-size: 16px;
+            text-align: left;
+            margin-left: 37px;
+            margin-right: 52px;
+        }
+    }
+    
+    .display-image img {
+        max-width: 300px;
+        transition: transform 0.5s ease;
+    }
+    
+    .display-image img.hidden {
+        transform: translateX(-100%);
+    }
+
+    
+    .button-DMax-container{
+        margin-top: 20px;
+        background-color: $element-color-primary;
+        border-radius: 26px 26px 26px 26px;
+        width: 325px;
+        height: 52px;
+        color: $text-color-tertiary;
+        font-size: 18px;
+        @include font-family('Kanit Regular', 400);;
+        letter-spacing: 1.26px;
+        line-height: 30px;
+        border: 1px solid $element-color-primary;
+        margin-top: 21px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+}
+
+
+
