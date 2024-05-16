@@ -31,7 +31,7 @@
         flex-direction: column;
         justify-content: center;
         color: $text-color-tertiary;
-        @include font-family('Kanit Bold', 700);
+        font-family: $font-family-primary-semiBold;
         text-align: left;
         z-index: 1;
         width: 100%;
@@ -41,7 +41,7 @@
         z-index: 2;
 
         h1 {
-            font-size: 29px;
+            font-size: 34px;
             letter-spacing: 3.4px;
             line-height: 50px;
             text-transform: uppercase;
@@ -53,10 +53,9 @@
 
         h2 {
             letter-spacing: 2.5px;
-            font-size: 22px;
+            font-size: 25px;
             line-height: 38px;
-            text-transform: uppercase;
-            width: 348px;
+            width: 349px;
             height: 38px;
             margin-left: 23px;
             margin-right: 19px;

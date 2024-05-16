@@ -18,7 +18,7 @@
         letter-spacing: 0.75px;
         line-height: 23px;
         color: $text-color-secondary;
-        @include font-family('Kanit Medium', 500);
+        font-family: $font-family-primary-medium;
         margin-left: 37px;
         margin-right: 57px;
     }
@@ -29,7 +29,7 @@
         letter-spacing: 2.41px;
         line-height: 41px;
         color: $text-color-primary;
-        @include font-family('Kanit Semi-Bold', 600);
+        font-family: $font-family-primary-semiBold;
         margin-left: 35px;
         margin-right: 57px;
     }
@@ -39,7 +39,7 @@
         letter-spacing: 1.12px;
         line-height: 30px;
         color: $text-color-primary;
-        @include font-family('Open Sans Regular', 600);
+        font-family: $font-family-secondary-regular;
         margin-left: 35px;
         margin-right: 57px;
     }
@@ -52,38 +52,13 @@
         align-items: center;
 
         .main-button-NSeries-container {
-            margin-top: 20px;
-            background-color: $element-color-primary;
-            border-radius: 26px 26px 26px 26px;
-            width: 322px;
-            height: 52px;
-            color: $text-color-tertiary;
-            font-size: 18px;
-            @include font-family('Kanit Regular', 400);
-            opacity: 80%;
-            letter-spacing: 1.26px;
-            line-height: 30px;
-            border: 1px solid $element-color-primary;
+            @include primary-button($transition: false);
         }
 
 
         .secondary-button-NSeries-container {
-            margin-top: 20px;
-            border-radius: 26px 26px 26px 26px;
-            width: 322px;
-            height: 52px;
-            color: $text-color-primary;
-            font-size: 16px;
-            @include font-family('Kanit Regular', 400);
-            letter-spacing: 1.26px;
-            line-height: 30px;
-            border: 3px solid $text-color-primary;
+            @include secondary-button;
         }
 
-        .secondary-button-NSeries-container:hover {
-            background-color: $text-color-primary;
-            color: $text-color-tertiary;
-
-        }
     }
 }

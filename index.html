@@ -5,16 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISUZU</title>
+    <link rel="stylesheet" href="assets/fonts/Kanit/kanit.css">
+    <link rel="stylesheet" href="assets/fonts/Open Sans/openSans.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+
 </head>
 
 <body>
     <header>
+        <nav class="navbar-container">
+            <div class="leftSide-navbar-container">
+                <img src="assets/vectors/Logo-Isuzu.svg" alt="logo Isuzu" class="logoIsuzu-leftSide-navbar-container">
+                <p>AUTOHAUS MUSTERMANN, MUSTERSTARF</p>
+            </div>
+            <div class="rightSide-navbar-container">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+        <section class="modal-header" id="modalHeader">
+            <div class="content-modal-header">
+                <img src="assets/vectors/close-navbar.svg" class="closeNavbar-content-modal-header" alt="close navbar">
+                <div class="container-content-modal-header">
+                    <h2 class="title-container-content-modal-header">AUTOHAUS MUSTERMANN, MUSTERSTARF</h2>
+                    <ul class="liste-container-content-modal-header">
+                        <li class="element-liste-container-content-modal-header">STARTSEITE</li>
+                        <li class="element-liste-container-content-modal-header">ÜBER UNS</li>
+                        <li class="element-liste-container-content-modal-header">D-MAX</li>
+                        <li class="element-liste-container-content-modal-header">N-SERIES</li>
+                        <li class="element-liste-container-content-modal-header">KONTAK</li>
+                        <li class="element-liste-container-content-modal-header">FOTOGALERIE</li>
+                    </ul>
+                    <button class="button-content-modal-header">Probefahrt</button>
+                </div>
+            </div>
+        </section>
 
     </header>
 
@@ -47,17 +75,17 @@
                 </p>
                 <div class="button-full-text">
                     <div class="readMore-aboutUs-container" id="readMoreContainer">
-                        <button href="#" class="class-readmore" id="idReadMore">
+                        <button class="class-readmore" id="idReadMore">
                             Read more
                             <img src="assets/vectors/chevron.svg" alt="icone chevron pour read more"
-                                class="close-icon-readMore">
+                                class="open-icon-readMore">
                         </button>
                     </div>
                     <div class="readLess-aboutUs-container" id="readLessContainer" style="display:none">
-                        <button href="#" class="class-readless" id="idReadLess">
+                        <button class="class-readless" id="idReadLess">
                             Read less
                             <img src="assets/vectors/chevron.svg" alt="icone chevron pour read more"
-                                class="open-icon-readMore">
+                                class="close-icon-readMore">
                         </button>
                         <button class="main-button-full-text">Main CTA title</button>
                         <button class="secondary-button-full-text">Secondary CTA title</button>
@@ -66,18 +94,20 @@
             </div>
         </section>
 
-        <section class="technikAndFunktion-container">
-            <img src="assets/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp" class="img-technikAndFunktion"
-                alt="uber den d-max image">
-            <p class="textImg-technikAndFunktion-container">ÜBER DEN D-MAX</p>
-            <div class="title-technikAndFunktion-container">
-                <img src="assets/vectors/chevron.svg" class="leftIcon-title-technikAndFunktion-container"
+        <section class="technoAndFunction-container">
+            <div class="imgContainer-technoAndFunction-container">
+                <img src="assets/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp"
+                    class="img-imgContainer-technoAndFunction-container" alt="uber den d-max image">
+            </div>
+            <p class="textImg-technoAndFunction-container">ÜBER DEN D-MAX</p>
+            <div class="title-technoAndFunction-container">
+                <img src="assets/vectors/chevron.svg" class="leftIcon-title-technoAndFunction-container"
                     alt="icone chevron left pour technik And Funktion">
                 <h2>TECHNIK & FUNKTION</h2>
-                <img src="assets/vectors/chevron.svg" class="rightIcon-title-technikAndFunktion-container"
+                <img src="assets/vectors/chevron.svg" class="rightIcon-title-technoAndFunction-container"
                     alt="icone chevron right pour technik And Funktion">
             </div>
-            <p class="text-technikAndFunktion-container">Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer
+            <p class="text-technoAndFunction-container">Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer
                 feugait. Enis feugiat minisi adiam
                 quis esse nonsequi diat. Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio a duis. Eum
                 magnis re.Amconsequis iriuscing,
@@ -92,20 +122,22 @@
         <section class="DMax-container">
             <h2>D-MAX MODELLE</h2>
             <div class="image-DMax-container">
-                <button class="square" onclick="displayImage(1)">
-                    <img src="assets/pictures/auto1.png" alt="Image 1">
+                <button class="autoSelect-image-DMax-container" data-image="1">
+                    <img src="assets/pictures/singleCab.png" alt="single cab car image">
                 </button>
-                <button class="square" onclick="displayImage(2)">
-                    <img src="assets/pictures/auto2.png" alt="Image 2">
+                <button class="autoSelect-image-DMax-container" data-image="2">
+                    <img src="assets/pictures/spaceCab.png" alt="space cab car image">
                 </button>
-                <button class="square" onclick="displayImage(3)">
-                    <img src="assets/pictures/auto3.png" alt="Image 3">
+                <button class="autoSelect-image-DMax-container" data-image="3">
+                    <img src="assets/pictures/doubleCab.png" alt="double cab car image">
                 </button>
             </div>
             <div class="display-image">
-                <h3 id="title"></h3>
-                <img id="displayed-image" src="assets/pictures/auto1.png" alt="">
-                <p id="paragraph"></p>
+                <div class="content-container">
+                    <h3 id="title"></h3>
+                    <img id="displayed-image">
+                    <p id="paragraph"></p>
+                </div>
             </div>
             <button class="button-DMax-container">Main CTA title</button>
         </section>
@@ -124,43 +156,161 @@
                 <button class="secondary-button-NSeries-container">Katalog downloaden</button>
             </div>
         </section>
-        <section class="Kontak-container">
-            <div class="information-kontak-container">
+        <section class="contact-container">
+            <div class="information-contact-container">
                 <h2>KONTAKTINFORMAATIONEN</h2>
-                <p class="kontact-information-kontak-container">KONTACT</p>
-                <div class="details-information-kontak-container">
-                    <p class="adress-details-information-kontak-container">
+                <p class="kontact-information-contact-container">KONTACT</p>
+                <div class="details-information-contact-container">
+                    <p class="adress-details-information-contact-container">
                         Langbaurghstraße 12,<br>
                         53842 Troisdorf</p>
-                    <p class="contact-details-information-kontak-container">
+                    <p class="contact-details-information-contact-container">
                         Telefon : 02241-96020<br>
                         Fax : 02241960296<br>
                         E-Mail : info(at)autohaus-weidenbrueck.de</p>
                 </div>
-                <p class="anfahrt-information-kontak-container">ANFAHRT</p>
-                <div class="localisation-information-kontak-container">
-                    <div class="text-localisation-information-kontak-container">
-                        <p class="1-text-localisation-information-kontak-container">Wir benötigen Deine Einwilligung, um
+                <p class="anfahrt-information-contact-container">ANFAHRT</p>
+                <div class="localisation-information-contact-container">
+                    <div class="text-localisation-information-contact-container" id="idMapLocalisationContact">
+                        <p class="one-text-localisation-information-contact-container">Wir benötigen Deine Einwilligung,
+                            um
                             die Karte von Google Maps mit den Händlerstandorten anzuzeigen. </p>
-                        <p class="2-text-localisation-information-kontak-container">Ich bin damit einverstanden,
-                            dass mir die Google Maps-Karte angezeigt wird. Damit können personenbezogene Daten an Google
-                            übertragen werden.</p>
-                        <p class="3-text-localisation-information-kontak-container">Mehr dazu in unserer
+                        <p class="two-text-localisation-information-contact-container">Ich bin damit einverstanden,
+                            dass mir die Google Maps-Karte angezeigt wird. Damit können personenbezogene <span>Daten an
+                                Google
+                                übertragen werden.</span></p>
+                        <p class="three-text-localisation-information-contact-container">Mehr dazu in unserer
                             Datenschutzerklärung.</p>
                     </div>
-                    <img src="" alt="">
-                    <button>Google Maps immer anzeigen</button>
+                </div>
+                <button>Google Maps immer anzeigen</button>
+            </div>
+        </section>
+        <section class="openingHours-container">
+            <h2>ÖFFNUNGSZEITEN</h2>
+            <h3 class="first-h3">Verkauf</h3>
+            <h4>Montag - Freitag</h4>
+            <ul>
+                <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
+                <li><time datetime="13:20">13:20 Uhr</time> - <time datetime="18:00">18:00 Uhr</time></li>
+            </ul>
+            <h4>Samstag</h4>
+            <ul>
+                <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
+            </ul>
+            <h3 class="second-h3">Service</h3>
+            <h4>Montag - Freitag</h4>
+            <ul>
+                <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
+                <li><time datetime="13:20">13:20 Uhr</time> - <time datetime="18:00">18:00 Uhr</time></li>
+            </ul>
+            <h4>Samstag</h4>
+            <ul>
+                <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
+            </ul>
+            <p>Außerhalb der gesetzlichen Ladenöffnungszeiten <span>keine Beratung, kein Verkauf, keine
+                    Probefahrtvereinbarung.</span></p>
+        </section>
+        <section class="customerReviews-container">
+            <h2>DAS SAGEN UNSERE KUNDEN</h2>
+            <div class="average-customerReviews-container">
+                <p>4,6</p>
+                <div class="average-star-container">
+                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img src="assets/vectors/yellowAndGreyStar.svg" alt="yellow and grey star">
+                </div>
+                <h3>durchschnittlich bei Google</h3>
+            </div>
+            <div class="customer-customerReviews-container">
+                <p class="name-customer-customerReviews-container"><span>Firstname</span></p>
+                <p class="name-customer-customerReviews-container">Lastname</p>
+                <p class="review-customer-customerReviews-container">ich bin in jeder Hinsicht sehr zufrieden mit den
+                    Schritten, die ich beim Kauf meines Fahrzeugs unternommen habe. Es ist genau so, wie ich es mir
+                    gewünscht habe und die verschiedenen Personen, die mich bedient haben, waren sehr kompetent und
+                    haben mir zugehört. Ich empfehle</p>
+
+
+                <div class="chevronContainer-customer-customerReviews-container">
+                    <img src="assets/vectors/chevron.svg"
+                        class="leftIcon-chevronContainer-customer-customerReviews-container"
+                        alt="icone chevron left pour customer review">
+                    <img src="assets/vectors/chevron.svg"
+                        class="rightIcon-chevronContainer-customer-customerReviews-container"
+                        alt="icone chevron right pour customer review">
+                </div>
+                <div class="review-star-container">
+                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
                 </div>
             </div>
+        </section>
+        <section class="photoGalery-container">
+            <h2>FOTOGALERIE</h2>
+            <img src="assets/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp" alt="picture ISUZU">
+
         </section>
     </main>
 
 
 
     <footer>
+        <section class="footer-container">
+            <img class="logoIsuzu-footer-container" src="assets/vectors/Logo-Isuzu.svg" alt="logo Isuzu">
+            <div class="summary-footer-container">
+                <p class="section-summary-footer-container">STARTSEITE</p>
+                <p class="section-summary-footer-container">ÜBER UNS</p>
+                <p class="section-summary-footer-container">D-MAX</p>
+                <p class="section-summary-footer-container">N-SERIES</p>
+                <p class="section-summary-footer-container">KONTAK</p>
+                <p class="section-summary-footer-container">FOTOGALERIE</p>
+            </div>
+            <div class="networksContainer-footer-container">
+                <div class="privacy-networksContainer-footer-container">
+                    <p class="Imprint-PrivacyPolicy">Impressum | Datenschutz</p>
+                </div>
+                <div class="networks-networksContainer-footer-container">
+                    <a class="network-networks-networksContainer-footer-container" href="https://www.youtube.com"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="youtube-networks-networksContainer-footer-container"
+                            src="assets/vectors/Youtube.svg" alt="Youtube link">
+                    </a>
 
+                    <a class="network-networks-networksContainer-footer-container" href="https://www.instagram.com"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="instagram-networks-networksContainer-footer-container"
+                            src="assets/vectors/Instagram.svg" alt="Instagram link">
+                    </a>
+
+                    <a class="network-networks-networksContainer-footer-container" href="https://www.facebook.com"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="facebook-networks-networksContainer-footer-container"
+                            src="assets/vectors/Facebook.svg" alt="Facebook link">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <div class="powered-by-boteca-container">
+            <img class="powered-by-boteca" src="assets/vectors/poweredByBoteca.svg" alt="powered by Boteca">
+        </div>
     </footer>
-    <script src="js/script.js"></script>
+    <aside class="options-container">
+        <button class="leftButton-options-container">
+            <img class="img-leftButton-options-container" src="" alt="">
+            <p class="roadTest-leftButton-options-container">Probefahrt</p>
+        </button>
+        <button class="rightButton-options-container">
+            <img class="img-rightButton-options-container" src="" alt="">
+            <p class="contact-rightButton-options-container">Kontakt</p>
+        </button>
+    </aside>
+    <script src="js/script.js" type="module"></script>
 </body>
 
 </html>

@@ -78,8 +78,7 @@ table {
   flex-direction: column;
   justify-content: center;
   color: #ffffff;
-  font-family: "Kanit Bold";
-  font-weight: 700;
+  font-family: "Kanit Semi-Bold", sans-serif;
   text-align: left;
   z-index: 1;
   width: 100%;
@@ -89,7 +88,7 @@ table {
   z-index: 2;
 }
 .video-container .text-overlay h1 {
-  font-size: 29px;
+  font-size: 34px;
   letter-spacing: 3.4px;
   line-height: 50px;
   text-transform: uppercase;
@@ -100,10 +99,9 @@ table {
 }
 .video-container .text-overlay h2 {
   letter-spacing: 2.5px;
-  font-size: 22px;
+  font-size: 25px;
   line-height: 38px;
-  text-transform: uppercase;
-  width: 348px;
+  width: 349px;
   height: 38px;
   margin-left: 23px;
   margin-right: 19px;
@@ -183,28 +181,23 @@ table {
   flex-direction: column;
   text-align: left;
 }
-.aboutUs-container .full-text {
-  display: none;
-}
 .aboutUs-container .uberUns-aboutUs-container {
   color: #6D727B;
   font-size: 15px;
   padding-left: 35px;
   padding-right: 57px;
-  font-family: "Kanit Medium";
-  font-weight: 500;
+  font-family: "Kanit Medium", sans-serif;
   letter-spacing: 0.75px;
   line-height: 23px;
   text-transform: uppercase;
-  margin-top: 74px;
+  margin-top: 67px;
 }
 .aboutUs-container h2 {
-  font-size: 25px;
+  font-size: 27px;
   color: #333333;
   padding-left: 35px;
   padding-right: 57px;
-  font-family: "Kanit Semi-Bold";
-  font-weight: 600;
+  font-family: "Kanit Semi-Bold", sans-serif;
   letter-spacing: 2.7px;
   line-height: 41px;
   text-transform: uppercase;
@@ -215,8 +208,7 @@ table {
   color: #333333;
   padding-left: 35px;
   padding-right: 36px;
-  font-family: "Open Sans Regular";
-  font-weight: 400;
+  font-family: "Open Sans Regular", sans-serif;
   letter-spacing: 1.26px;
   line-height: 30px;
   margin-top: 20px;
@@ -226,10 +218,21 @@ table {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.aboutUs-container .class-readMore {
+.aboutUs-container .button-full-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutUs-container .button-full-text .readMore-aboutUs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.aboutUs-container .button-full-text .readMore-aboutUs-container .class-readMore {
   color: #E3000B;
-  font-family: "Kanit Semi-Bold";
-  font-weight: 600;
+  font-family: "Kanit Semi-Bold", sans-serif;
   font-size: 16px;
   padding-left: 151px;
   padding-right: 150px;
@@ -239,58 +242,43 @@ table {
   font-weight: bold;
   text-decoration: none;
 }
-
-.readMore-aboutUs-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.open-icon-readMore {
+.aboutUs-container .button-full-text .readMore-aboutUs-container .class-readMore .open-icon-readMore {
   transform: rotate(90deg);
   width: 16.16px;
   height: 30px;
 }
-
-.button-full-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.button-full-text .main-button-full-text {
+.aboutUs-container .button-full-text .readLess-aboutUs-container .main-button-full-text {
   margin-top: 20px;
   background-color: #E3000B;
-  border-radius: 26px 26px 26px 26px;
+  border-radius: 26px;
   width: 322px;
   height: 52px;
   color: #ffffff;
   font-size: 18px;
-  font-family: "Kanit Regular";
-  font-weight: 400;
-  opacity: 80%;
+  font-family: "Kanit Regular", sans-serif;
   letter-spacing: 1.26px;
   line-height: 30px;
   border: 1px solid #E3000B;
+  align-self: center;
+  opacity: 80%;
 }
-.button-full-text .secondary-button-full-text {
+.aboutUs-container .button-full-text .readLess-aboutUs-container .secondary-button-full-text {
   margin-top: 20px;
   border-radius: 26px 26px 26px 26px;
   width: 322px;
   height: 52px;
   color: #333333;
   font-size: 16px;
-  font-family: "Kanit Regular";
-  font-weight: 400;
+  font-family: "Kanit Regular", sans-serif;
   letter-spacing: 1.26px;
   line-height: 30px;
   border: 3px solid #333333;
 }
-.button-full-text .secondary-button-full-text:hover {
+.aboutUs-container .button-full-text .readLess-aboutUs-container .secondary-button-full-text:hover {
   background-color: #333333;
   color: #ffffff;
 }
-.button-full-text .close-icon-readMore {
+.aboutUs-container .button-full-text .readLess-aboutUs-container .close-icon-readMore {
   transform: rotate(270deg);
   width: 16.16px;
   height: 30px;
@@ -350,17 +338,32 @@ table {
   border-spacing: 0;
 }
 
-.technikAndFunktion-container {
+.technoAndFunction-container {
   position: relative;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.technikAndFunktion-container .img-technikAndFunktion {
+.technoAndFunction-container .imgContainer-technoAndFunction-container {
+  position: relative;
   max-width: 100%;
-  height: 459px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
 }
-.technikAndFunktion-container .textImg-technikAndFunktion-container {
+.technoAndFunction-container .imgContainer-technoAndFunction-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  -webkit-mask: url("../../assets/pictures/bloc-sep-1.svg") no-repeat;
+          mask: url("../../assets/pictures/bloc-sep-1.svg") no-repeat;
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
+  -webkit-mask-position: center bottom;
+          mask-position: center bottom;
+}
+.technoAndFunction-container .textImg-technoAndFunction-container {
   position: absolute;
   top: 6%;
   left: 47%;
@@ -370,65 +373,57 @@ table {
   font-size: 23px;
   letter-spacing: 5px;
   line-height: 38px;
-  font-family: "Kanit Bold";
-  font-weight: 700;
+  font-family: "Kanit Bold", sans-serif;
   text-align: center;
   width: 270px;
 }
-.technikAndFunktion-container .title-technikAndFunktion-container {
+.technoAndFunction-container .title-technoAndFunction-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
+  width: 100%;
 }
-.technikAndFunktion-container .title-technikAndFunktion-container .leftIcon-title-technikAndFunktion-container {
-  transform: rotate(180deg);
-  width: 16.16px;
-  height: 30px;
-}
-.technikAndFunktion-container .title-technikAndFunktion-container h2 {
+.technoAndFunction-container .title-technoAndFunction-container h2 {
   width: 184px;
   height: 82px;
   font-size: 27px;
   letter-spacing: 2.7px;
   line-height: 41px;
-  font-family: "Kanit Semi-Bold";
-  font-weight: 600;
+  margin-left: 41px;
+  font-family: "Kanit Semi-Bold", sans-serif;
 }
-.technikAndFunktion-container .title-technikAndFunktion-container .rightIcon-title-technikAndFunktion-container {
-  width: 16.16px;
-  height: 30px;
-}
-.technikAndFunktion-container .text-technikAndFunktion-container {
+.technoAndFunction-container .text-technoAndFunction-container {
   margin-top: 20px;
   margin-left: 36.2px;
   margin-right: 36.8px;
   font-size: 16px;
   letter-spacing: 1.12px;
   line-height: 30px;
-  font-family: "Open Sans Semi-Bold";
-  font-weight: 600;
+  font-family: "Kanit Semi-Bold", sans-serif;
   color: #333333;
 }
-.technikAndFunktion-container button {
+.technoAndFunction-container button {
   margin-top: 20px;
   background-color: #E3000B;
-  border-radius: 26px 26px 26px 26px;
+  border-radius: 26px;
   width: 322px;
   height: 52px;
   color: #ffffff;
   font-size: 18px;
-  font-family: "Kanit Regular";
-  font-weight: 400;
+  font-family: "Kanit Regular", sans-serif;
   letter-spacing: 1.26px;
   line-height: 30px;
   border: 1px solid #E3000B;
-  margin-top: 21px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  align-self: center;
+  transition: text-indent 0.3s;
+}
+.technoAndFunction-container button:hover {
+  transform: translateX(1);
+  text-indent: -2px;
+  opacity: 0.8;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -487,16 +482,17 @@ table {
 
 .DMax-container {
   text-align: center;
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .DMax-container h2 {
   margin-top: 83px;
   text-align: left;
   font-size: 27px;
-  margin-left: 34px;
+  margin-left: -100px;
   height: 41px;
-  font-family: "Kanit Bold";
-  font-weight: 700;
+  font-family: "Kanit Bold", sans-serif;
   font-weight: bold;
   color: #333333;
   letter-spacing: 0.01px;
@@ -507,16 +503,19 @@ table {
   flex-direction: row;
   justify-content: center;
 }
-.DMax-container .image-DMax-container .square {
+.DMax-container .image-DMax-container .autoSelect-image-DMax-container {
   display: inline-block;
   width: 90px;
   height: 90px;
   cursor: pointer;
-  margin-right: 30px;
+  margin: 13px;
   transition: transform 0.5s ease;
   border: 1px solid #AFAFAF;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   margin-top: 23px;
+}
+.DMax-container .image-DMax-container .autoSelect-image-DMax-container.selected {
+  border-color: #E3000B;
 }
 .DMax-container .image-DMax-container img {
   width: 80px;
@@ -528,12 +527,12 @@ table {
 .DMax-container .display-image {
   margin-top: 20px;
   overflow: hidden;
+  position: relative;
 }
 .DMax-container .display-image h3 {
   letter-spacing: 0.01px;
   line-height: 20px;
-  font-family: "Kanit Semi-Bold";
-  font-weight: 600;
+  font-family: "Kanit Semi-Bold", sans-serif;
   font-weight: bold;
   color: #333333;
   font-size: 30px;
@@ -542,38 +541,62 @@ table {
 .DMax-container .display-image p {
   letter-spacing: 1.12px;
   line-height: 30px;
-  font-family: "Open Sans Regular";
-  font-weight: 400;
+  font-family: "Open Sans Regular", sans-serif;
   color: #333333;
   font-size: 16px;
   text-align: left;
   margin-left: 37px;
   margin-right: 52px;
 }
-.DMax-container .display-image img {
-  max-width: 300px;
+.DMax-container .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  transform: translateX(0);
+}
+.DMax-container .entering {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.DMax-container .exiting {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.DMax-container .entering-from-left {
+  opacity: 1;
+  transform: translateX(0);
   transition: transform 0.5s ease;
 }
-.DMax-container .display-image img.hidden {
-  transform: translateX(-100%);
+.DMax-container #displayed-image.exiting {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.DMax-container #displayed-image.entering {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 .DMax-container .button-DMax-container {
   margin-top: 20px;
   background-color: #E3000B;
-  border-radius: 26px 26px 26px 26px;
-  width: 325px;
+  border-radius: 26px;
+  width: 322px;
   height: 52px;
   color: #ffffff;
   font-size: 18px;
-  font-family: "Kanit Regular";
-  font-weight: 400;
+  font-family: "Kanit Regular", sans-serif;
   letter-spacing: 1.26px;
   line-height: 30px;
   border: 1px solid #E3000B;
-  margin-top: 21px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  align-self: center;
+  transition: text-indent 0.3s;
+}
+.DMax-container .button-DMax-container:hover {
+  transform: translateX(1);
+  text-indent: -2px;
+  opacity: 0.8;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -643,8 +666,7 @@ table {
   letter-spacing: 0.75px;
   line-height: 23px;
   color: #6D727B;
-  font-family: "Kanit Medium";
-  font-weight: 500;
+  font-family: "Kanit Medium", sans-serif;
   margin-left: 37px;
   margin-right: 57px;
 }
@@ -654,8 +676,7 @@ table {
   letter-spacing: 2.41px;
   line-height: 41px;
   color: #333333;
-  font-family: "Kanit Semi-Bold";
-  font-weight: 600;
+  font-family: "Kanit Semi-Bold", sans-serif;
   margin-left: 35px;
   margin-right: 57px;
 }
@@ -664,8 +685,7 @@ table {
   letter-spacing: 1.12px;
   line-height: 30px;
   color: #333333;
-  font-family: "Open Sans Regular";
-  font-weight: 600;
+  font-family: "Open Sans Regular", sans-serif;
   margin-left: 35px;
   margin-right: 57px;
 }
@@ -677,17 +697,19 @@ table {
 .NSeries-container .Button-NSeries-container .main-button-NSeries-container {
   margin-top: 20px;
   background-color: #E3000B;
-  border-radius: 26px 26px 26px 26px;
+  border-radius: 26px;
   width: 322px;
   height: 52px;
   color: #ffffff;
   font-size: 18px;
-  font-family: "Kanit Regular";
-  font-weight: 400;
-  opacity: 80%;
+  font-family: "Kanit Regular", sans-serif;
   letter-spacing: 1.26px;
   line-height: 30px;
   border: 1px solid #E3000B;
+  align-self: center;
+}
+.NSeries-container .Button-NSeries-container .main-button-NSeries-container:hover {
+  opacity: 0.8;
 }
 .NSeries-container .Button-NSeries-container .secondary-button-NSeries-container {
   margin-top: 20px;
@@ -696,13 +718,15 @@ table {
   height: 52px;
   color: #333333;
   font-size: 16px;
-  font-family: "Kanit Regular";
-  font-weight: 400;
+  font-family: "Kanit Regular", sans-serif;
   letter-spacing: 1.26px;
   line-height: 30px;
   border: 3px solid #333333;
+  transition: text-indent 0.3s;
 }
 .NSeries-container .Button-NSeries-container .secondary-button-NSeries-container:hover {
+  transform: translateX(1);
+  text-indent: 20px;
   background-color: #333333;
   color: #ffffff;
 }
@@ -761,7 +785,11 @@ table {
   border-spacing: 0;
 }
 
-.Kontak-container .information-kontak-container h2 {
+.contact-container .information-contact-container {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .information-contact-container h2 {
   margin-top: 55px;
   margin-left: 35px;
   margin-right: 36px;
@@ -769,10 +797,10 @@ table {
   letter-spacing: 2.7px;
   line-height: 41px;
   color: #333333;
-  font-family: "Kanit Semi-Bold";
-  font-weight: 600;
+  font-family: "Kanit Semi-Bold", sans-serif;
+  word-wrap: break-word;
 }
-.Kontak-container .information-kontak-container .kontact-information-kontak-container {
+.contact-container .information-contact-container .kontact-information-contact-container {
   margin-top: 30px;
   margin-left: 35px;
   margin-right: 36px;
@@ -780,30 +808,779 @@ table {
   letter-spacing: 1.7px;
   line-height: 26px;
   color: #333333;
-  font-family: "Kanit Bold";
-  font-weight: 700;
+  font-family: "Kanit Bold", sans-serif;
   font-weight: bold;
 }
-.Kontak-container .information-kontak-container .details-information-kontak-container {
+.contact-container .information-contact-container .details-information-contact-container {
   margin-top: 20px;
   color: #333333;
   font-size: 18px;
-  font-family: "Open Sans Regular";
-  font-weight: 400;
+  font-family: "Open Sans Regular", sans-serif;
   letter-spacing: 0.54px;
   line-height: 30px;
   margin-left: 35px;
 }
-.Kontak-container .information-kontak-container .details-information-kontak-container .adress-details-information-kontak-container {
+.contact-container .information-contact-container .details-information-contact-container .adress-details-information-contact-container {
   margin-bottom: 40px;
 }
-.Kontak-container .information-kontak-container .anfahrt-information-kontak-container {
+.contact-container .information-contact-container .anfahrt-information-contact-container {
   margin-top: 30px;
   margin-left: 35px;
   font-size: 17px;
   letter-spacing: 1.7px;
   line-height: 26px;
   color: #333333;
-  font-family: "Kanit Bold";
-  font-weight: 700;
+  font-family: "Kanit Bold", sans-serif;
+}
+.contact-container .information-contact-container .localisation-information-contact-container {
+  width: 393px;
+  height: 361px;
+  border: 1px solid #E3000B;
+  align-self: center;
+  margin-top: 20px;
+}
+.contact-container .information-contact-container .localisation-information-contact-container .text-localisation-information-contact-container {
+  margin-top: 20px;
+}
+.contact-container .information-contact-container .localisation-information-contact-container .text-localisation-information-contact-container .one-text-localisation-information-contact-container {
+  margin-top: 19px;
+  margin-left: 14px;
+  margin-right: 57px;
+  color: #333333;
+  font-size: 15px;
+  font-family: "Open Sans Regular", sans-serif;
+  letter-spacing: 0.45px;
+  line-height: 30px;
+}
+.contact-container .information-contact-container .localisation-information-contact-container .text-localisation-information-contact-container .two-text-localisation-information-contact-container {
+  margin-top: 20px;
+  margin-left: 14px;
+  margin-right: 57px;
+  color: #333333;
+  font-size: 15px;
+  font-family: "Open Sans Regular", sans-serif;
+  letter-spacing: 0.45px;
+  line-height: 30px;
+}
+.contact-container .information-contact-container .localisation-information-contact-container .text-localisation-information-contact-container .two-text-localisation-information-contact-container span {
+  text-decoration: underline;
+}
+.contact-container .information-contact-container .localisation-information-contact-container .text-localisation-information-contact-container .three-text-localisation-information-contact-container {
+  margin-top: 20px;
+  margin-left: 14px;
+  margin-right: 57px;
+  color: #333333;
+  font-size: 15px;
+  font-family: "Open Sans Regular", sans-serif;
+  letter-spacing: 0.45px;
+  line-height: 30px;
+}
+.contact-container .information-contact-container button {
+  margin-top: 20px;
+  background-color: #E3000B;
+  border-radius: 26px;
+  width: 322px;
+  height: 52px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Kanit Regular", sans-serif;
+  letter-spacing: 1.26px;
+  line-height: 30px;
+  border: 1px solid #E3000B;
+  align-self: center;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.openingHours-container {
+  margin-top: 30px;
+  margin-left: 35px;
+}
+.openingHours-container h2 {
+  font-size: 22px;
+  letter-spacing: 2.3px;
+  line-height: 33px;
+  color: #333333;
+  font-family: "Kanit Bold", sans-serif;
+}
+.openingHours-container h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  letter-spacing: 2.2px;
+  line-height: 30px;
+  color: #333333;
+  font-family: "Kanit Medium", sans-serif;
+}
+.openingHours-container h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 0.54px;
+  line-height: 30px;
+  color: #333333;
+  font-family: "Open Sans Bold", sans-serif;
+}
+.openingHours-container ul {
+  margin-top: 10px;
+  font-size: 18px;
+  letter-spacing: 0.54px;
+  line-height: 30px;
+  color: #333333;
+  font-family: "Open Sans Bold", sans-serif;
+}
+.openingHours-container p {
+  margin-top: 30px;
+  margin-right: 36px;
+  font-size: 18px;
+  letter-spacing: 0.54px;
+  line-height: 30px;
+  color: #333333;
+  font-family: "Open Sans Bold", sans-serif;
+}
+.openingHours-container p span {
+  display: block;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.customerReviews-container {
+  margin-top: 54px;
+}
+.customerReviews-container h2 {
+  margin-top: 40px;
+  margin-left: 32px;
+  font-size: 27px;
+  letter-spacing: 2.7px;
+  line-height: 41px;
+  font-family: "Kanit Semi-Bold", sans-serif;
+  color: #333333;
+}
+.customerReviews-container .average-customerReviews-container {
+  margin-left: 25px;
+}
+.customerReviews-container .average-customerReviews-container p {
+  font-size: 100px;
+  line-height: 150px;
+  font-family: "Kanit Regular", sans-serif;
+  color: #E3000B;
+}
+.customerReviews-container .average-customerReviews-container .average-star-container {
+  display: flex;
+  display: inline-block;
+  width: 228px;
+  height: 35.08px;
+}
+.customerReviews-container .average-customerReviews-container .average-star-container img {
+  width: 36px;
+  height: 35px;
+}
+.customerReviews-container .average-customerReviews-container h3 {
+  margin-top: 18px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Kanit Medium", sans-serif;
+  color: #333333;
+}
+.customerReviews-container .customer-customerReviews-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.customerReviews-container .customer-customerReviews-container .name-customer-customerReviews-container {
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 3px;
+  font-family: "Kanit Light", sans-serif;
+  color: #6D727B;
+}
+.customerReviews-container .customer-customerReviews-container .name-customer-customerReviews-container span {
+  margin-left: -10px;
+}
+.customerReviews-container .customer-customerReviews-container .review-customer-customerReviews-container {
+  width: 280px;
+  height: 292px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1.12px;
+  font-family: "Open Sans Semi-Bold", sans-serif;
+  color: #333333;
+  text-align: center;
+}
+.customerReviews-container .customer-customerReviews-container .chevronContainer-customer-customerReviews-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+.customerReviews-container .customer-customerReviews-container .review-star-container img {
+  width: 27px;
+  height: 26px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.photoGalery-container {
+  margin-top: 60px;
+  overflow: hidden;
+}
+.photoGalery-container h2 {
+  margin-left: 35px;
+  width: 322px;
+  height: 41px;
+  font-size: 27px;
+  letter-spacing: 2.7px;
+  line-height: 41px;
+  font-family: "Kanit Semi-Bold", sans-serif;
+  color: #333333;
+}
+.photoGalery-container img {
+  max-width: 100%;
+  height: 415px;
+  margin-top: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index: 1020;
+  bottom: 0;
+}
+.options-container .leftButton-options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #E3000B;
+  border: 1px solid #E3000B;
+}
+.options-container .leftButton-options-container .roadTest-leftButton-options-container {
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  line-height: 26px;
+  color: #ffffff;
+  font-family: "Kanit Regular", sans-serif;
+}
+.options-container .rightButton-options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #333333;
+  border: 1px solid #333333;
+}
+.options-container .rightButton-options-container .contact-rightButton-options-container {
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  line-height: 26px;
+  color: #ffffff;
+  font-family: "Kanit Regular", sans-serif;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-color: rgba(51, 51, 51, 0.7490196078);
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1020;
+  top: 0;
+}
+header .navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar-container .leftSide-navbar-container {
+  width: 100%;
+  margin-left: 35px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+header .navbar-container .leftSide-navbar-container .logoIsuzu-leftSide-navbar-container {
+  filter: brightness(0) invert(1);
+  width: 98px;
+  height: 19.57px;
+}
+header .navbar-container .leftSide-navbar-container p {
+  width: 271px;
+  height: 18px;
+  margin-top: 7.42px;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
+  font-family: "Open Sans Bold", sans-serif;
+}
+header .navbar-container .rightSide-navbar-container {
+  margin-right: 36px;
+  margin-top: 16.44px;
+  height: 58px;
+}
+header .navbar-container .rightSide-navbar-container .hamburger {
+  width: 22.59px;
+  height: 18.56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+header .navbar-container .rightSide-navbar-container .hamburger .line {
+  width: 22.59px;
+  height: 2px;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.modal-header {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: none;
+}
+.modal-header.showModal {
+  display: block;
+  transform: translateX(0);
+}
+.modal-header .content-modal-header .closeNavbar-content-modal-header {
+  position: absolute;
+  top: 14px;
+  left: 334.89px;
+}
+.modal-header .content-modal-header .container-content-modal-header {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  margin-top: 61px;
+  margin-right: 119px;
+}
+.modal-header .content-modal-header .container-content-modal-header .title-container-content-modal-header {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 27px;
+  color: #333333;
+  font-family: "Kanit Regular", sans-serif;
+}
+.modal-header .content-modal-header .container-content-modal-header .liste-container-content-modal-header {
+  margin-top: 34px;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 27px;
+  color: #333333;
+  font-family: "Kanit Semi-Bold", sans-serif;
+}
+.modal-header .content-modal-header .container-content-modal-header .liste-container-content-modal-header .element-liste-container-content-modal-header {
+  margin-top: 14px;
+}
+.modal-header .content-modal-header .container-content-modal-header .button-content-modal-header {
+  margin-top: 29px;
+  background-color: #E3000B;
+  border-radius: 20px 20px 20px 20px;
+  width: 208px;
+  height: 37px;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: "Kanit Regular", sans-serif;
+  letter-spacing: 1.26px;
+  line-height: 19px;
+  border: 1px solid #E3000B;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.footer-container {
+  margin-top: 60px;
+}
+.footer-container .logoIsuzu-footer-container {
+  margin-left: 35px;
+  margin-bottom: 4.5px;
+}
+.footer-container .summary-footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 35px;
+}
+.footer-container .summary-footer-container .section-summary-footer-container {
+  margin-top: 35px;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 27px;
+  color: #333333;
+  font-family: "Kanit Semi-Bold", sans-serif;
+}
+.footer-container .networksContainer-footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 59.9px;
+  margin-left: 35px;
+  margin-right: 34px;
+  border-top: solid 2px #AFAFAF;
+}
+.footer-container .networksContainer-footer-container .privacy-networksContainer-footer-container {
+  margin-top: 13.5px;
+}
+.footer-container .networksContainer-footer-container .privacy-networksContainer-footer-container .Imprint-PrivacyPolicy {
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  line-height: 30px;
+  color: #333333;
+  font-family: "Open Sans Regular", sans-serif;
+}
+.footer-container .networksContainer-footer-container .networks-networksContainer-footer-container {
+  margin-top: 14.5px;
+}
+.footer-container .networksContainer-footer-container .networks-networksContainer-footer-container .network-networks-networksContainer-footer-container {
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+}
+
+.powered-by-boteca-container {
+  display: flex;
+  justify-content: center;
+}
+.powered-by-boteca-container .powered-by-boteca {
+  margin-top: 53.75px;
+}
+
+.technoAndFunction-container .title-technoAndFunction-container .leftIcon-title-technoAndFunction-container, .customerReviews-container .customer-customerReviews-container .chevronContainer-customer-customerReviews-container .leftIcon-chevronContainer-customer-customerReviews-container {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.technoAndFunction-container .title-technoAndFunction-container .rightIcon-title-technoAndFunction-container, .customerReviews-container .customer-customerReviews-container .chevronContainer-customer-customerReviews-container .rightIcon-chevronContainer-customer-customerReviews-container {
+  width: 16.16px;
+  height: 30px;
+}
+
+body {
+  opacity: 98%;
 }/*# sourceMappingURL=styles.css.map */

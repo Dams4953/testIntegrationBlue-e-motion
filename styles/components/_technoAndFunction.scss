@@ -1,0 +1,97 @@
+@import '../base/reset';
+@import '../base/variables';
+@import '../base/mixin.scss';
+
+
+
+
+.technoAndFunction-container {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .imgContainer-technoAndFunction-container {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .imgContainer-technoAndFunction-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        mask: url('../../assets/pictures/bloc-sep-1.svg') no-repeat;
+        mask-size: 100% 100%;
+        mask-position: center bottom;
+    }
+    
+    
+    
+
+
+    .textImg-technoAndFunction-container {
+        position: absolute;
+        top: 6%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: white;
+        font-size: 23px;
+        letter-spacing: 5px;
+        line-height: 38px;
+        font-family: $font-family-primary-bold;
+        text-align: center;
+        width: 270px;
+    }
+
+    .title-technoAndFunction-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        width: 100%;
+
+        .leftIcon-title-technoAndFunction-container {
+            @extend %left-icon-chevron;
+        }
+
+        h2 {
+            width: 184px;
+            height: 82px;
+            font-size: 27px;
+            letter-spacing: 2.7px;
+            line-height: 41px;
+            margin-left: 41px;
+            font-family: $font-family-primary-semiBold;
+        }
+
+        .rightIcon-title-technoAndFunction-container {
+            @extend %right-icon-chevron;
+
+        }
+
+    }
+
+    .text-technoAndFunction-container {
+
+        margin-top: 20px;
+        margin-left: 36.2px;
+        margin-right: 36.8px;
+        font-size: 16px;
+        letter-spacing: 1.12px;
+        line-height: 30px;
+        font-family: $font-family-primary-semiBold;
+        color: $text-color-primary;
+    }
+
+    button {
+
+        @include primary-button;
+    }
+}

@@ -1,0 +1,120 @@
+@import '../base/reset';
+@import '../base/variables';
+@import '../base/mixin.scss';
+
+
+
+
+.contact-container {
+
+    .information-contact-container {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin-top: 55px;
+            margin-left: 35px;
+            margin-right: 36px;
+            font-size: 27px;
+            letter-spacing: 2.7px;
+            line-height: 41px;
+            color: $text-color-primary;
+            font-family: $font-family-primary-semiBold;
+            word-wrap: break-word;
+        }
+
+        .kontact-information-contact-container {
+            margin-top: 30px;
+            margin-left: 35px;
+            margin-right: 36px;
+            font-size: 17px;
+            letter-spacing: 1.7px;
+            line-height: 26px;
+            color: $text-color-primary;
+            font-family: $font-family-primary-bold;
+            font-weight: bold;
+        }
+
+        .details-information-contact-container {
+            margin-top: 20px;
+            color: $text-color-primary;
+            font-size: 18px;
+            font-family: $font-family-secondary-regular;
+            letter-spacing: 0.54px;
+            line-height: 30px;
+            margin-left: 35px;
+
+            .adress-details-information-contact-container {
+                margin-bottom: 40px;
+
+            }
+        }
+
+        .anfahrt-information-contact-container {
+            margin-top: 30px;
+            margin-left: 35px;
+            font-size: 17px;
+            letter-spacing: 1.7px;
+            line-height: 26px;
+            color: $text-color-primary;
+            font-family: $font-family-primary-bold;
+        }
+
+        .localisation-information-contact-container {
+            width: 393px;
+            height: 361px;
+            border: 1px solid $element-color-primary;
+            align-self: center;
+            margin-top: 20px;
+
+            .text-localisation-information-contact-container {
+
+                margin-top: 20px;
+
+                .one-text-localisation-information-contact-container {
+                    margin-top: 19px;
+                    margin-left: 14px;
+                    margin-right: 57px;
+                    color: $text-color-primary;
+                    font-size: 15px;
+                    font-family: $font-family-secondary-regular;
+                    letter-spacing: 0.45px;
+                    line-height: 30px;
+                }
+
+                .two-text-localisation-information-contact-container {
+                    margin-top: 20px;
+                    margin-left: 14px;
+                    margin-right: 57px;
+                    color: $text-color-primary;
+                    font-size: 15px;
+                    font-family: $font-family-secondary-regular;
+                    letter-spacing: 0.45px;
+                    line-height: 30px;
+
+                    span {
+                        text-decoration: underline;
+                    }
+                }
+
+                .three-text-localisation-information-contact-container {
+                    margin-top: 20px;
+                    margin-left: 14px;
+                    margin-right: 57px;
+                    color: $text-color-primary;
+                    font-size: 15px;
+                    font-family: $font-family-secondary-regular;
+                    letter-spacing: 0.45px;
+                    line-height: 30px;
+                }
+            }
+
+        }
+
+        button {
+            @include primary-button($transition: false, $opacity: false);	
+        }
+
+
+    }
+}

@@ -1,9 +1,20 @@
 @import 'base/reset.css';
 @import 'components/videoIntroduction.scss';
 @import 'components/aboutUs.scss';
-@import 'components/technikAndFunktion.scss';
+@import 'components/technoAndFunction.scss';
 @import 'components/dMax.scss';
 @import 'components/nSeries.scss';
-@import 'components/kontak.scss';
+@import 'components/contact.scss';
+@import 'components/openingHours.scss';
+@import 'components/customerReviews.scss';
+@import 'components/photoGalery.scss';
+@import 'components/options.scss';
+@import 'components/header.scss';
+@import 'components/footer.scss';
 @import 'base/variables.scss';
 @import 'base/mixin.scss';
+@import 'base/placeholder.scss';
+
+body{
+    opacity: 98%;
+}

@@ -9,29 +9,24 @@
     flex-direction: column;
     text-align: left;
 
-
-    .full-text {
-        display: none;
-    }
-
     .uberUns-aboutUs-container {
         color: $text-color-secondary;
         font-size: 15px;
         padding-left: 35px;
         padding-right: 57px;
-        @include font-family('Kanit Medium', 500);
+        font-family: $font-family-primary-medium;
         letter-spacing: 0.75px;
         line-height: 23px;
         text-transform: uppercase;
-        margin-top: 74px;
+        margin-top: 67px;
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 27px;
         color: $text-color-primary;
         padding-left: 35px;
         padding-right: 57px;
-        @include font-family('Kanit Semi-Bold', 600);
+        font-family: $font-family-primary-semiBold;
         letter-spacing: 2.7px;
         line-height: 41px;
         text-transform: uppercase;
@@ -43,7 +38,7 @@
         color: $text-color-primary;
         padding-left: 35px;
         padding-right: 36px;
-        @include font-family('Open Sans Regular', 400);
+        font-family: $font-family-secondary-regular;
         letter-spacing: 1.26px;
         line-height: 30px;
         margin-top: 20px;
@@ -54,78 +49,65 @@
         text-overflow: ellipsis;
     }
 
-    .class-readMore {
-        color: $element-color-primary;
-        @include font-family('Kanit Semi-Bold', 600);
-        font-size: 16px;
-        padding-left: 151px;
-        padding-right: 150px;
-        letter-spacing: 0.54px;
-        line-height: 30px;
-        margin-top: 30px;
-        font-weight: bold;
-        text-decoration: none;
+    .button-full-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .readMore-aboutUs-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            .class-readMore {
+                color: $element-color-primary;
+                font-family: $font-family-primary-semiBold;
+                font-size: 16px;
+                padding-left: 151px;
+                padding-right: 150px;
+                letter-spacing: 0.54px;
+                line-height: 30px;
+                margin-top: 30px;
+                font-weight: bold;
+                text-decoration: none;
+
+                .open-icon-readMore {
+                    transform: rotate(90deg);
+                    width: 16.16px;
+                    height: 30px;
+
+                }
+            }
+        }
+
+        .readLess-aboutUs-container {
+
+            .main-button-full-text {
+                @include primary-button($transition: false, $opacity: false);
+                opacity: 80%;
+            }
+
+            .secondary-button-full-text {
+                @include secondary-button($transition: false);
+
+
+            }
+
+            .close-icon-readMore {
+                transform: rotate(270deg);
+                width: 16.16px;
+                height: 30px;
+            }
+        }
     }
+
 }
 
-.readMore-aboutUs-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.open-icon-readMore {
-    transform: rotate(90deg);
-    width: 16.16px;
-    height: 30px;
-
-}
-
-.button-full-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .main-button-full-text {
-        margin-top: 20px;
-        background-color: $element-color-primary;
-        border-radius: 26px 26px 26px 26px;
-        width: 322px;
-        height: 52px;
-        color: $text-color-tertiary;
-        font-size: 18px;
-        @include font-family('Kanit Regular', 400);
-        opacity: 80%;
-        letter-spacing: 1.26px;
-        line-height: 30px;
-        border: 1px solid $element-color-primary;
-    }
-
-    .secondary-button-full-text {
-        margin-top: 20px;
-        border-radius: 26px 26px 26px 26px;
-        width: 322px;
-        height: 52px;
-        color: $text-color-primary;
-        font-size: 16px;
-        @include font-family('Kanit Regular', 400);
-        letter-spacing: 1.26px;
-        line-height: 30px;
-        border: 3px solid $text-color-primary;
 
 
-    }
 
-    .secondary-button-full-text:hover {
-        background-color: $text-color-primary;
-        color: $text-color-tertiary;
 
-    }
 
-    .close-icon-readMore {
-        transform: rotate(270deg);
-        width: 16.16px;
-        height: 30px;
-    }
-}
+

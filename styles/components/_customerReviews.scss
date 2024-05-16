@@ -1,0 +1,109 @@
+@import '../base/reset';
+@import '../base/variables';
+@import '../base/mixin.scss';
+
+.customerReviews-container {
+
+    margin-top: 54px;
+
+    h2 {
+        margin-top: 40px;
+        margin-left: 32px;
+        font-size: 27px;
+        letter-spacing: 2.7px;
+        line-height: 41px;
+        font-family: $font-family-primary-semiBold;
+        color: $text-color-primary;
+    }
+
+    .average-customerReviews-container {
+        margin-left: 25px;
+
+        p {
+
+            font-size: 100px;
+            line-height: 150px;
+            font-family: $font-family-primary-regular;
+            color: $element-color-primary;
+        }
+
+        .average-star-container {
+            display: flex;
+            display: inline-block;
+            width: 228px;
+            height: 35.08px;
+
+            img {
+                width: 36px;
+                height: 35px;
+            }
+
+        }
+
+        h3 {
+            margin-top: 18px;
+            font-size: 20px;
+            line-height: 30px;
+            font-family: $font-family-primary-medium;
+            color: $text-color-primary;
+        }
+    }
+
+    .customer-customerReviews-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        .name-customer-customerReviews-container {
+
+            font-size: 30px;
+            line-height: 45px;
+            letter-spacing: 3px;
+            font-family: $font-family-primary-light;
+            color: $text-color-secondary;
+
+            span {
+                margin-left: -10px;
+            }
+        }
+
+        .review-customer-customerReviews-container {
+            width: 280px;
+            height: 292px;
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 1.12px;
+            font-family: $font-family-secondary-semiBold;
+            color: $text-color-primary;
+            text-align: center;
+        }
+
+        .chevronContainer-customer-customerReviews-container {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+
+
+            .leftIcon-chevronContainer-customer-customerReviews-container {
+                @extend %left-icon-chevron;
+            }
+
+            .rightIcon-chevronContainer-customer-customerReviews-container {
+                @extend %right-icon-chevron;
+            }
+        }
+
+        .review-star-container{
+            
+            img{
+                width: 27px;
+                height: 26px;
+            }
+        }
+    }
+}

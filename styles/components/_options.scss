@@ -1,0 +1,52 @@
+@import '../base/reset';
+@import '../base/variables';
+@import '../base/mixin.scss';
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1020;
+    bottom: 0;
+
+    .leftButton-options-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background-color: $element-color-primary;
+        border: 1px solid $element-color-primary;
+
+        .img-leftButton-options-container {}
+
+        .roadTest-leftButton-options-container {
+            font-size: 17px;
+            letter-spacing: 1.7px;
+            line-height: 26px;
+            color: $text-color-tertiary;
+            font-family: $font-family-primary-regular;
+        }
+    }
+
+    .rightButton-options-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background-color: $text-color-primary;
+        border: 1px solid $text-color-primary;
+
+        .img-rightButton-options-container {}
+
+        .contact-rightButton-options-container {
+            font-size: 17px;
+            letter-spacing: 1.7px;
+            line-height: 26px;
+            color: $text-color-tertiary;
+            font-family: $font-family-primary-regular;
+        }
+
+    }
+}

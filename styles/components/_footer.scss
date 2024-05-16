@@ -1,0 +1,73 @@
+@import '../base/reset';
+@import '../base/variables';
+@import '../base/mixin.scss';
+
+.footer-container {
+    margin-top: 60px;
+
+    .logoIsuzu-footer-container {
+        margin-left: 35px;
+        margin-bottom: 4.5px;
+    }
+
+    .summary-footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 35px;
+
+        .section-summary-footer-container {
+            margin-top: 35px;
+            font-size: 18px;
+            letter-spacing: 0.9px;
+            line-height: 27px;
+            color: $text-color-primary;
+            font-family: $font-family-primary-semiBold;
+        }
+    }
+
+    .networksContainer-footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 59.9px;
+        margin-left: 35px;
+        margin-right: 34px;
+        border-top: solid 2px $border-color-img;
+
+        .privacy-networksContainer-footer-container {
+            margin-top: 13.5px;
+
+            .Imprint-PrivacyPolicy {
+
+                font-size: 14px;
+                letter-spacing: 0.42px;
+                line-height: 30px;
+                color: $text-color-primary;
+                font-family: $font-family-secondary-regular;
+            }
+
+
+        }
+
+        .networks-networksContainer-footer-container {
+            margin-top: 14.5px;
+
+            .network-networks-networksContainer-footer-container {
+                width: 32px;
+                height: 32px;
+                text-decoration: none;
+                
+            }
+        }
+    }
+}
+
+.powered-by-boteca-container {
+    display: flex;
+    justify-content: center;
+
+    .powered-by-boteca {
+        margin-top: 53.75px;
+    }
+}
