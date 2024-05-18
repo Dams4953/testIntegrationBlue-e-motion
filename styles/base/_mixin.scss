@@ -6,6 +6,12 @@
   }
 }
 
+@mixin mobile {
+  @media only screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
 
 @mixin primary-button($transition: true, $opacity: true) {
   margin-top: 20px;
