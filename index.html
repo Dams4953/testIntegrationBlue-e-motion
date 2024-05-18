@@ -12,59 +12,71 @@
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
-        <nav class="navbar-container">
-            <div class="leftSide-navbar-container">
-                <img src="assets/vectors/Logo-Isuzu.svg" alt="logo Isuzu" class="logoIsuzu-leftSide-navbar-container">
-                <p>AUTOHAUS MUSTERMANN, MUSTERSTARF</p>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="navbar__left-side">
+                <img src="assets/vectors/Logo-Isuzu.svg" alt="logo Isuzu" class="navbar__left-side__logo">
+                <p class="navbar__left-side__text">AUTOHAUS MUSTERMANN, MUSTERSTARF</p>
             </div>
-            <div class="rightSide-navbar-container">
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+            <div class="navbar__right-side">
+                <div class="navbar__right-side__hamburger">
+                    <div class="navbar__right-side__hamburger__line"></div>
+                    <div class="navbar__right-side__hamburger__line"></div>
+                    <div class="navbar__right-side__hamburger__line"></div>
                 </div>
             </div>
         </nav>
+
+        <!-- MODAL HEADER -->
         <section class="modal-header" id="modalHeader">
-            <div class="content-modal-header">
-                <img src="assets/vectors/close-navbar.svg" class="closeNavbar-content-modal-header" alt="close navbar">
-                <div class="container-content-modal-header">
-                    <h2 class="title-container-content-modal-header">AUTOHAUS MUSTERMANN, MUSTERSTARF</h2>
-                    <ul class="liste-container-content-modal-header">
-                        <li class="element-liste-container-content-modal-header">STARTSEITE</li>
-                        <li class="element-liste-container-content-modal-header">ÜBER UNS</li>
-                        <li class="element-liste-container-content-modal-header">D-MAX</li>
-                        <li class="element-liste-container-content-modal-header">N-SERIES</li>
-                        <li class="element-liste-container-content-modal-header">KONTAK</li>
-                        <li class="element-liste-container-content-modal-header">FOTOGALERIE</li>
+            <div class="modal-header__container">
+                <img src="assets/vectors/close-navbar.svg" class="modal-header__container__close-img"
+                    alt="close navbar">
+                <div class="modal-header__container__content">
+                    <h2 class="modal-header__container__content__title">AUTOHAUS MUSTERMANN, MUSTERSTARF</h2>
+                    <ul class="modal-header__container__content__list">
+                        <li class="modal-header__container__content__list__element">STARTSEITE</li>
+                        <li class="modal-header__container__content__list__element">ÜBER UNS</li>
+                        <li class="modal-header__container__content__list__element">D-MAX</li>
+                        <li class="modal-header__container__content__list__element">N-SERIES</li>
+                        <li class="modal-header__container__content__list__element">KONTAK</li>
+                        <li class="modal-header__container__content__list__element">FOTOGALERIE</li>
                     </ul>
-                    <button class="button-content-modal-header">Probefahrt</button>
+                    <button class="modal-header__container__content__button">Probefahrt</button>
                 </div>
             </div>
         </section>
 
     </header>
 
+    <!-- MAIN -->
     <main>
-        <div class="video-container">
-            <video id="videoIntroduction">
+
+        <!-- INTRODUCTION VIDEO -->
+        <div class="intro-video">
+            <video class="intro-video__video" id="videoIntroduction">
                 <source src="assets/videos/ISUZU-DMAX-key-visual-loop.mp4" type="video/mp4">
                 Votre navigateur ne supporte pas la lecture de vidéo.
             </video>
-            <div class="text-overlay">
-                <h1>WILLKOMMEN BEI</h1>
-                <h2>AUTOHAUS MUSTERMANN</h2>
+            <div class="intro-video__titles">
+                <h1 class="intro-video__titles__h1">WILLKOMMEN BEI</h1>
+                <h2 class="intro-video__titles__h2">AUTOHAUS MUSTERMANN</h2>
             </div>
-            <div class="svg-overlay">
+            <div class="intro-video__svg">
                 <img src="assets/vectors/icon-scroll-normal.svg" alt="scroll icon video introduction">
             </div>
         </div>
-        <section class="aboutUs-container">
+
+        <!-- ABOUT US -->
+        <section class="about-us">
             <div>
-                <h3 class="uberUns-aboutUs-container">ÜBER UNS</h3>
-                <h2>AUTOHAUS WIENS, IHR ISUZU-HÄNDLER</h2>
-                <p class="text-aboutUs-container" id="textAboutUs">
+                <h3 class="about-us__title">ÜBER UNS</h3>
+                <h2 class="about-us__heading">AUTOHAUS WIENS, IHR ISUZU-HÄNDLER</h2>
+                <p class="about-us__text" id="textAboutUs">
                     Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer feugait. Enis feugiat minisi adiam quis
                     esse nonsequi diat. Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio a duis. Eum
                     magnis re. Amconsequis iriuscing, se, to iurem eum facillametum dit del odo. El atueraestrud
@@ -73,243 +85,285 @@
                     consequi. Dolortin sustionsenim amconsequis iriustrud, min il, tio lor. Eummolortion dolortie
                     feuguer lummolessi mod feuismo odo tem vullutat..
                 </p>
-                <div class="button-full-text">
-                    <div class="readMore-aboutUs-container" id="readMoreContainer">
-                        <button class="class-readmore" id="idReadMore">
+                <div class="about-us__toggle-content">
+                    <div class="about-us__toggle-content--more" id="readMoreContainer">
+                        <button class="about-us__toggle-content--more__button" id="idReadMore">
                             Read more
                             <img src="assets/vectors/chevron.svg" alt="icone chevron pour read more"
-                                class="open-icon-readMore">
+                                class="about-us__toggle-content--more__button__chevron">
                         </button>
                     </div>
-                    <div class="readLess-aboutUs-container" id="readLessContainer" style="display:none">
-                        <button class="class-readless" id="idReadLess">
-                            Read less
+                    <div class="about-us__toggle-content--less" id="readLessContainer" style="display:none">
+                        <div class="about-us__toggle-content--less__buttons">
+                            <button class="about-us__toggle-content--less__buttons__main-button">Main CTA title</button>
+                            <button class="about-us__toggle-content--less__buttons__secondary-button">Secondary CTA
+                                title</button>
+                        </div>
+                        <div class="about-us__toggle-content--less__toggle" id="idReadLess">
+                            <button class="about-us__toggle-content--less__toggle__button">
+                                Read less
+                            </button>
                             <img src="assets/vectors/chevron.svg" alt="icone chevron pour read more"
-                                class="close-icon-readMore">
-                        </button>
-                        <button class="main-button-full-text">Main CTA title</button>
-                        <button class="secondary-button-full-text">Secondary CTA title</button>
+                                class="about-us__toggle-content--less__toggle__chevron">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="technoAndFunction-container">
-            <div class="imgContainer-technoAndFunction-container">
+        <!-- TECHNO AND FUNCTION -->
+        <section class="techno-and-function">
+            <div class="techno-and-function__container-picture">
                 <img src="assets/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp"
-                    class="img-imgContainer-technoAndFunction-container" alt="uber den d-max image">
+                    class="techno-and-function__container-picture__img" alt="uber den d-max image">
             </div>
-            <p class="textImg-technoAndFunction-container">ÜBER DEN D-MAX</p>
-            <div class="title-technoAndFunction-container">
-                <img src="assets/vectors/chevron.svg" class="leftIcon-title-technoAndFunction-container"
-                    alt="icone chevron left pour technik And Funktion">
-                <h2>TECHNIK & FUNKTION</h2>
-                <img src="assets/vectors/chevron.svg" class="rightIcon-title-technoAndFunction-container"
-                    alt="icone chevron right pour technik And Funktion">
+            <h3 class="techno-and-function__h3">ÜBER DEN D-MAX</h3>
+            <div class="techno-and-function__container-title">
+                <div class="techno-and-function__container-title desktop-flexbox-container-title">
+                    <img src="assets/vectors/chevron.svg" class="techno-and-function__title__left-chevron"
+                        alt="icone chevron left pour technik And Funktion">
+                    <h2 class="techno-and-function__container-title__h2">TECHNIK & FUNKTION</h2>
+                    <img src="assets/vectors/chevron.svg" class="techno-and-function__title__right-chevron"
+                        alt="icone chevron right pour technik And Funktion">
+                </div>
             </div>
-            <p class="text-technoAndFunction-container">Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer
+            <p class="techno-and-function__text">Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer
                 feugait. Enis feugiat minisi adiam
-                quis esse nonsequi diat. Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio a duis. Eum
+                quis esse nonsequi diat. Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio a duis.
+                Eum
                 magnis re.Amconsequis iriuscing,
                 se, to iurem eum facillametum dit del odo. El atueraestrud vullutat, uipsuscidunt lortin rat commod
                 commod luptat iusci Commy re del eui
-                elesequisim nim amet lummy quip. Dionsenim, sustionsenim amconul am lum amconul lorem digniamet. Feuismo
+                elesequisim nim amet lummy quip. Dionsenim, sustionsenim amconul am lum amconul lorem digniamet.
+                Feuismo
                 eum eummolortion consequi. Dolortin
                 sustionsenim amconsequis iriustrud, min il, tio lor. Eummolortion dolortie feuguer lummolessi mod
                 feuismo ddo tem vullutat.</p>
-            <button>Main CTA title</button>
+            <button class="techno-and-function__button">Main CTA title</button>
         </section>
-        <section class="DMax-container">
-            <h2>D-MAX MODELLE</h2>
-            <div class="image-DMax-container">
-                <button class="autoSelect-image-DMax-container" data-image="1">
-                    <img src="assets/pictures/singleCab.png" alt="single cab car image">
+
+        <!-- D-MAX -->
+        <section class="d-max">
+            <h2 class="d-max__h2">D-MAX MODELLE</h2>
+            <div class="d-max__pictures-container">
+                <button class="d-max__pictures-container__select-picture" data-image="1">
+                    <img src="assets/pictures/singleCab.png" alt="single cab car image"
+                        class="d-max__pictures-container__select-picture__img">
                 </button>
-                <button class="autoSelect-image-DMax-container" data-image="2">
-                    <img src="assets/pictures/spaceCab.png" alt="space cab car image">
+                <button class="d-max__pictures-container__select-picture" data-image="2">
+                    <img src="assets/pictures/spaceCab.png" alt="space cab car image"
+                        class="d-max__pictures-container__select-picture__img">
                 </button>
-                <button class="autoSelect-image-DMax-container" data-image="3">
-                    <img src="assets/pictures/doubleCab.png" alt="double cab car image">
+                <button class="d-max__pictures-container__select-picture" data-image="3">
+                    <img src="assets/pictures/doubleCab.png" alt="double cab car image"
+                        class="d-max__pictures-container__select-picture__img">
                 </button>
             </div>
-            <div class="display-image">
-                <div class="content-container">
-                    <h3 id="title"></h3>
-                    <img id="displayed-image">
-                    <p id="paragraph"></p>
+            <div class="d-max__selected-content">
+                <div class="d-max__selected-content__container">
+                    <h3 class="d-max__selected-content__container__title" id="title"></h3>
+                    <img class="d-max__selected-content__container_picture" id="displayed-image">
+                    <p class="d-max__selected-content__container__text" id="paragraph"></p>
                 </div>
             </div>
-            <button class="button-DMax-container">Main CTA title</button>
+            <button class="d-max__button">Main CTA title</button>
         </section>
 
-
-        <section class="NSeries-container">
-            <img src="assets/pictures/04-home-bild_text-N-Serie 3,5t Koffer City Image.webp"
-                class="img-NSeries-container" alt="truck image">
-            <h3>FÜR MACHER GEMACHT</h3>
-            <h2>DIE ISUZU N-SERIE</h2>
-            <p class="text-NSeries-conainer">Das ideale Nutzfahrzeug ist wirtschaftlich, robust und flexibel. Aber vor
+        <!-- N-SERIES -->
+        <section class="n-series">
+            <img src="assets/pictures/04-home-bild_text-N-Serie 3,5t Koffer City Image.webp" class="n-series__picture"
+                alt="truck image">
+            <h3 class="n-series__h3">FÜR MACHER GEMACHT</h3>
+            <h2 class="n-series__h2">DIE ISUZU N-SERIE</h2>
+            <p class="n-series__text">Das ideale Nutzfahrzeug ist wirtschaftlich, robust und flexibel. Aber vor
                 allem: ein Partner, der dir die Arbeit erleichtert. Die N-Serie leistet all das – jeden Tag, rund um den
                 Globus.</p>
-            <div class="Button-NSeries-container">
-                <button class="main-button-NSeries-container">N-Serie entdecken</button>
-                <button class="secondary-button-NSeries-container">Katalog downloaden</button>
+            <div class="n-series__buttons-container">
+                <button class="n-series__buttons-container__main-button">N-Serie entdecken</button>
+                <button class="n-series__buttons-container__secondary-button">Katalog downloaden</button>
             </div>
         </section>
-        <section class="contact-container">
-            <div class="information-contact-container">
-                <h2>KONTAKTINFORMAATIONEN</h2>
-                <p class="kontact-information-contact-container">KONTACT</p>
-                <div class="details-information-contact-container">
-                    <p class="adress-details-information-contact-container">
+
+        <!-- CONTACT -->
+        <section class="contact">
+            <div class="contact__container">
+                <h2 class="contact__container__h2">KONTAKTINFORMAATIONEN</h2>
+                <h3 class="contact__container__h3">KONTACT</h3>
+                <div class="contact__container__information">
+                    <p class="contact__container__information__adress">
                         Langbaurghstraße 12,<br>
                         53842 Troisdorf</p>
-                    <p class="contact-details-information-contact-container">
+                    <p class="contact__container__information__elements">
                         Telefon : 02241-96020<br>
                         Fax : 02241960296<br>
                         E-Mail : info(at)autohaus-weidenbrueck.de</p>
                 </div>
-                <p class="anfahrt-information-contact-container">ANFAHRT</p>
-                <div class="localisation-information-contact-container">
-                    <div class="text-localisation-information-contact-container" id="idMapLocalisationContact">
-                        <p class="one-text-localisation-information-contact-container">Wir benötigen Deine Einwilligung,
+                <h3 class="contact__container__h3">ANFAHRT</h3>
+                <div class="contact__container__localisation">
+                    <div class="contact__container__localisation__text-container" id="idMapLocalisationContact">
+                        <p class="contact__container__localisation__text-container__text-header">Wir benötigen Deine
+                            Einwilligung,
                             um
                             die Karte von Google Maps mit den Händlerstandorten anzuzeigen. </p>
-                        <p class="two-text-localisation-information-contact-container">Ich bin damit einverstanden,
-                            dass mir die Google Maps-Karte angezeigt wird. Damit können personenbezogene <span>Daten an
+                        <p class="contact__container__localisation__text-container__text-main">Ich bin damit
+                            einverstanden,
+                            dass mir die Google Maps-Karte angezeigt wird. Damit können personenbezogene <span
+                                class="contact__container__localisation__text-container__text-main__underline">Daten an
                                 Google
                                 übertragen werden.</span></p>
-                        <p class="three-text-localisation-information-contact-container">Mehr dazu in unserer
+                        <p class="contact__container__localisation__text-container__text-footer">Mehr dazu in unserer
                             Datenschutzerklärung.</p>
                     </div>
                 </div>
-                <button>Google Maps immer anzeigen</button>
+                <button class="contact__container__button-map">Google Maps immer anzeigen</button>
             </div>
         </section>
-        <section class="openingHours-container">
-            <h2>ÖFFNUNGSZEITEN</h2>
-            <h3 class="first-h3">Verkauf</h3>
-            <h4>Montag - Freitag</h4>
-            <ul>
+
+        <!-- OPENING HOURS -->
+        <section class="opening-hours">
+            <h2 class="opening-hours__h2">ÖFFNUNGSZEITEN</h2>
+            <h3 class="opening-hours__h3">Verkauf</h3>
+            <h4 class="opening-hours__h4">Montag - Freitag</h4>
+            <ul class="opening-hours__time-container">
                 <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
                 <li><time datetime="13:20">13:20 Uhr</time> - <time datetime="18:00">18:00 Uhr</time></li>
             </ul>
-            <h4>Samstag</h4>
-            <ul>
+            <h4 class="opening-hours__h4">Samstag</h4>
+            <ul class="opening-hours__time-container">
                 <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
             </ul>
-            <h3 class="second-h3">Service</h3>
-            <h4>Montag - Freitag</h4>
-            <ul>
+            <h3 class="opening-hours__h3">Service</h3>
+            <h4 class="opening-hours__h4">Montag - Freitag</h4>
+            <ul class="opening-hours__time-container">
                 <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
                 <li><time datetime="13:20">13:20 Uhr</time> - <time datetime="18:00">18:00 Uhr</time></li>
             </ul>
-            <h4>Samstag</h4>
-            <ul>
+            <h4 class="opening-hours__h4">Samstag</h4>
+            <ul class="opening-hours__time-container">
                 <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
             </ul>
-            <p>Außerhalb der gesetzlichen Ladenöffnungszeiten <span>keine Beratung, kein Verkauf, keine
+            <p class="opening-hours__text-footer">Außerhalb der gesetzlichen Ladenöffnungszeiten <span>keine Beratung,
+                    kein Verkauf, keine
                     Probefahrtvereinbarung.</span></p>
         </section>
-        <section class="customerReviews-container">
-            <h2>DAS SAGEN UNSERE KUNDEN</h2>
-            <div class="average-customerReviews-container">
-                <p>4,6</p>
-                <div class="average-star-container">
-                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
-                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
-                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
-                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
-                    <img src="assets/vectors/yellowAndGreyStar.svg" alt="yellow and grey star">
+
+        <!-- CUSTOMER REVIEWS -->
+        <section class="customer-reviews">
+            <h2 class="customer-reviews__h2">DAS SAGEN UNSERE KUNDEN</h2>
+            <div class="customer-reviews__average-container">
+                <p class="customer-reviews__average-container__note">4,6</p>
+                <div class="customer-reviews__average-container__stars-average-container">
+                    <img class="customer-reviews__average-container__stars-container__img"
+                        src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img class="customer-reviews__average-container__stars-container__img"
+                        src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img class="customer-reviews__average-container__stars-container__img"
+                        src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img class="customer-reviews__average-container__stars-container__img"
+                        src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img class="customer-reviews__average-container__stars-container__img"
+                        src="assets/vectors/yellowAndGreyStar.svg" alt="yellow and grey star">
                 </div>
-                <h3>durchschnittlich bei Google</h3>
+                <h3 class="customer-reviews__average-container__h3">durchschnittlich bei Google</h3>
             </div>
-            <div class="customer-customerReviews-container">
-                <p class="name-customer-customerReviews-container"><span>Firstname</span></p>
-                <p class="name-customer-customerReviews-container">Lastname</p>
-                <p class="review-customer-customerReviews-container">ich bin in jeder Hinsicht sehr zufrieden mit den
+            <div class="customer-reviews__customer-container">
+                <p class="customer-reviews__customer-container__name"><span
+                        class="customer-reviews__customer-container__name--margin">Firstname</span></p>
+                <p class="customer-reviews__customer-container__name">Lastname</p>
+                <p class="customer-reviews__customer-container__text">ich bin in jeder Hinsicht sehr zufrieden mit den
                     Schritten, die ich beim Kauf meines Fahrzeugs unternommen habe. Es ist genau so, wie ich es mir
                     gewünscht habe und die verschiedenen Personen, die mich bedient haben, waren sehr kompetent und
                     haben mir zugehört. Ich empfehle</p>
-
-
-                <div class="chevronContainer-customer-customerReviews-container">
+                <div class="customer-reviews__customer-container__chevrons-container">
                     <img src="assets/vectors/chevron.svg"
-                        class="leftIcon-chevronContainer-customer-customerReviews-container"
+                        class="customer-reviews__customer-container__chevrons-container__left-chevron"
                         alt="icone chevron left pour customer review">
                     <img src="assets/vectors/chevron.svg"
-                        class="rightIcon-chevronContainer-customer-customerReviews-container"
+                        class="customer-reviews__customer-container__chevrons-container__right-chevron"
                         alt="icone chevron right pour customer review">
                 </div>
-                <div class="review-star-container">
-                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
-                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
-                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
-                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
-                    <img src="assets/vectors/yellowStar.svg" alt="yellow star">
+                <div class="customer-reviews__average-container__stars-note-container">
+                    <img class="customer-reviews__average-container__stars-note-container__img"
+                        src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img class="customer-reviews__average-container__stars-note-container__img"
+                        src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img class="customer-reviews__average-container__stars-note-container__img"
+                        src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img class="customer-reviews__average-container__stars-note-container__img"
+                        src="assets/vectors/yellowStar.svg" alt="yellow star">
+                    <img class="customer-reviews__average-container__stars-note-container__img"
+                        src="assets/vectors/yellowStar.svg" alt="yellow star">
                 </div>
             </div>
         </section>
-        <section class="photoGalery-container">
-            <h2>FOTOGALERIE</h2>
-            <img src="assets/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp" alt="picture ISUZU">
 
+        <!-- PHOTO GALERY -->
+        <section class="photo-galery">
+            <h2 class="photo-galery__h2">FOTOGALERIE</h2>
+            <img class="photo-galery__img" src="assets/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp"
+                alt="picture ISUZU">
         </section>
+
     </main>
 
-
-
+    <!-- FOOTER -->
     <footer>
+
+        <!-- FOOTER CONTAINER -->
         <section class="footer-container">
-            <img class="logoIsuzu-footer-container" src="assets/vectors/Logo-Isuzu.svg" alt="logo Isuzu">
-            <div class="summary-footer-container">
-                <p class="section-summary-footer-container">STARTSEITE</p>
-                <p class="section-summary-footer-container">ÜBER UNS</p>
-                <p class="section-summary-footer-container">D-MAX</p>
-                <p class="section-summary-footer-container">N-SERIES</p>
-                <p class="section-summary-footer-container">KONTAK</p>
-                <p class="section-summary-footer-container">FOTOGALERIE</p>
+            <img class="footer-container__logo" src="assets/vectors/Logo-Isuzu.svg" alt="logo Isuzu">
+            <div class="footer-container__summary-container">
+                <p class="footer-container__summary-container__element">STARTSEITE</p>
+                <p class="footer-container__summary-container__element">ÜBER UNS</p>
+                <p class="footer-container__summary-container__element">D-MAX</p>
+                <p class="footer-container__summary-container__element">N-SERIES</p>
+                <p class="footer-container__summary-container__element">KONTAK</p>
+                <p class="footer-container__summary-container__element">FOTOGALERIE</p>
             </div>
-            <div class="networksContainer-footer-container">
-                <div class="privacy-networksContainer-footer-container">
-                    <p class="Imprint-PrivacyPolicy">Impressum | Datenschutz</p>
+            <div class="footer-container__footer-inner">
+                <div class="footer-container__footer-inner__privacy-container">
+                    <p class="footer-container__footer-inner__privacy-container__element">Impressum | Datenschutz</p>
                 </div>
-                <div class="networks-networksContainer-footer-container">
-                    <a class="network-networks-networksContainer-footer-container" href="https://www.youtube.com"
+                <div class="footer-container__footer-inner__networks">
+                    <a class="footer-container__footer-inner__networks__network" href="https://www.youtube.com"
                         target="_blank" rel="noopener noreferrer">
-                        <img class="youtube-networks-networksContainer-footer-container"
-                            src="assets/vectors/Youtube.svg" alt="Youtube link">
+                        <img class="footer-container__footer-inner__networks__network__youtube"
+                            src="assets/vectors/youtube-icon.svg" alt="Youtube link">
                     </a>
-
-                    <a class="network-networks-networksContainer-footer-container" href="https://www.instagram.com"
+                    <a class="footer-container__footer-inner__networks__network" href="https://www.instagram.com"
                         target="_blank" rel="noopener noreferrer">
-                        <img class="instagram-networks-networksContainer-footer-container"
+                        <img class="footer-container__footer-inner__networks__network__instagram"
                             src="assets/vectors/Instagram.svg" alt="Instagram link">
+                        <img src="" alt="">
                     </a>
 
-                    <a class="network-networks-networksContainer-footer-container" href="https://www.facebook.com"
+                    <a class="footer-container__footer-inner__networks__network" href="https://www.facebook.com"
                         target="_blank" rel="noopener noreferrer">
-                        <img class="facebook-networks-networksContainer-footer-container"
+                        <img class="footer-container__footer-inner__networks__network__facebook"
                             src="assets/vectors/Facebook.svg" alt="Facebook link">
+                        <img src="" alt="">
                     </a>
                 </div>
             </div>
-
         </section>
-        <div class="powered-by-boteca-container">
-            <img class="powered-by-boteca" src="assets/vectors/poweredByBoteca.svg" alt="powered by Boteca">
+        <div class="under-footer-container">
+            <img class="under-footer-container__img" src="assets/vectors/poweredByBoteca.svg" alt="powered by Boteca">
         </div>
+
     </footer>
+
+    <!-- NAVBAR OPTIONS CONTAINER -->
     <aside class="options-container">
-        <button class="leftButton-options-container">
-            <img class="img-leftButton-options-container" src="" alt="">
-            <p class="roadTest-leftButton-options-container">Probefahrt</p>
+        <button class="options-container__left-button">
+            <img class="options-container__left-button__img" src="" alt="">
+            <p class="options-container__left-button__text">Probefahrt</p>
         </button>
-        <button class="rightButton-options-container">
-            <img class="img-rightButton-options-container" src="" alt="">
-            <p class="contact-rightButton-options-container">Kontakt</p>
+        <button class="options-container__right-button">
+            <img class="options-container__right-button__img" src="" alt="">
+            <p class="options-container__right-button__text">Kontakt</p>
         </button>
     </aside>
+
     <script src="js/script.js" type="module"></script>
 </body>
 

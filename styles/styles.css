@@ -53,7 +53,18 @@ table {
   border-spacing: 0;
 }
 
-.video-container {
+.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-title .techno-and-function__title__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-title .techno-and-function__title__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
+.intro-video {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -61,7 +72,7 @@ table {
   border: 1px solid #707070;
   z-index: 1;
 }
-.video-container video {
+.intro-video__video {
   position: absolute;
   top: 0;
   left: 0;
@@ -72,22 +83,27 @@ table {
   margin: 0;
   color: black;
 }
-.video-container .text-overlay {
+.intro-video__titles {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: #ffffff;
   font-family: "Kanit Semi-Bold", sans-serif;
   text-align: left;
-  z-index: 1;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  font-weight: bold;
   z-index: 2;
 }
-.video-container .text-overlay h1 {
+@media only screen and (min-width: 1024px) {
+  .intro-video__titles {
+    left: 13%;
+    align-items: flex-start;
+  }
+}
+.intro-video__titles__h1 {
   font-size: 34px;
   letter-spacing: 3.4px;
   line-height: 50px;
@@ -97,7 +113,17 @@ table {
   margin-left: 23px;
   margin-right: 50px;
 }
-.video-container .text-overlay h2 {
+@media only screen and (min-width: 1024px) {
+  .intro-video__titles__h1 {
+    font-size: 55px;
+    letter-spacing: 11px;
+    line-height: 83px;
+    width: 606px;
+    height: 83px;
+    text-align: left;
+  }
+}
+.intro-video__titles__h2 {
   letter-spacing: 2.5px;
   font-size: 25px;
   line-height: 38px;
@@ -106,7 +132,16 @@ table {
   margin-left: 23px;
   margin-right: 19px;
 }
-.video-container .svg-overlay {
+@media only screen and (min-width: 1024px) {
+  .intro-video__titles__h2 {
+    font-size: 48px;
+    letter-spacing: 9.6px;
+    line-height: 72px;
+    width: 760px;
+    height: 72px;
+  }
+}
+.intro-video__svg {
   position: absolute;
   bottom: 90px;
   right: 0;
@@ -116,8 +151,6 @@ table {
   align-items: center;
   z-index: 3;
   pointer-events: none;
-}
-.video-container .svg-overlay .svg-overlay {
   max-width: 100%;
   height: auto;
 }
@@ -176,12 +209,23 @@ table {
   border-spacing: 0;
 }
 
-.aboutUs-container {
+.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-title .techno-and-function__title__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-title .techno-and-function__title__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
+.about-us {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
-.aboutUs-container .uberUns-aboutUs-container {
+.about-us__title {
   color: #6D727B;
   font-size: 15px;
   padding-left: 35px;
@@ -192,7 +236,7 @@ table {
   text-transform: uppercase;
   margin-top: 67px;
 }
-.aboutUs-container h2 {
+.about-us__heading {
   font-size: 27px;
   color: #333333;
   padding-left: 35px;
@@ -203,7 +247,7 @@ table {
   text-transform: uppercase;
   margin-top: 13px;
 }
-.aboutUs-container .text-aboutUs-container {
+.about-us__text {
   font-size: 18px;
   color: #333333;
   padding-left: 35px;
@@ -218,36 +262,37 @@ table {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.aboutUs-container .button-full-text {
+.about-us__toggle-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.aboutUs-container .button-full-text .readMore-aboutUs-container {
+.about-us__toggle-content--more__button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.aboutUs-container .button-full-text .readMore-aboutUs-container .class-readMore {
   color: #E3000B;
   font-family: "Kanit Semi-Bold", sans-serif;
-  font-size: 16px;
-  padding-left: 151px;
-  padding-right: 150px;
+  font-size: 18px;
   letter-spacing: 0.54px;
   line-height: 30px;
   margin-top: 30px;
-  font-weight: bold;
-  text-decoration: none;
+  background: none;
+  border: none;
 }
-.aboutUs-container .button-full-text .readMore-aboutUs-container .class-readMore .open-icon-readMore {
+.about-us__toggle-content--more__button__chevron {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%);
   transform: rotate(90deg);
   width: 16.16px;
   height: 30px;
+  margin-top: 4px;
 }
-.aboutUs-container .button-full-text .readLess-aboutUs-container .main-button-full-text {
+.about-us__toggle-content--less__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us__toggle-content--less__buttons__main-button {
   margin-top: 20px;
   background-color: #E3000B;
   border-radius: 26px;
@@ -262,7 +307,7 @@ table {
   align-self: center;
   opacity: 80%;
 }
-.aboutUs-container .button-full-text .readLess-aboutUs-container .secondary-button-full-text {
+.about-us__toggle-content--less__buttons__secondary-button {
   margin-top: 20px;
   border-radius: 26px 26px 26px 26px;
   width: 322px;
@@ -274,14 +319,31 @@ table {
   line-height: 30px;
   border: 3px solid #333333;
 }
-.aboutUs-container .button-full-text .readLess-aboutUs-container .secondary-button-full-text:hover {
+.about-us__toggle-content--less__buttons__secondary-button:hover {
   background-color: #333333;
   color: #ffffff;
 }
-.aboutUs-container .button-full-text .readLess-aboutUs-container .close-icon-readMore {
+.about-us__toggle-content--less__toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us__toggle-content--less__toggle__button {
+  color: #E3000B;
+  font-family: "Kanit Semi-Bold", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.54px;
+  line-height: 30px;
+  margin-top: 30px;
+  background: none;
+  border: none;
+}
+.about-us__toggle-content--less__toggle__chevron {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%);
   transform: rotate(270deg);
   width: 16.16px;
   height: 30px;
+  margin-top: 4px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -338,7 +400,18 @@ table {
   border-spacing: 0;
 }
 
-.technoAndFunction-container {
+.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-title .techno-and-function__title__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-title .techno-and-function__title__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
+.techno-and-function {
   position: relative;
   margin-top: 30px;
   display: flex;
@@ -346,24 +419,25 @@ table {
   justify-content: center;
   align-items: center;
 }
-.technoAndFunction-container .imgContainer-technoAndFunction-container {
+@media only screen and (min-width: 1024px) {
+  .techno-and-function {
+    flex-direction: row;
+  }
+}
+.techno-and-function__container-picture {
   position: relative;
   max-width: 100%;
   width: 100%;
 }
-.technoAndFunction-container .imgContainer-technoAndFunction-container img {
+.techno-and-function__container-picture__img {
   width: 100%;
-  height: auto;
+  height: 459px;
   display: block;
   margin: auto;
-  -webkit-mask: url("../../assets/pictures/bloc-sep-1.svg") no-repeat;
-          mask: url("../../assets/pictures/bloc-sep-1.svg") no-repeat;
-  -webkit-mask-size: 100% 100%;
-          mask-size: 100% 100%;
-  -webkit-mask-position: center bottom;
-          mask-position: center bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.technoAndFunction-container .textImg-technoAndFunction-container {
+.techno-and-function__h3 {
   position: absolute;
   top: 6%;
   left: 47%;
@@ -377,7 +451,7 @@ table {
   text-align: center;
   width: 270px;
 }
-.technoAndFunction-container .title-technoAndFunction-container {
+.techno-and-function__container-title {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -386,7 +460,7 @@ table {
   margin-top: 30px;
   width: 100%;
 }
-.technoAndFunction-container .title-technoAndFunction-container h2 {
+.techno-and-function__container-title__h2 {
   width: 184px;
   height: 82px;
   font-size: 27px;
@@ -395,7 +469,7 @@ table {
   margin-left: 41px;
   font-family: "Kanit Semi-Bold", sans-serif;
 }
-.technoAndFunction-container .text-technoAndFunction-container {
+.techno-and-function__text {
   margin-top: 20px;
   margin-left: 36.2px;
   margin-right: 36.8px;
@@ -405,7 +479,7 @@ table {
   font-family: "Kanit Semi-Bold", sans-serif;
   color: #333333;
 }
-.technoAndFunction-container button {
+.techno-and-function__button {
   margin-top: 20px;
   background-color: #E3000B;
   border-radius: 26px;
@@ -420,7 +494,7 @@ table {
   align-self: center;
   transition: text-indent 0.3s;
 }
-.technoAndFunction-container button:hover {
+.techno-and-function__button:hover {
   transform: translateX(1);
   text-indent: -2px;
   opacity: 0.8;
@@ -480,13 +554,24 @@ table {
   border-spacing: 0;
 }
 
-.DMax-container {
+.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-title .techno-and-function__title__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-title .techno-and-function__title__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
+.d-max {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.DMax-container h2 {
+.d-max__h2 {
   margin-top: 83px;
   text-align: left;
   font-size: 27px;
@@ -498,12 +583,12 @@ table {
   letter-spacing: 0.01px;
   line-height: 44px;
 }
-.DMax-container .image-DMax-container {
+.d-max__pictures-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.DMax-container .image-DMax-container .autoSelect-image-DMax-container {
+.d-max__pictures-container__select-picture {
   display: inline-block;
   width: 90px;
   height: 90px;
@@ -514,22 +599,29 @@ table {
   border-radius: 10px;
   margin-top: 23px;
 }
-.DMax-container .image-DMax-container .autoSelect-image-DMax-container.selected {
+.d-max__pictures-container__select-picture.selected {
   border-color: #E3000B;
 }
-.DMax-container .image-DMax-container img {
+.d-max__pictures-container img {
   width: 80px;
   height: 80px;
   -o-object-fit: contain;
      object-fit: contain;
   margin-top: 10px;
 }
-.DMax-container .display-image {
+.d-max__selected-content {
   margin-top: 20px;
   overflow: hidden;
   position: relative;
 }
-.DMax-container .display-image h3 {
+.d-max__selected-content__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  transform: translateX(0);
+}
+.d-max__selected-content__container__title {
   letter-spacing: 0.01px;
   line-height: 20px;
   font-family: "Kanit Semi-Bold", sans-serif;
@@ -538,7 +630,7 @@ table {
   font-size: 30px;
   margin-top: 30px;
 }
-.DMax-container .display-image p {
+.d-max__selected-content__container__text {
   letter-spacing: 1.12px;
   line-height: 30px;
   font-family: "Open Sans Regular", sans-serif;
@@ -548,37 +640,7 @@ table {
   margin-left: 37px;
   margin-right: 52px;
 }
-.DMax-container .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1);
-  transform: translateX(0);
-}
-.DMax-container .entering {
-  opacity: 1;
-  transform: translateX(0%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.DMax-container .exiting {
-  opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.DMax-container .entering-from-left {
-  opacity: 1;
-  transform: translateX(0);
-  transition: transform 0.5s ease;
-}
-.DMax-container #displayed-image.exiting {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.DMax-container #displayed-image.entering {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-.DMax-container .button-DMax-container {
+.d-max__button {
   margin-top: 20px;
   background-color: #E3000B;
   border-radius: 26px;
@@ -593,10 +655,33 @@ table {
   align-self: center;
   transition: text-indent 0.3s;
 }
-.DMax-container .button-DMax-container:hover {
+.d-max__button:hover {
   transform: translateX(1);
   text-indent: -2px;
   opacity: 0.8;
+}
+.d-max .entering {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.d-max .exiting {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.d-max .entering-from-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+.d-max #displayed-image.exiting {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.d-max #displayed-image.entering {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -653,14 +738,25 @@ table {
   border-spacing: 0;
 }
 
-.NSeries-container .img-NSeries-container {
+.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-title .techno-and-function__title__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-title .techno-and-function__title__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
+.n-series__picture {
   max-width: 100%;
   height: 459px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: 69px;
 }
-.NSeries-container h3 {
+.n-series__h3 {
   margin-top: 21px;
   font-size: 15px;
   letter-spacing: 0.75px;
@@ -670,7 +766,7 @@ table {
   margin-left: 37px;
   margin-right: 57px;
 }
-.NSeries-container h2 {
+.n-series__h2 {
   margin-top: 13px;
   font-size: 27px;
   letter-spacing: 2.41px;
@@ -680,7 +776,7 @@ table {
   margin-left: 35px;
   margin-right: 57px;
 }
-.NSeries-container .text-NSeries-conainer {
+.n-series__text {
   font-size: 16px;
   letter-spacing: 1.12px;
   line-height: 30px;
@@ -689,12 +785,12 @@ table {
   margin-left: 35px;
   margin-right: 57px;
 }
-.NSeries-container .Button-NSeries-container {
+.n-series__buttons-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.NSeries-container .Button-NSeries-container .main-button-NSeries-container {
+.n-series__buttons-container__main-button {
   margin-top: 20px;
   background-color: #E3000B;
   border-radius: 26px;
@@ -708,10 +804,10 @@ table {
   border: 1px solid #E3000B;
   align-self: center;
 }
-.NSeries-container .Button-NSeries-container .main-button-NSeries-container:hover {
+.n-series__buttons-container__main-button:hover {
   opacity: 0.8;
 }
-.NSeries-container .Button-NSeries-container .secondary-button-NSeries-container {
+.n-series__buttons-container__secondary-button {
   margin-top: 20px;
   border-radius: 26px 26px 26px 26px;
   width: 322px;
@@ -724,7 +820,7 @@ table {
   border: 3px solid #333333;
   transition: text-indent 0.3s;
 }
-.NSeries-container .Button-NSeries-container .secondary-button-NSeries-container:hover {
+.n-series__buttons-container__secondary-button:hover {
   transform: translateX(1);
   text-indent: 20px;
   background-color: #333333;
@@ -785,11 +881,22 @@ table {
   border-spacing: 0;
 }
 
-.contact-container .information-contact-container {
+.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-title .techno-and-function__title__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-title .techno-and-function__title__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
+.contact__container {
   display: flex;
   flex-direction: column;
 }
-.contact-container .information-contact-container h2 {
+.contact__container__h2 {
   margin-top: 55px;
   margin-left: 35px;
   margin-right: 36px;
@@ -800,7 +907,7 @@ table {
   font-family: "Kanit Semi-Bold", sans-serif;
   word-wrap: break-word;
 }
-.contact-container .information-contact-container .kontact-information-contact-container {
+.contact__container__h3 {
   margin-top: 30px;
   margin-left: 35px;
   margin-right: 36px;
@@ -811,7 +918,7 @@ table {
   font-family: "Kanit Bold", sans-serif;
   font-weight: bold;
 }
-.contact-container .information-contact-container .details-information-contact-container {
+.contact__container__information {
   margin-top: 20px;
   color: #333333;
   font-size: 18px;
@@ -820,29 +927,20 @@ table {
   line-height: 30px;
   margin-left: 35px;
 }
-.contact-container .information-contact-container .details-information-contact-container .adress-details-information-contact-container {
+.contact__container__information__adress {
   margin-bottom: 40px;
 }
-.contact-container .information-contact-container .anfahrt-information-contact-container {
-  margin-top: 30px;
-  margin-left: 35px;
-  font-size: 17px;
-  letter-spacing: 1.7px;
-  line-height: 26px;
-  color: #333333;
-  font-family: "Kanit Bold", sans-serif;
-}
-.contact-container .information-contact-container .localisation-information-contact-container {
+.contact__container__localisation {
   width: 393px;
   height: 361px;
   border: 1px solid #E3000B;
   align-self: center;
   margin-top: 20px;
 }
-.contact-container .information-contact-container .localisation-information-contact-container .text-localisation-information-contact-container {
+.contact__container__localisation__text-container {
   margin-top: 20px;
 }
-.contact-container .information-contact-container .localisation-information-contact-container .text-localisation-information-contact-container .one-text-localisation-information-contact-container {
+.contact__container__localisation__text-container__text-header {
   margin-top: 19px;
   margin-left: 14px;
   margin-right: 57px;
@@ -852,7 +950,7 @@ table {
   letter-spacing: 0.45px;
   line-height: 30px;
 }
-.contact-container .information-contact-container .localisation-information-contact-container .text-localisation-information-contact-container .two-text-localisation-information-contact-container {
+.contact__container__localisation__text-container__text-main {
   margin-top: 20px;
   margin-left: 14px;
   margin-right: 57px;
@@ -862,10 +960,10 @@ table {
   letter-spacing: 0.45px;
   line-height: 30px;
 }
-.contact-container .information-contact-container .localisation-information-contact-container .text-localisation-information-contact-container .two-text-localisation-information-contact-container span {
-  text-decoration: underline;
+.contact__container__localisation__text-container__text-main__underline {
+  border-bottom: 1px solid #333333;
 }
-.contact-container .information-contact-container .localisation-information-contact-container .text-localisation-information-contact-container .three-text-localisation-information-contact-container {
+.contact__container__localisation__text-container__text-footer {
   margin-top: 20px;
   margin-left: 14px;
   margin-right: 57px;
@@ -875,7 +973,7 @@ table {
   letter-spacing: 0.45px;
   line-height: 30px;
 }
-.contact-container .information-contact-container button {
+.contact__container__button-map {
   margin-top: 20px;
   background-color: #E3000B;
   border-radius: 26px;
@@ -943,18 +1041,29 @@ table {
   border-spacing: 0;
 }
 
-.openingHours-container {
+.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-title .techno-and-function__title__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-title .techno-and-function__title__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
+.opening-hours {
   margin-top: 30px;
   margin-left: 35px;
 }
-.openingHours-container h2 {
+.opening-hours__h2 {
   font-size: 22px;
   letter-spacing: 2.3px;
   line-height: 33px;
   color: #333333;
   font-family: "Kanit Bold", sans-serif;
 }
-.openingHours-container h3 {
+.opening-hours__h3 {
   margin-top: 20px;
   font-size: 22px;
   letter-spacing: 2.2px;
@@ -962,7 +1071,7 @@ table {
   color: #333333;
   font-family: "Kanit Medium", sans-serif;
 }
-.openingHours-container h4 {
+.opening-hours__h4 {
   margin-top: 20px;
   font-size: 18px;
   letter-spacing: 0.54px;
@@ -970,24 +1079,24 @@ table {
   color: #333333;
   font-family: "Open Sans Bold", sans-serif;
 }
-.openingHours-container ul {
+.opening-hours__time-container {
   margin-top: 10px;
   font-size: 18px;
   letter-spacing: 0.54px;
   line-height: 30px;
   color: #333333;
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Regular", sans-serif;
 }
-.openingHours-container p {
+.opening-hours__text-footer {
   margin-top: 30px;
   margin-right: 36px;
   font-size: 18px;
   letter-spacing: 0.54px;
   line-height: 30px;
   color: #333333;
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Regular", sans-serif;
 }
-.openingHours-container p span {
+.opening-hours__text-footer span {
   display: block;
 }
 
@@ -1045,10 +1154,21 @@ table {
   border-spacing: 0;
 }
 
-.customerReviews-container {
+.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-title .techno-and-function__title__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-title .techno-and-function__title__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
+.customer-reviews {
   margin-top: 54px;
 }
-.customerReviews-container h2 {
+.customer-reviews__h2 {
   margin-top: 40px;
   margin-left: 32px;
   font-size: 27px;
@@ -1057,33 +1177,33 @@ table {
   font-family: "Kanit Semi-Bold", sans-serif;
   color: #333333;
 }
-.customerReviews-container .average-customerReviews-container {
+.customer-reviews__average-container {
   margin-left: 25px;
 }
-.customerReviews-container .average-customerReviews-container p {
+.customer-reviews__average-container__note {
   font-size: 100px;
   line-height: 150px;
   font-family: "Kanit Regular", sans-serif;
   color: #E3000B;
 }
-.customerReviews-container .average-customerReviews-container .average-star-container {
+.customer-reviews__average-container__stars-average-container {
   display: flex;
   display: inline-block;
   width: 228px;
   height: 35.08px;
 }
-.customerReviews-container .average-customerReviews-container .average-star-container img {
+.customer-reviews__average-container__stars-average-container__img {
   width: 36px;
   height: 35px;
 }
-.customerReviews-container .average-customerReviews-container h3 {
+.customer-reviews__average-container__h3 {
   margin-top: 18px;
   font-size: 20px;
   line-height: 30px;
   font-family: "Kanit Medium", sans-serif;
   color: #333333;
 }
-.customerReviews-container .customer-customerReviews-container {
+.customer-reviews__customer-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1091,19 +1211,18 @@ table {
   align-items: center;
   margin-top: 50px;
 }
-.customerReviews-container .customer-customerReviews-container .name-customer-customerReviews-container {
+.customer-reviews__customer-container__name {
   font-size: 30px;
   line-height: 45px;
   letter-spacing: 3px;
   font-family: "Kanit Light", sans-serif;
   color: #6D727B;
 }
-.customerReviews-container .customer-customerReviews-container .name-customer-customerReviews-container span {
+.customer-reviews__customer-container__name--margin {
   margin-left: -10px;
 }
-.customerReviews-container .customer-customerReviews-container .review-customer-customerReviews-container {
+.customer-reviews__customer-container__text {
   width: 280px;
-  height: 292px;
   margin-top: 20px;
   font-size: 16px;
   line-height: 30px;
@@ -1112,13 +1231,13 @@ table {
   color: #333333;
   text-align: center;
 }
-.customerReviews-container .customer-customerReviews-container .chevronContainer-customer-customerReviews-container {
+.customer-reviews__customer-container__chevrons-container {
   display: flex;
   justify-content: space-between;
   position: absolute;
   width: 100%;
 }
-.customerReviews-container .customer-customerReviews-container .review-star-container img {
+.customer-reviews__customer-container__stars-note-container__img {
   width: 27px;
   height: 26px;
 }
@@ -1177,11 +1296,22 @@ table {
   border-spacing: 0;
 }
 
-.photoGalery-container {
+.techno-and-function__container-title .techno-and-function__title__left-chevron, .customer-reviews__customer-container__chevrons-container__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.techno-and-function__container-title .techno-and-function__title__right-chevron, .customer-reviews__customer-container__chevrons-container__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
+.photo-galery {
   margin-top: 60px;
   overflow: hidden;
 }
-.photoGalery-container h2 {
+.photo-galery__h2 {
   margin-left: 35px;
   width: 322px;
   height: 41px;
@@ -1191,7 +1321,7 @@ table {
   font-family: "Kanit Semi-Bold", sans-serif;
   color: #333333;
 }
-.photoGalery-container img {
+.photo-galery__img {
   max-width: 100%;
   height: 415px;
   margin-top: 30px;
@@ -1253,6 +1383,17 @@ table {
   border-spacing: 0;
 }
 
+.techno-and-function__container-title .techno-and-function__title__left-chevron, .customer-reviews__customer-container__chevrons-container__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.techno-and-function__container-title .techno-and-function__title__right-chevron, .customer-reviews__customer-container__chevrons-container__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
 .options-container {
   display: flex;
   flex-direction: row;
@@ -1262,7 +1403,7 @@ table {
   z-index: 1020;
   bottom: 0;
 }
-.options-container .leftButton-options-container {
+.options-container__left-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1270,14 +1411,14 @@ table {
   background-color: #E3000B;
   border: 1px solid #E3000B;
 }
-.options-container .leftButton-options-container .roadTest-leftButton-options-container {
+.options-container__left-button__text {
   font-size: 17px;
   letter-spacing: 1.7px;
   line-height: 26px;
   color: #ffffff;
   font-family: "Kanit Regular", sans-serif;
 }
-.options-container .rightButton-options-container {
+.options-container__right-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1285,7 +1426,7 @@ table {
   background-color: #333333;
   border: 1px solid #333333;
 }
-.options-container .rightButton-options-container .contact-rightButton-options-container {
+.options-container__right-button__text {
   font-size: 17px;
   letter-spacing: 1.7px;
   line-height: 26px;
@@ -1347,6 +1488,17 @@ table {
   border-spacing: 0;
 }
 
+.techno-and-function__container-title .techno-and-function__title__left-chevron, .customer-reviews__customer-container__chevrons-container__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.techno-and-function__container-title .techno-and-function__title__right-chevron, .customer-reviews__customer-container__chevrons-container__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
 header {
   background-color: rgba(51, 51, 51, 0.7490196078);
   position: fixed;
@@ -1355,24 +1507,42 @@ header {
   z-index: 1020;
   top: 0;
 }
-header .navbar-container {
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 62px;
+  }
+}
+header .navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .navbar-container .leftSide-navbar-container {
+header .navbar__left-side {
   width: 100%;
   margin-left: 35px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
-header .navbar-container .leftSide-navbar-container .logoIsuzu-leftSide-navbar-container {
+@media only screen and (min-width: 1024px) {
+  header .navbar__left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+header .navbar__left-side__logo {
   filter: brightness(0) invert(1);
   width: 98px;
   height: 19.57px;
 }
-header .navbar-container .leftSide-navbar-container p {
+@media only screen and (min-width: 1024px) {
+  header .navbar__left-side__logo {
+    margin-left: 140px;
+    margin-top: 6px;
+  }
+}
+header .navbar__left-side__text {
   width: 271px;
   height: 18px;
   margin-top: 7.42px;
@@ -1381,12 +1551,22 @@ header .navbar-container .leftSide-navbar-container p {
   color: #ffffff;
   font-family: "Open Sans Bold", sans-serif;
 }
-header .navbar-container .rightSide-navbar-container {
+@media only screen and (min-width: 1024px) {
+  header .navbar__left-side__text {
+    margin-right: 133px;
+  }
+}
+header .navbar__right-side {
   margin-right: 36px;
   margin-top: 16.44px;
   height: 58px;
 }
-header .navbar-container .rightSide-navbar-container .hamburger {
+@media only screen and (min-width: 1024px) {
+  header .navbar__right-side {
+    display: none;
+  }
+}
+header .navbar__right-side__hamburger {
   width: 22.59px;
   height: 18.56px;
   display: flex;
@@ -1394,11 +1574,212 @@ header .navbar-container .rightSide-navbar-container .hamburger {
   justify-content: space-between;
   cursor: pointer;
 }
-header .navbar-container .rightSide-navbar-container .hamburger .line {
+header .navbar__right-side__hamburger__line {
   width: 22.59px;
   height: 2px;
   background-color: #ffffff;
   font-weight: bold;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.techno-and-function__container-title .techno-and-function__title__left-chevron, .customer-reviews__customer-container__chevrons-container__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.techno-and-function__container-title .techno-and-function__title__right-chevron, .customer-reviews__customer-container__chevrons-container__right-chevron {
+  width: 16.16px;
+  height: 30px;
+}
+
+.footer-container {
+  margin-top: 60px;
+}
+.footer-container__logo {
+  margin-left: 35px;
+  margin-bottom: 4.5px;
+}
+.footer-container__summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 35px;
+}
+.footer-container__summary-container__element {
+  margin-top: 35px;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 27px;
+  color: #333333;
+  font-family: "Kanit Semi-Bold", sans-serif;
+}
+.footer-container__footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 59.9px;
+  margin-left: 35px;
+  margin-right: 34px;
+  border-top: solid 2px #AFAFAF;
+}
+.footer-container__footer-inner__privacy-container {
+  margin-top: 13.5px;
+}
+.footer-container__footer-inner__privacy-container__element {
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  line-height: 30px;
+  color: #333333;
+  font-family: "Open Sans Regular", sans-serif;
+}
+.footer-container__footer-inner__networks {
+  margin-top: 14.5px;
+}
+.footer-container__footer-inner__networks__network {
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  background-color: #6D727B;
+  border-radius: 50%;
+}
+.footer-container__footer-inner__networks__network:hover {
+  background-color: #E3000B;
+}
+.footer-container__footer-inner__networks__network__youtube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+.under-footer-container {
+  display: flex;
+  justify-content: center;
+}
+.under-footer-container__img {
+  margin-top: 53.75px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.techno-and-function__container-title .techno-and-function__title__left-chevron, .customer-reviews__customer-container__chevrons-container__left-chevron {
+  width: 16.16px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.techno-and-function__container-title .techno-and-function__title__right-chevron, .customer-reviews__customer-container__chevrons-container__right-chevron {
+  width: 16.16px;
+  height: 30px;
 }
 
 .modal-header {
@@ -1415,26 +1796,26 @@ header .navbar-container .rightSide-navbar-container .hamburger .line {
   display: block;
   transform: translateX(0);
 }
-.modal-header .content-modal-header .closeNavbar-content-modal-header {
+.modal-header__container__close-img {
   position: absolute;
   top: 14px;
   left: 334.89px;
 }
-.modal-header .content-modal-header .container-content-modal-header {
+.modal-header__container__content {
   display: flex;
   flex-direction: column;
   margin-left: 35px;
   margin-top: 61px;
   margin-right: 119px;
 }
-.modal-header .content-modal-header .container-content-modal-header .title-container-content-modal-header {
+.modal-header__container__content__title {
   font-size: 18px;
   letter-spacing: 0.9px;
   line-height: 27px;
   color: #333333;
   font-family: "Kanit Regular", sans-serif;
 }
-.modal-header .content-modal-header .container-content-modal-header .liste-container-content-modal-header {
+.modal-header__container__content__list {
   margin-top: 34px;
   font-size: 18px;
   letter-spacing: 0.9px;
@@ -1442,10 +1823,10 @@ header .navbar-container .rightSide-navbar-container .hamburger .line {
   color: #333333;
   font-family: "Kanit Semi-Bold", sans-serif;
 }
-.modal-header .content-modal-header .container-content-modal-header .liste-container-content-modal-header .element-liste-container-content-modal-header {
+.modal-header__container__content__list__element {
   margin-top: 14px;
 }
-.modal-header .content-modal-header .container-content-modal-header .button-content-modal-header {
+.modal-header__container__content__button {
   margin-top: 29px;
   background-color: #E3000B;
   border-radius: 20px 20px 20px 20px;
@@ -1459,124 +1840,13 @@ header .navbar-container .rightSide-navbar-container .hamburger .line {
   border: 1px solid #E3000B;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.footer-container {
-  margin-top: 60px;
-}
-.footer-container .logoIsuzu-footer-container {
-  margin-left: 35px;
-  margin-bottom: 4.5px;
-}
-.footer-container .summary-footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-left: 35px;
-}
-.footer-container .summary-footer-container .section-summary-footer-container {
-  margin-top: 35px;
-  font-size: 18px;
-  letter-spacing: 0.9px;
-  line-height: 27px;
-  color: #333333;
-  font-family: "Kanit Semi-Bold", sans-serif;
-}
-.footer-container .networksContainer-footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 59.9px;
-  margin-left: 35px;
-  margin-right: 34px;
-  border-top: solid 2px #AFAFAF;
-}
-.footer-container .networksContainer-footer-container .privacy-networksContainer-footer-container {
-  margin-top: 13.5px;
-}
-.footer-container .networksContainer-footer-container .privacy-networksContainer-footer-container .Imprint-PrivacyPolicy {
-  font-size: 14px;
-  letter-spacing: 0.42px;
-  line-height: 30px;
-  color: #333333;
-  font-family: "Open Sans Regular", sans-serif;
-}
-.footer-container .networksContainer-footer-container .networks-networksContainer-footer-container {
-  margin-top: 14.5px;
-}
-.footer-container .networksContainer-footer-container .networks-networksContainer-footer-container .network-networks-networksContainer-footer-container {
-  width: 32px;
-  height: 32px;
-  text-decoration: none;
-}
-
-.powered-by-boteca-container {
-  display: flex;
-  justify-content: center;
-}
-.powered-by-boteca-container .powered-by-boteca {
-  margin-top: 53.75px;
-}
-
-.technoAndFunction-container .title-technoAndFunction-container .leftIcon-title-technoAndFunction-container, .customerReviews-container .customer-customerReviews-container .chevronContainer-customer-customerReviews-container .leftIcon-chevronContainer-customer-customerReviews-container {
+.techno-and-function__container-title .techno-and-function__title__left-chevron, .customer-reviews__customer-container__chevrons-container__left-chevron {
   width: 16.16px;
   height: 30px;
   transform: rotate(180deg);
 }
 
-.technoAndFunction-container .title-technoAndFunction-container .rightIcon-title-technoAndFunction-container, .customerReviews-container .customer-customerReviews-container .chevronContainer-customer-customerReviews-container .rightIcon-chevronContainer-customer-customerReviews-container {
+.techno-and-function__container-title .techno-and-function__title__right-chevron, .customer-reviews__customer-container__chevrons-container__right-chevron {
   width: 16.16px;
   height: 30px;
 }

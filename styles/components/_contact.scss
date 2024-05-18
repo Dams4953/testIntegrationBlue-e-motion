@@ -1,17 +1,15 @@
 @import '../base/reset';
 @import '../base/variables';
-@import '../base/mixin.scss';
+@import '../base/mixin';
+@import '../base/placeholder';
 
+.contact {
 
-
-
-.contact-container {
-
-    .information-contact-container {
+    &__container {
         display: flex;
         flex-direction: column;
 
-        h2 {
+        &__h2 {
             margin-top: 55px;
             margin-left: 35px;
             margin-right: 36px;
@@ -23,7 +21,7 @@
             word-wrap: break-word;
         }
 
-        .kontact-information-contact-container {
+        &__h3 {
             margin-top: 30px;
             margin-left: 35px;
             margin-right: 36px;
@@ -35,7 +33,7 @@
             font-weight: bold;
         }
 
-        .details-information-contact-container {
+        &__information {
             margin-top: 20px;
             color: $text-color-primary;
             font-size: 18px;
@@ -44,34 +42,23 @@
             line-height: 30px;
             margin-left: 35px;
 
-            .adress-details-information-contact-container {
+        &__adress {
                 margin-bottom: 40px;
 
             }
         }
 
-        .anfahrt-information-contact-container {
-            margin-top: 30px;
-            margin-left: 35px;
-            font-size: 17px;
-            letter-spacing: 1.7px;
-            line-height: 26px;
-            color: $text-color-primary;
-            font-family: $font-family-primary-bold;
-        }
-
-        .localisation-information-contact-container {
+        &__localisation {
             width: 393px;
             height: 361px;
             border: 1px solid $element-color-primary;
             align-self: center;
             margin-top: 20px;
 
-            .text-localisation-information-contact-container {
-
+            &__text-container {
                 margin-top: 20px;
 
-                .one-text-localisation-information-contact-container {
+                &__text-header {
                     margin-top: 19px;
                     margin-left: 14px;
                     margin-right: 57px;
@@ -82,7 +69,7 @@
                     line-height: 30px;
                 }
 
-                .two-text-localisation-information-contact-container {
+                &__text-main {
                     margin-top: 20px;
                     margin-left: 14px;
                     margin-right: 57px;
@@ -92,12 +79,12 @@
                     letter-spacing: 0.45px;
                     line-height: 30px;
 
-                    span {
-                        text-decoration: underline;
+                    &__underline {
+                        border-bottom: 1px solid $text-color-primary;
                     }
                 }
 
-                .three-text-localisation-information-contact-container {
+                &__text-footer {
                     margin-top: 20px;
                     margin-left: 14px;
                     margin-right: 57px;
@@ -108,13 +95,10 @@
                     line-height: 30px;
                 }
             }
-
         }
 
-        button {
+        &__button-map {
             @include primary-button($transition: false, $opacity: false);	
         }
-
-
     }
 }

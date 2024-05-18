@@ -1,12 +1,13 @@
 @import '../base/reset';
 @import '../base/variables';
-@import '../base/mixin.scss';
+@import '../base/mixin';
+@import '../base/placeholder';
 
-.photoGalery-container {
+.photo-galery{
     margin-top: 60px;
     overflow: hidden;
 
-    h2 {
+    &__h2 {
         margin-left: 35px;
         width: 322px;
         height: 41px;
@@ -17,7 +18,7 @@
         color: $text-color-primary;
     }
 
-    img {
+    &__img {
         max-width: 100%;
         height: 415px;
         margin-top: 30px;

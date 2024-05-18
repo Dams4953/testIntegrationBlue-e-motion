@@ -17,7 +17,7 @@ export function functionSelectAuto() {
         }
     ];
 
-    let buttons = document.querySelectorAll(".autoSelect-image-DMax-container");
+    let buttons = document.querySelectorAll(".d-max__pictures-container__select-picture");
 
     buttons.forEach(function(button, index) {
         button.addEventListener("click", function() {
@@ -41,7 +41,7 @@ export function functionSelectAuto() {
         let displayedImage = document.getElementById('displayed-image');
         let title = document.getElementById('title');
         let paragraph = document.getElementById('paragraph');
-        let displayImageContainer = document.querySelector('.display-image');
+        let displayImageContainer = document.querySelector('.d-max__selected-content');
 
         displayImageContainer.classList.add('exiting');
 

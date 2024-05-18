@@ -1,11 +1,9 @@
 @import '../base/reset';
 @import '../base/variables';
-@import '../base/mixin.scss';
+@import '../base/mixin';
+@import '../base/placeholder';
 
-
-
-
-.technoAndFunction-container {
+.techno-and-function {
     position: relative;
     margin-top: 30px;
     display: flex;
@@ -13,27 +11,25 @@
     justify-content: center;
     align-items: center;
 
-    .imgContainer-technoAndFunction-container {
+    @include desktop {
+        flex-direction: row;
+    }
+
+    &__container-picture {
         position: relative;
         max-width: 100%;
         width: 100%;
-    }
-    
-    .imgContainer-technoAndFunction-container img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-        mask: url('../../assets/pictures/bloc-sep-1.svg') no-repeat;
-        mask-size: 100% 100%;
-        mask-position: center bottom;
-    }
-    
-    
-    
 
+        &__img {
+            width: 100%;
+            height: 459px;
+            display: block;
+            margin: auto;
+            object-fit: cover;
+        }
+    }
 
-    .textImg-technoAndFunction-container {
+    &__h3 {
         position: absolute;
         top: 6%;
         left: 47%;
@@ -48,7 +44,7 @@
         width: 270px;
     }
 
-    .title-technoAndFunction-container {
+    &__container-title {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -57,11 +53,14 @@
         margin-top: 30px;
         width: 100%;
 
-        .leftIcon-title-technoAndFunction-container {
+    
+        
+
+        .techno-and-function__title__left-chevron {
             @extend %left-icon-chevron;
         }
 
-        h2 {
+        &__h2 {
             width: 184px;
             height: 82px;
             font-size: 27px;
@@ -71,15 +70,13 @@
             font-family: $font-family-primary-semiBold;
         }
 
-        .rightIcon-title-technoAndFunction-container {
+        .techno-and-function__title__right-chevron {
             @extend %right-icon-chevron;
 
         }
-
     }
 
-    .text-technoAndFunction-container {
-
+    &__text {
         margin-top: 20px;
         margin-left: 36.2px;
         margin-right: 36.8px;
@@ -90,8 +87,7 @@
         color: $text-color-primary;
     }
 
-    button {
-
+    &__button {
         @include primary-button;
     }
 }

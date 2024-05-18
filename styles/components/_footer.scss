@@ -1,22 +1,23 @@
 @import '../base/reset';
 @import '../base/variables';
-@import '../base/mixin.scss';
+@import '../base/mixin';
+@import '../base/placeholder';
 
 .footer-container {
     margin-top: 60px;
 
-    .logoIsuzu-footer-container {
+    &__logo {
         margin-left: 35px;
         margin-bottom: 4.5px;
     }
 
-    .summary-footer-container {
+    &__summary-container {
         display: flex;
         flex-direction: column;
         align-items: left;
         margin-left: 35px;
 
-        .section-summary-footer-container {
+        &__element {
             margin-top: 35px;
             font-size: 18px;
             letter-spacing: 0.9px;
@@ -26,7 +27,7 @@
         }
     }
 
-    .networksContainer-footer-container {
+    &__footer-inner {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -35,39 +36,52 @@
         margin-right: 34px;
         border-top: solid 2px $border-color-img;
 
-        .privacy-networksContainer-footer-container {
+        &__privacy-container {
             margin-top: 13.5px;
 
-            .Imprint-PrivacyPolicy {
-
+            &__element {
                 font-size: 14px;
                 letter-spacing: 0.42px;
                 line-height: 30px;
                 color: $text-color-primary;
                 font-family: $font-family-secondary-regular;
             }
-
-
         }
 
-        .networks-networksContainer-footer-container {
+        &__networks {
             margin-top: 14.5px;
 
-            .network-networks-networksContainer-footer-container {
+            &__network {
                 width: 32px;
                 height: 32px;
                 text-decoration: none;
-                
+                position: relative;
+                display: inline-block;
+                background-color: $text-color-secondary;
+                border-radius: 50%;
+
+                &:hover {
+                    background-color: $element-color-primary;
+                }
+            
+                &__youtube {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border: none;
+                }
             }
+            
         }
     }
 }
 
-.powered-by-boteca-container {
+.under-footer-container {
     display: flex;
     justify-content: center;
 
-    .powered-by-boteca {
+    &__img {
         margin-top: 53.75px;
     }
 }

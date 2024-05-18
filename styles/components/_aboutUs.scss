@@ -1,15 +1,14 @@
 @import '../base/reset';
 @import '../base/variables';
-@import '../base/mixin.scss';
+@import '../base/mixin';
+@import '../base/placeholder';
 
-
-
-.aboutUs-container {
+.about-us {
     display: flex;
     flex-direction: column;
     text-align: left;
 
-    .uberUns-aboutUs-container {
+    &__title {
         color: $text-color-secondary;
         font-size: 15px;
         padding-left: 35px;
@@ -21,7 +20,7 @@
         margin-top: 67px;
     }
 
-    h2 {
+    &__heading {
         font-size: 27px;
         color: $text-color-primary;
         padding-left: 35px;
@@ -33,7 +32,7 @@
         margin-top: 13px;
     }
 
-    .text-aboutUs-container {
+    &__text {
         font-size: 18px;
         color: $text-color-primary;
         padding-left: 35px;
@@ -49,65 +48,81 @@
         text-overflow: ellipsis;
     }
 
-    .button-full-text {
+    &__toggle-content {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .readMore-aboutUs-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+        &--more {
 
-            .class-readMore {
+            &__button {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 color: $element-color-primary;
                 font-family: $font-family-primary-semiBold;
-                font-size: 16px;
-                padding-left: 151px;
-                padding-right: 150px;
+                font-size: 18px;
                 letter-spacing: 0.54px;
                 line-height: 30px;
                 margin-top: 30px;
-                font-weight: bold;
-                text-decoration: none;
+                background: none;
+                border: none;
 
-                .open-icon-readMore {
+                &__chevron {
+                    filter: brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%);
                     transform: rotate(90deg);
                     width: 16.16px;
                     height: 30px;
+                    margin-top: 4px;
 
                 }
             }
         }
 
-        .readLess-aboutUs-container {
+        &--less {
 
-            .main-button-full-text {
-                @include primary-button($transition: false, $opacity: false);
-                opacity: 80%;
+            &__buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &__main-button {
+                    @include primary-button($transition: false, $opacity: false);
+                    opacity: 80%;
+                }
+
+                &__secondary-button {
+                    @include secondary-button($transition: false);
+                }
             }
 
-            .secondary-button-full-text {
-                @include secondary-button($transition: false);
+            
 
+            &__toggle {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-            }
+                &__button {
+                    color: $element-color-primary;
+                    font-family: $font-family-primary-semiBold;
+                    font-size: 18px;
+                    letter-spacing: 0.54px;
+                    line-height: 30px;
+                    margin-top: 30px;
+                    background: none;
+                    border: none;
 
-            .close-icon-readMore {
-                transform: rotate(270deg);
-                width: 16.16px;
-                height: 30px;
+                }
+
+                &__chevron {
+                    filter: brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%);
+                    transform: rotate(270deg);
+                    width: 16.16px;
+                    height: 30px;
+                    margin-top: 4px;
+                }
             }
         }
     }
-
 }
-
-
-
-
-
-
-

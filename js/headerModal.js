@@ -1,5 +1,5 @@
 export function functionHeaderModal() {
-    let hamburger = document.querySelector(".hamburger");
+    let hamburger = document.querySelector(".navbar__right-side__hamburger");
     let modal = document.getElementById("modalHeader");
 
     hamburger.addEventListener("click", function () {

@@ -1,18 +1,18 @@
 @import '../base/reset';
 @import '../base/variables';
-@import '../base/mixin.scss';
+@import '../base/mixin';
+@import '../base/placeholder';
 
+.n-series {
 
-.NSeries-container {
-
-    .img-NSeries-container {
+    &__picture {
         max-width: 100%;
         height: 459px;
         object-fit: cover;
         margin-top: 69px;
     }
 
-    h3 {
+    &__h3 {
         margin-top: 21px;
         font-size: 15px;
         letter-spacing: 0.75px;
@@ -23,7 +23,7 @@
         margin-right: 57px;
     }
 
-    h2 {
+    &__h2 {
         margin-top: 13px;
         font-size: 27px;
         letter-spacing: 2.41px;
@@ -34,7 +34,7 @@
         margin-right: 57px;
     }
 
-    .text-NSeries-conainer {
+    &__text {
         font-size: 16px;
         letter-spacing: 1.12px;
         line-height: 30px;
@@ -44,21 +44,17 @@
         margin-right: 57px;
     }
 
-
-
-    .Button-NSeries-container {
+    &__buttons-container {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .main-button-NSeries-container {
+        &__main-button {
             @include primary-button($transition: false);
         }
 
-
-        .secondary-button-NSeries-container {
+        &__secondary-button {
             @include secondary-button;
         }
-
     }
 }

@@ -1,4 +1,8 @@
 export function functionReadMore() {
+
+    if (window.innerWidth >= 1024) {
+        return;
+    }
     document.getElementById('idReadMore').addEventListener('click', function (event) {
         event.preventDefault();
         let textContainer = document.getElementById('textAboutUs');

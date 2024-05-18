@@ -1,5 +1,12 @@
 @import 'variables';
 
+@mixin desktop {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+
 @mixin primary-button($transition: true, $opacity: true) {
   margin-top: 20px;
   background-color: $element-color-primary;
@@ -61,3 +68,4 @@
     }
   }
 }
+

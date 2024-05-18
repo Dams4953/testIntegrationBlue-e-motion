@@ -1,14 +1,13 @@
 @import '../base/reset';
 @import '../base/variables';
-@import '../base/mixin.scss';
+@import '../base/mixin';
+@import '../base/placeholder';
 
-
-
-.openingHours-container {
+.opening-hours {
     margin-top: 30px;
     margin-left: 35px;
 
-    h2 {
+    &__h2 {
         font-size: 22px;
         letter-spacing: 2.3px;
         line-height: 33px;
@@ -16,7 +15,7 @@
         font-family: $font-family-primary-bold;
     }
 
-    h3{
+    &__h3 {
         margin-top: 20px;
         font-size: 22px;
         letter-spacing: 2.2px;
@@ -25,7 +24,7 @@
         font-family: $font-family-primary-medium;
     }
 
-    h4 {
+    &__h4 {
         margin-top: 20px;
         font-size: 18px;
         letter-spacing: 0.54px;
@@ -34,27 +33,26 @@
         font-family: $font-family-secondary-bold;
     }
 
-    ul {
+    &__time-container {
         margin-top: 10px;
         font-size: 18px;
         letter-spacing: 0.54px;
         line-height: 30px;
         color: $text-color-primary;
-        font-family: $font-family-secondary-bold;
+        font-family: $font-family-secondary-regular;
     }
 
-    p{
+    &__text-footer {
         margin-top: 30px;
         margin-right: 36px;
         font-size: 18px;
         letter-spacing: 0.54px;
         line-height: 30px;
         color: $text-color-primary;
-        font-family: $font-family-secondary-bold;
+        font-family: $font-family-secondary-regular;
 
-        span{
+        span {
             display: block;
         }
     }
-
 }
