@@ -44,47 +44,91 @@
         width: 270px;
     }
 
-    &__container-title {
+    &__container-content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         justify-content: space-between;
         margin-top: 30px;
         width: 100%;
 
-    
-        
+        &__container-title {
 
-        .techno-and-function__title__left-chevron {
-            @extend %left-icon-chevron;
-        }
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            width: 100%;
 
-        &__h2 {
-            width: 184px;
-            height: 82px;
-            font-size: 27px;
-            letter-spacing: 2.7px;
-            line-height: 41px;
-            margin-left: 41px;
-            font-family: $font-family-primary-semiBold;
-        }
+            .techno-and-function__container-content__container-title__left-chevron {
+                @extend %left-icon-chevron;
 
-        .techno-and-function__title__right-chevron {
-            @extend %right-icon-chevron;
+                @include desktop {
 
+                    display: none;
+                }
+            }
+
+            &__h2 {
+                width: 184px;
+                height: 82px;
+                font-size: 27px;
+                letter-spacing: 2.7px;
+                line-height: 41px;
+                margin-left: 41px;
+                font-family: $font-family-primary-semiBold;
+
+                @include desktop {
+
+                    width: 369px;
+                }
+            }
+
+            .techno-and-function__container-content__container-title__right-chevron {
+                @extend %right-icon-chevron;
+
+                @include desktop {
+
+                    display: none;
+                }
+
+            }
         }
     }
 
-    &__text {
-        margin-top: 20px;
-        margin-left: 36.2px;
-        margin-right: 36.8px;
-        font-size: 16px;
-        letter-spacing: 1.12px;
-        line-height: 30px;
-        font-family: $font-family-primary-semiBold;
-        color: $text-color-primary;
+    &__desktop-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @include desktop {
+
+            &__left-chevron {
+                width: 16.16px;
+                height: 30px;
+                transform: rotate(180deg);
+            }
+
+            &__right-chevron {
+                width: 16.16px;
+                height: 30px;
+
+            }
+        }
+
+        &__text {
+            margin-top: 20px;
+            margin-left: 36.2px;
+            margin-right: 36.8px;
+            font-size: 16px;
+            letter-spacing: 1.12px;
+            line-height: 30px;
+            font-family: $font-family-primary-semiBold;
+            color: $text-color-primary;
+        }
     }
 
     &__button {

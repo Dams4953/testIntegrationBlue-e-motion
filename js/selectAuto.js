@@ -17,24 +17,7 @@ export function functionSelectAuto() {
         }
     ];
 
-    let buttons = document.querySelectorAll(".d-max__pictures-container__select-picture");
-
-    buttons.forEach(function(button, index) {
-        button.addEventListener("click", function() {
-            let imageNum = parseInt(this.getAttribute("data-image"));
-            displayImage(imageNum);
-
-            buttons.forEach(function(btn) {
-                btn.classList.remove('selected');
-            });
-
-            this.classList.add('selected');
-        });
-
-        if (index === 1) {
-            button.classList.add('selected');
-        }
-    });
+    let desktopSize = 1024;
 
     function displayImage(imageNum) {
         let imgData = imageData[imageNum - 1];
@@ -60,5 +43,43 @@ export function functionSelectAuto() {
         }, 500);
     }
 
-    displayImage(1);
+    function updateContent() {
+        if (window.innerWidth <= desktopSize) {
+            let buttons = document.querySelectorAll(".d-max__pictures-container__select-picture");
+    
+            buttons.forEach(function (button, index) {
+                button.addEventListener("click", function () {
+                    let imageNum = parseInt(this.getAttribute("data-image"));
+                    displayImage(imageNum);
+    
+                    buttons.forEach(function (btn) {
+                        btn.classList.remove('selected');
+                    });
+    
+                    this.classList.add('selected');
+                });
+    
+                if (index === 1) {
+                    button.classList.add('selected');
+                }
+            });
+    
+            displayImage(1);
+
+            let paragraphElement = document.getElementById('paragraph');
+            paragraphElement.textContent = imageData[0].paragraph;
+    
+            let displayedImage = document.getElementById('displayed-image');
+            displayedImage.classList.add('hidden');
+        } else {
+            let paragraphElement = document.getElementById('paragraph');
+            paragraphElement.textContent = ''; 
+    
+            let displayedImage = document.getElementById('displayed-image');
+            displayedImage.classList.remove('hidden'); 
+        }
+    }
+  
+    window.addEventListener('load', updateContent);
+    window.addEventListener('resize', updateContent);
 }

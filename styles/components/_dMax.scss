@@ -9,6 +9,11 @@
     flex-direction: column;
     align-items: center;
 
+    @include desktop {
+        height: 867px;
+    }
+
+
     &__h2 {
         margin-top: 83px;
         text-align: left;
@@ -16,16 +21,30 @@
         margin-left: -100px;
         height: 41px;
         font-family: $font-family-primary-bold;
-        font-weight: bold;
-        color: #333333;
+        color: $text-color-primary;
         letter-spacing: 0.01px;
         line-height: 44px;
+
+        @include desktop {
+            align-self: start;
+            margin-left: 14%;
+            margin-top: 101px;
+            margin-left: 14%;
+            margin-bottom: 54px;
+            letter-spacing: 6.8px;
+            line-height: 50px;
+            font-size: 34px;
+        }
     }
 
     &__pictures-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
+
+        @include desktop {
+            display: none;
+        }
 
         &__select-picture {
             display: inline-block;
@@ -56,12 +75,102 @@
         overflow: hidden;
         position: relative;
 
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            height: 699.55px;
+        }
+
+        &__desktop-container {
+
+            &__title {
+                letter-spacing: 0.01px;
+                line-height: 20px;
+                font-family: $font-family-primary-semiBold;
+                color: $text-color-primary;
+                font-size: 30px;
+                margin-top: 30px;
+
+                @include desktop {
+                    opacity: 55%;
+                    color: $text-color-primary;
+                    font-size: 20px;
+                    margin-top: 0px;
+                }
+            }
+
+            &__picture {
+                width: 264.61px;
+                height: 181.22px;
+                margin-top: 52px;
+
+                @include desktop {
+                    opacity: 55%;
+                }
+            }
+
+            &__text {
+                letter-spacing: 1.12px;
+                line-height: 30px;
+                font-family: $font-family-secondary-regular;
+                color: $text-color-primary;
+                font-size: 16px;
+                text-align: left;
+                margin-left: 37px;
+                margin-right: 52px;
+            }
+        }
+
+        // DEFAULT DESKTOP
+        .d-max__selected-content__desktop-container__default-container {
+            width: 470.16px;
+            height: 321.99px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 81.72px;
+            margin-right: 60.41px;
+
+            .d-max__selected-content__desktop-container__picture-default {
+                width: 470.16px;
+                height: 321.99px;
+
+            }
+
+            .d-max__selected-content__desktop-container__title-default {
+                letter-spacing: 0.01px;
+                line-height: 20px;
+                font-family: $font-family-primary-semiBold;
+                color: $element-color-primary;
+                font-size: 25px;
+                margin-bottom: 14.39px;
+            }
+
+            .d-max__selected-content__desktop-container__text-default {
+                width: 795px;
+                height: 234px;
+                letter-spacing: 0.54px;
+                line-height: 30px;
+                font-family: $font-family-secondary-regular;
+                color: $text-color-primary;
+                font-size: 18px;
+                text-align: left;
+                margin-left: 186.8px;
+                margin-right: 160.12px;
+            }
+        }
+
+        // SELECT AUTO MOBILE
         &__container {
             display: flex;
             flex-direction: column;
             align-items: center;
             transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1);
             transform: translateX(0);
+
+            @include desktop {
+                display: none;
+            }
 
             &__title {
                 letter-spacing: 0.01px;
@@ -82,12 +191,20 @@
                 text-align: left;
                 margin-left: 37px;
                 margin-right: 52px;
-            }    
+            }
         }
     }
 
     &__button {
         @include primary-button;
+
+        @include desktop {
+            margin-top: 35.04px;
+            width: 245px;
+            height: 65px;
+            margin-left: -507px;
+            align-self: center;
+        }
     }
 
     // js
