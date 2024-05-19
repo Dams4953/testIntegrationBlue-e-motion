@@ -6,9 +6,78 @@
 .footer-container {
     margin-top: 60px;
 
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 180px;
+
+        &__footer-above-desktop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__text {
+                font-size: 14px;
+                letter-spacing: 0.42px;
+                line-height: 30px;
+                color: $text-color-primary;
+                font-family: $font-family-secondary-regular;
+                margin-right: 10px;
+
+                &--bold {
+                    font-family: $font-family-secondary-bold;
+                }
+            }
+
+            &__networks {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                &__network {
+                    width: 32px;
+                    height: 32px;
+                    text-decoration: none;
+                    position: relative;
+                    display: inline-block;
+                    background-color: $text-color-secondary;
+                    border-radius: 50%;
+
+                    &:hover {
+                        background-color: $element-color-primary;
+                    }
+
+                    &__img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        border: none;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    @include mobile {
+        &__footer-above-desktop {
+            display: none;
+        }
+    }
+
     &__logo {
         margin-left: 35px;
         margin-bottom: 4.5px;
+
+        @include desktop {
+            width: 155.43px;
+            height: 31.04px;
+            margin-top: 91px;
+        }
     }
 
     &__summary-container {
@@ -16,6 +85,15 @@
         flex-direction: column;
         align-items: left;
         margin-left: 35px;
+        margin-bottom: 33px;
+
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+        }
 
         &__element {
             margin-top: 35px;
@@ -36,8 +114,19 @@
         margin-right: 34px;
         border-top: solid 2px $border-color-img;
 
+        @include desktop {
+            width: 70%;
+            align-items: end;
+            justify-content: center;
+            flex-direction: row;
+        }
+
         &__privacy-container {
             margin-top: 13.5px;
+
+            @include desktop {
+                margin-top: 17px;
+            }
 
             &__element {
                 font-size: 14px;
@@ -45,11 +134,32 @@
                 line-height: 30px;
                 color: $text-color-primary;
                 font-family: $font-family-secondary-regular;
+
+                @include desktop {
+                    display: none;
+                }
+            }
+
+            &__element-desktop {
+                font-size: 14px;
+                letter-spacing: 0.42px;
+                line-height: 30px;
+                color: $text-color-primary;
+                font-family: $font-family-secondary-regular;
+                width: 203px;
+
+                @include mobile {
+                    display: none;
+                }
             }
         }
 
         &__networks {
             margin-top: 14.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
 
             &__network {
                 width: 32px;
@@ -63,8 +173,8 @@
                 &:hover {
                     background-color: $element-color-primary;
                 }
-            
-                &__youtube {
+
+                &__img {
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -72,7 +182,7 @@
                     border: none;
                 }
             }
-            
+
         }
     }
 }
@@ -80,6 +190,12 @@
 .under-footer-container {
     display: flex;
     justify-content: center;
+
+    @include desktop {
+        justify-content: end;
+        margin-bottom: 30.75px;
+        margin-right: 20px;
+    }
 
     &__img {
         margin-top: 53.75px;

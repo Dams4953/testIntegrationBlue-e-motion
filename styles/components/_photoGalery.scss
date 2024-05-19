@@ -3,7 +3,8 @@
 @import '../base/mixin';
 @import '../base/placeholder';
 
-.photo-galery{
+// Galerie de photos
+.photo-galery {
     margin-top: 60px;
     overflow: hidden;
 
@@ -16,6 +17,14 @@
         line-height: 41px;
         font-family: $font-family-primary-semiBold;
         color: $text-color-primary;
+
+        @include desktop {
+            margin-left: 278px;
+            margin-bottom: 40.6px;
+            font-size: 34px;
+            letter-spacing: 3.4px;
+            line-height: 50px;
+        }
     }
 
     &__img {
@@ -23,5 +32,100 @@
         height: 415px;
         margin-top: 30px;
         object-fit: cover;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__carousel-container {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile {
+            display: none;
+        }
+
+        &__carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            &__carousel-item {
+                min-width: 25%;
+                transition: opacity 0.5s ease-in-out;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 267px;
+                    object-fit: cover;
+                    width: 428px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+
+                }
+            }
+        }
+
+        &__control {
+            position: absolute;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+
+            &.prev {
+                left: 0;
+                transform: rotate(180deg);
+                width: 21.54px;
+                opacity: 50%;
+                margin-left: 15px;
+            }
+
+            &.next {
+                right: 0;
+                width: 21.54px;
+                filter: brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%);
+                margin-right: 15px;
+            }
+        }
+
+        &__indicators {
+            position: absolute;
+            left: 47%;
+            margin-top: 30px;
+            display: flex;
+            gap: 19px;
+
+            @include mobile {
+                display: none;
+            }
+
+
+            .indicator {
+                width: 15px;
+                height: 15px;
+                background-color: $element-color-primary;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &.active {
+                    background-color: $element-color-primary;
+                    opacity: 30%;
+                }
+            }
+        }
+    }
+
+    .hidden {
+        display: none !important;
     }
 }

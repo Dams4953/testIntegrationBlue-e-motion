@@ -14,10 +14,43 @@
         line-height: 41px;
         font-family: $font-family-primary-semiBold;
         color: $text-color-primary;
+
+        @include desktop {
+            font-size: 34px;
+            width: 522px;
+            margin-left: 273px;
+            letter-spacing: 3.4px;
+            line-height: 50px;
+        }
     }
 
-    &__average-container {
+    @include desktop {
+        &__desktop-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: 273px;
+            margin-bottom: 157px;
+        }
+    }
+
+    .customer-reviews__average-container {
         margin-left: 25px;
+
+        @include desktop {
+            width: 420px;
+            height: 150px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            margin-right: 295px;
+
+            &__desktop-subcontain {
+                display: flex;
+                flex-direction: column;
+            }
+        }
 
         &__note {
 
@@ -25,6 +58,10 @@
             line-height: 150px;
             font-family: $font-family-primary-regular;
             color: $element-color-primary;
+
+            @include desktop {
+                margin-right: 40px;
+            }
         }
 
         &__stars-average-container {
@@ -45,6 +82,10 @@
             line-height: 30px;
             font-family: $font-family-primary-medium;
             color: $text-color-primary;
+
+            @include desktop {
+                width: 249px;
+            }
         }
     }
 
@@ -56,6 +97,18 @@
         align-items: center;
         margin-top: 50px;
 
+        @include desktop {
+            width: 624px;
+            height: 343px;
+            margin: 0;
+            margin-right: 303px;
+
+            &__name-desktop-container {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
         &__name {
 
             font-size: 30px;
@@ -66,6 +119,11 @@
 
             &--margin {
                 margin-left: -10px;
+
+                @include desktop {
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
             }
         }
 
@@ -78,6 +136,13 @@
             font-family: $font-family-secondary-semiBold;
             color: $text-color-primary;
             text-align: center;
+
+            @include desktop {
+                margin: 0;
+                margin-top: 25px;
+                margin-bottom: 20px;
+                width: 492px;
+            }
         }
 
         &__chevrons-container {
@@ -88,6 +153,11 @@
 
             &__left-chevron {
                 @extend %left-icon-chevron;
+
+                @include desktop {
+                    width: 26.93px;
+                    height: 50px;
+                }
             }
 
             &__right-chevron {

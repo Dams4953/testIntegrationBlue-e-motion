@@ -8,6 +8,7 @@
     @include desktop {
         display: flex;
         flex-direction: row-reverse;
+        margin-top: 112px;
     }
 
     &__picture {
@@ -15,6 +16,10 @@
         height: 459px;
         object-fit: cover;
         margin-top: 69px;
+
+        @include desktop {
+            height: 776px;
+        }
     }
 
     @include desktop {
@@ -22,6 +27,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-right: 210px;
+            margin-top: 115px;
         }
     }
 
@@ -34,6 +41,15 @@
         font-family: $font-family-primary-medium;
         margin-left: 37px;
         margin-right: 57px;
+
+        @include desktop {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 11;
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 30px;
+        }
     }
 
     &__h2 {
@@ -45,6 +61,15 @@
         font-family: $font-family-primary-semiBold;
         margin-left: 35px;
         margin-right: 57px;
+
+        @include desktop {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 40px;
+            font-size: 34px;
+            letter-spacing: 3.4px;
+            line-height: 50px;
+        }
     }
 
     &__text {
@@ -55,6 +80,12 @@
         font-family: $font-family-secondary-regular;
         margin-left: 35px;
         margin-right: 57px;
+
+        @include desktop {
+            width: 398px;
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     &__buttons-container {
@@ -62,12 +93,26 @@
         flex-direction: column;
         align-items: center;
 
+        @include desktop {
+            align-items: start;
+            margin-top: 12px;
+        }
+
         &__main-button {
             @include primary-button($transition: false);
+
+            @include desktop {
+                align-self: normal;
+                width: 263px;
+            }
         }
 
         &__secondary-button {
             @include secondary-button;
+
+            @include desktop {
+                width: 263px;
+            }
         }
     }
 }
