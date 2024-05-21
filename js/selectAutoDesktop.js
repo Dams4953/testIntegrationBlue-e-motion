@@ -1,16 +1,16 @@
 export function functionSelectAutoDesktop() {
     let imageData = [
         {
-            src: "/assets/pictures/singleCab.png",
+            src: "./assets/pictures/singleCab.png",
             title: "SINGLE CAB"
         },
         {
-            src: "/assets/pictures/doubleCab2x.png",
+            src: "./assets/pictures/doubleCab2x.png",
             title: "DOUBLE CAB",
             paragraph: "Dolutatueros lobor zzriusto non. Doloreetuer quamcommy minit, dolorer wiscin dolorem ullaorperit. Erciduisit ispum odigniamet lam eummolestin faciduisim do tin uismodolor, an feuisis enim. Sustionsenim velis em minisl it facipit lortin. Conulputat mod etum si. Tin, atuerat, wisl min quis dolenismodit nisci adionsequat wissis. Adionsequat ut consequi dolortie nummodolor lenim lortin nonsequi. Erci quis non. Aliquipsusci erciduisit feummod non. It feu facinim dion ptatueros dion, dolortie tis dolortio rit eugiamet. Iriustrud lorer tumsandionse magna."
         },
         {
-            src: "/assets/pictures/spaceCab.png",
+            src: "./assets/pictures/spaceCab.png",
             title: "EXTENDED CAB"
         }
     ];
