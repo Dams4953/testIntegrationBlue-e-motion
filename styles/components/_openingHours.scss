@@ -1,11 +1,15 @@
-@import '../base/reset';
-@import '../base/variables';
-@import '../base/mixin';
-@import '../base/placeholder';
+@import '../utils/reset';
+@import '../utils/variables/variables';
+@import '../utils/mixin/mixin';
+@import '../utils/placeholder/placeholder';
 
 .opening-hours {
     margin-top: 30px;
     margin-left: 35px;
+
+    @include desktop {
+        margin: 0px;
+    }
 
     &__h2 {
         font-size: 22px;
@@ -13,6 +17,10 @@
         line-height: 33px;
         color: $text-color-primary;
         font-family: $font-family-primary-bold;
+
+        @include desktop {
+            margin-bottom: 10px;
+        }
     }
 
     &__h3 {
@@ -22,6 +30,13 @@
         line-height: 30px;
         color: $text-color-primary;
         font-family: $font-family-primary-medium;
+
+        @include desktop {
+            margin-top: 30px;
+            font-size: 22px;
+            letter-spacing: 2.2px;
+            line-height: 33px;
+        }
     }
 
     &__h4 {
@@ -31,6 +46,11 @@
         line-height: 30px;
         color: $text-color-primary;
         font-family: $font-family-secondary-bold;
+
+        @include desktop {
+            font-family: $font-family-secondary-regular;
+            margin-top: 15px;
+        }
     }
 
     &__time-container {
@@ -40,6 +60,17 @@
         line-height: 30px;
         color: $text-color-primary;
         font-family: $font-family-secondary-regular;
+
+        @include desktop {
+            position: relative;
+            top: -39px;
+            margin-bottom: -50px;
+            margin-left: 234px;
+
+            li {
+                margin-bottom: 8px;
+            }
+        }
     }
 
     &__text-footer {
@@ -50,6 +81,11 @@
         line-height: 30px;
         color: $text-color-primary;
         font-family: $font-family-secondary-regular;
+
+        @include desktop {
+            width: 416px;
+            margin-top: 36px;
+        }
 
         span {
             display: block;

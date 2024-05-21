@@ -1,7 +1,7 @@
-@import '../base/reset';
-@import '../base/variables';
-@import '../base/mixin';
-@import '../base/placeholder';
+@import '../utils/reset';
+@import '../utils/variables/variables';
+@import '../utils/mixin/mixin';
+@import '../utils/placeholder/placeholder';
 
 .techno-and-function {
     position: relative;
@@ -13,6 +13,7 @@
 
     @include desktop {
         flex-direction: row;
+        margin-top: 199px;
     }
 
     &__container-picture {

@@ -1,13 +1,29 @@
-@import '../base/reset';
-@import '../base/variables';
-@import '../base/mixin';
-@import '../base/placeholder';
+@import '../utils/reset';
+@import '../utils/variables/variables';
+@import '../utils/mixin/mixin';
+@import '../utils/placeholder/placeholder';
 
 .contact {
 
     &__container {
         display: flex;
         flex-direction: column;
+
+        @include desktop {
+
+            display: flex;
+            flex-direction: row;
+
+            &__informations-container-desktop {
+                margin-right: 80px;
+            }
+
+            &__map-container-desktop {
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
 
         &__h2 {
             margin-top: 55px;
@@ -19,6 +35,16 @@
             color: $text-color-primary;
             font-family: $font-family-primary-semiBold;
             word-wrap: break-word;
+
+            @include desktop {
+                margin: 0px;
+                font-size: 34px;
+                letter-spacing: 3.4px;
+                line-height: 50px;
+                position: absolute;
+                top: 4386px;
+                margin-bottom: 60px;
+            }
         }
 
         &__h3 {
@@ -30,7 +56,13 @@
             line-height: 26px;
             color: $text-color-primary;
             font-family: $font-family-primary-bold;
-            font-weight: bold;
+
+            @include desktop {
+                margin: 0px;
+                font-size: 22px;
+                letter-spacing: 2.2px;
+                line-height: 33px;
+            }
         }
 
         &__information {
@@ -42,7 +74,11 @@
             line-height: 30px;
             margin-left: 35px;
 
-        &__adress {
+            @include desktop {
+                margin: 0px;
+            }
+
+            &__adress {
                 margin-bottom: 40px;
 
             }
@@ -54,6 +90,10 @@
             border: 1px solid $element-color-primary;
             align-self: center;
             margin-top: 20px;
+
+            @include desktop {
+                padding: 10px;
+            }
 
             &__text-container {
                 margin-top: 20px;
@@ -67,6 +107,14 @@
                     font-family: $font-family-secondary-regular;
                     letter-spacing: 0.45px;
                     line-height: 30px;
+
+                    @include desktop {
+                        margin-top: 0px;
+                        font-size: 18px;
+                        letter-spacing: 0.54px;
+                        line-height: 30px;
+                        margin-right: 35px;
+                    }
                 }
 
                 &__text-main {
@@ -78,6 +126,14 @@
                     font-family: $font-family-secondary-regular;
                     letter-spacing: 0.45px;
                     line-height: 30px;
+
+                    @include desktop {
+                        font-size: 18px;
+                        letter-spacing: 0.54px;
+                        line-height: 30px;
+                        margin-right: 35px;
+                        margin-top: 35px;
+                    }
 
                     &__underline {
                         border-bottom: 1px solid $text-color-primary;
@@ -93,12 +149,20 @@
                     font-family: $font-family-secondary-regular;
                     letter-spacing: 0.45px;
                     line-height: 30px;
+
+                    @include desktop {
+                        font-size: 18px;
+                        letter-spacing: 0.54px;
+                        line-height: 30px;
+                        margin-right: 35px;
+                        margin-top: 35px;
+                    }
                 }
             }
         }
 
         &__button-map {
-            @include primary-button($transition: false, $opacity: false);	
+            @include primary-button($transition: false, $opacity: false);
         }
     }
 }

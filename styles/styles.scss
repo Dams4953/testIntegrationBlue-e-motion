@@ -1,4 +1,12 @@
-@import 'base/reset.css';
+// utils
+@import 'utils/reset.css';
+@import 'utils/variables/variables';
+@import 'utils/placeholder/placeholder';
+@import 'utils/mixin/mixin';
+// header
+@import 'components/modalHeader.scss';
+@import 'components/header.scss';
+// main
 @import 'components/videoIntroduction.scss';
 @import 'components/aboutUs.scss';
 @import 'components/technoAndFunction.scss';
@@ -8,14 +16,30 @@
 @import 'components/openingHours.scss';
 @import 'components/customerReviews.scss';
 @import 'components/photoGalery.scss';
-@import 'components/options.scss';
-@import 'components/header.scss';
+// footer
 @import 'components/footer.scss';
-@import 'components/modalHeader.scss';
-@import 'base/variables.scss';
-@import 'base/mixin.scss';
-@import 'base/placeholder.scss';
+// aside
+@import 'components/options.scss';
+@import 'components/sideMenuDesktop.scss';
 
-body{
+
+
+body {
     opacity: 98%;
+}
+
+// SECTION REGROUPANT CONTACT ET OPENING HOURS POUR LE DESKTOP 
+.contact-opening-hours-desktop {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+    margin-top: 192px;
+    margin-bottom: 112px;
+    
+    @include mobile {
+        display: none;
+    }
 }

@@ -1,0 +1,69 @@
+@import '../utils/reset';
+@import '../utils/variables/variables';
+@import '../utils/mixin/mixin';
+@import '../utils/placeholder/placeholder';
+
+.lateral-menu-container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 149px;
+    height: 236px;
+    background-color: $background-color-header;
+    color: $text-color-tertiary;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+        display: none;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            text-align: end;
+
+            li {
+                position: relative;
+                margin: 11px;
+                padding-right: 12px;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.1); 
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    letter-spacing: 0.01px;
+                    line-height: 25px;
+                    color: $text-color-tertiary;
+                    font-family: $font-family-primary-regular;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: red; 
+                    }
+                }
+
+                &::after {
+                    content: '▪';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: $text-color-tertiary;
+                    margin-left: 8px;
+                    transition: transform 0.3s; 
+
+                    &:hover {
+                        content: '■'; 
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

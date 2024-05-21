@@ -1,7 +1,7 @@
-@import '../base/reset';
-@import '../base/variables';
-@import '../base/mixin';
-@import '../base/placeholder';
+@import '../utils/reset';
+@import '../utils/variables/variables';
+@import '../utils/mixin/mixin';
+@import '../utils/placeholder/placeholder';
 
 .customer-reviews {
     margin-top: 54px;

@@ -72,19 +72,33 @@
         </div>
 
         <!-- ABOUT US -->
-        <section class="about-us">
-            <div>
-                <h3 class="about-us__title">ÜBER UNS</h3>
-                <h2 class="about-us__heading">AUTOHAUS WIENS, IHR ISUZU-HÄNDLER</h2>
-                <p class="about-us__text" id="textAboutUs">
-                    Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer feugait. Enis feugiat minisi adiam quis
-                    esse nonsequi diat. Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio a duis. Eum
-                    magnis re. Amconsequis iriuscing, se, to iurem eum facillametum dit del odo. El atueraestrud
-                    vullutat, uipsuscidunt lortin rat commod commod luptat iusci. Commy re del eui elesequisim nim amet
-                    lummy quip. Dionsenim, sustionsenim amconul am lum amconul lorem digniamet. Feuismo eum eummolortion
-                    consequi. Dolortin sustionsenim amconsequis iriustrud, min il, tio lor. Eummolortion dolortie
-                    feuguer lummolessi mod feuismo odo tem vullutat..
-                </p>
+        <section class="about-us" id="about-us">
+            <div class="about-us__container-desktop">
+                <div class="about-us__container-desktop__title-container-desktop">
+                    <h3 class="about-us__title">ÜBER UNS</h3>
+                    <h2 class="about-us__heading">AUTOHAUS WIENS, IHR ISUZU-HÄNDLER</h2>
+                </div>
+                <div class="about-us__container-desktop__content-container-desktop">
+                    <p class="about-us__text" id="textAboutUs">
+                        Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer feugait. Enis feugiat minisi adiam
+                        quis
+                        esse nonsequi diat. Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio a duis.
+                        Eum
+                        magnis re. Amconsequis iriuscing, se, to iurem eum facillametum dit del odo. El atueraestrud
+                        vullutat, uipsuscidunt lortin rat commod commod luptat iusci. <span
+                            class="about-us__text--desktop-margin">Commy re del eui elesequisim nim
+                            amet
+                            lummy quip. Dionsenim, sustionsenim amconul am lum amconul lorem digniamet. Feuismo eum
+                            eummolortion
+                            consequi. Dolortin sustionsenim amconsequis iriustrud, min il, tio lor. Eummolortion
+                            dolortie
+                            feuguer lummolessi mod feuismo odo tem vullutat..</span>
+                    </p>
+                    <div class="about-us__container-desktop__content-container-desktop__buttons-container">
+                        <button class="about-us__main-button-desktop">Main CTA title</button>
+                        <button class="about-us__secondary-button-desktop">Secondary CTA
+                    </div>
+                </div>
                 <div class="about-us__toggle-content">
                     <div class="about-us__toggle-content--more" id="readMoreContainer">
                         <button class="about-us__toggle-content--more__button" id="idReadMore">
@@ -95,7 +109,8 @@
                     </div>
                     <div class="about-us__toggle-content--less" id="readLessContainer" style="display:none">
                         <div class="about-us__toggle-content--less__buttons">
-                            <button class="about-us__toggle-content--less__buttons__main-button">Main CTA title</button>
+                            <button class="about-us__toggle-content--less__buttons__main-button">Main CTA
+                                title</button>
                             <button class="about-us__toggle-content--less__buttons__secondary-button">Secondary CTA
                                 title</button>
                         </div>
@@ -156,7 +171,7 @@
         </section>
 
         <!-- D-MAX -->
-        <section class="d-max">
+        <section class="d-max" id="d-max">
             <h2 class="d-max__h2">D-MAX MODELLE</h2>
             <div class="d-max__pictures-container">
                 <button class="d-max__pictures-container__select-picture" data-image="1">
@@ -183,7 +198,7 @@
         </section>
 
         <!-- N-SERIES -->
-        <section class="n-series">
+        <section class="n-series" id="n-series">
             <img src="assets/pictures/04-home-bild_text-N-Serie 3,5t Koffer City Image.webp" class="n-series__picture"
                 alt="truck image">
             <div class="n-series__desktop-container">
@@ -200,67 +215,78 @@
             </div>
         </section>
 
-        <!-- CONTACT -->
-        <section class="contact">
-            <div class="contact__container">
-                <h2 class="contact__container__h2">KONTAKTINFORMAATIONEN</h2>
-                <h3 class="contact__container__h3">KONTACT</h3>
-                <div class="contact__container__information">
-                    <p class="contact__container__information__adress">
-                        Langbaurghstraße 12,<br>
-                        53842 Troisdorf</p>
-                    <p class="contact__container__information__elements">
-                        Telefon : 02241-96020<br>
-                        Fax : 02241960296<br>
-                        E-Mail : info(at)autohaus-weidenbrueck.de</p>
-                </div>
-                <h3 class="contact__container__h3">ANFAHRT</h3>
-                <div class="contact__container__localisation">
-                    <div class="contact__container__localisation__text-container" id="idMapLocalisationContact">
-                        <p class="contact__container__localisation__text-container__text-header">Wir benötigen Deine
-                            Einwilligung,
-                            um
-                            die Karte von Google Maps mit den Händlerstandorten anzuzeigen. </p>
-                        <p class="contact__container__localisation__text-container__text-main">Ich bin damit
-                            einverstanden,
-                            dass mir die Google Maps-Karte angezeigt wird. Damit können personenbezogene <span
-                                class="contact__container__localisation__text-container__text-main__underline">Daten an
-                                Google
-                                übertragen werden.</span></p>
-                        <p class="contact__container__localisation__text-container__text-footer">Mehr dazu in unserer
-                            Datenschutzerklärung.</p>
+        <!-- DESKTOP CONTACT AND OPENING HOURS -->
+        <section class="contact-opening-hours-desktop" id="contact">
+            <!-- CONTACT -->
+            <section class="contact">
+                <div class="contact__container">
+                    <div class="contact__container__informations-container-desktop">
+                        <h2 class="contact__container__h2">KONTAKTINFORMAATIONEN</h2>
+                        <h3 class="contact__container__h3">KONTACT</h3>
+                        <div class="contact__container__information">
+                            <p class="contact__container__information__adress">
+                                Langbaurghstraße 12,<br>
+                                53842 Troisdorf</p>
+                            <p class="contact__container__information__elements">
+                                Telefon : 02241-96020<br>
+                                Fax : 02241960296<br>
+                                E-Mail : info(at)autohaus-weidenbrueck.de</p>
+                        </div>
+                    </div>
+                    <div class="contact__container__map-container-desktop">
+                        <h3 class="contact__container__h3">ANFAHRT</h3>
+                        <div class="contact__container__localisation">
+                            <div class="contact__container__localisation__text-container" id="idMapLocalisationContact">
+                                <p class="contact__container__localisation__text-container__text-header">Wir benötigen
+                                    Deine
+                                    Einwilligung,
+                                    um
+                                    die Karte von Google Maps mit den Händlerstandorten anzuzeigen. </p>
+                                <p class="contact__container__localisation__text-container__text-main">Ich bin damit
+                                    einverstanden,
+                                    dass mir die Google Maps-Karte angezeigt wird. Damit können personenbezogene <span
+                                        class="contact__container__localisation__text-container__text-main__underline">Daten
+                                        an
+                                        Google
+                                        übertragen werden.</span></p>
+                                <p class="contact__container__localisation__text-container__text-footer">Mehr dazu in
+                                    unserer
+                                    Datenschutzerklärung.</p>
+                            </div>
+                        </div>
+                        <button class="contact__container__button-map">Google Maps immer anzeigen</button>
                     </div>
                 </div>
-                <button class="contact__container__button-map">Google Maps immer anzeigen</button>
-            </div>
-        </section>
+            </section>
 
-        <!-- OPENING HOURS -->
-        <section class="opening-hours">
-            <h2 class="opening-hours__h2">ÖFFNUNGSZEITEN</h2>
-            <h3 class="opening-hours__h3">Verkauf</h3>
-            <h4 class="opening-hours__h4">Montag - Freitag</h4>
-            <ul class="opening-hours__time-container">
-                <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
-                <li><time datetime="13:20">13:20 Uhr</time> - <time datetime="18:00">18:00 Uhr</time></li>
-            </ul>
-            <h4 class="opening-hours__h4">Samstag</h4>
-            <ul class="opening-hours__time-container">
-                <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
-            </ul>
-            <h3 class="opening-hours__h3">Service</h3>
-            <h4 class="opening-hours__h4">Montag - Freitag</h4>
-            <ul class="opening-hours__time-container">
-                <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
-                <li><time datetime="13:20">13:20 Uhr</time> - <time datetime="18:00">18:00 Uhr</time></li>
-            </ul>
-            <h4 class="opening-hours__h4">Samstag</h4>
-            <ul class="opening-hours__time-container">
-                <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
-            </ul>
-            <p class="opening-hours__text-footer">Außerhalb der gesetzlichen Ladenöffnungszeiten <span>keine Beratung,
-                    kein Verkauf, keine
-                    Probefahrtvereinbarung.</span></p>
+            <!-- OPENING HOURS -->
+            <section class="opening-hours">
+                <h2 class="opening-hours__h2">ÖFFNUNGSZEITEN</h2>
+                <h3 class="opening-hours__h3">Verkauf</h3>
+                <h4 class="opening-hours__h4">Montag - Freitag</h4>
+                <ul class="opening-hours__time-container">
+                    <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
+                    <li><time datetime="13:20">13:20 Uhr</time> - <time datetime="18:00">18:00 Uhr</time></li>
+                </ul>
+                <h4 class="opening-hours__h4">Samstag</h4>
+                <ul class="opening-hours__time-container">
+                    <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
+                </ul>
+                <h3 class="opening-hours__h3"><span class=""></span>Service</span></h3>
+                <h4 class="opening-hours__h4">Montag - Freitag</h4>
+                <ul class="opening-hours__time-container">
+                    <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
+                    <li><time datetime="13:20">13:20 Uhr</time> - <time datetime="18:00">18:00 Uhr</time></li>
+                </ul>
+                <h4 class="opening-hours__h4">Samstag</h4>
+                <ul class="opening-hours__time-container">
+                    <li><time datetime="07:30">07:30 Uhr</time> - <time datetime="12:00">12:00 Uhr</time></li>
+                </ul>
+                <p class="opening-hours__text-footer">Außerhalb der gesetzlichen Ladenöffnungszeiten <span>keine
+                        Beratung,
+                        kein Verkauf, keine
+                        Probefahrtvereinbarung.</span></p>
+            </section>
         </section>
 
         <!-- CUSTOMER REVIEWS -->
@@ -321,7 +347,7 @@
         </section>
 
         <!-- PHOTO GALERY -->
-        <section class="photo-galery">
+        <section class="photo-galery" id="photo-galery">
             <h2 class="photo-galery__h2">FOTOGALERIE</h2>
             <img class="photo-galery__img" src="assets/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp"
                 alt="picture ISUZU">
@@ -424,6 +450,20 @@
             <img class="options-container__right-button__img" src="" alt="">
             <p class="options-container__right-button__text">Kontakt</p>
         </button>
+    </aside>
+
+    <!-- NAVBAR LATERAL CONTAINER -->
+    <aside class="lateral-menu-container">
+        <nav>
+            <ul>
+                <li><a href="">Startseite</a></li>
+                <li><a href="#about-us">Über uns</a></li>
+                <li><a href="#d-max">D-MAX</a></li>
+                <li><a href="#n-series">N-SERIES</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#photo-galery">Fotogalerie</a></li>
+            </ul>
+        </nav>
     </aside>
 
     <script src="js/script.js" type="module"></script>

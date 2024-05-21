@@ -1,12 +1,41 @@
-@import '../base/reset';
-@import '../base/variables';
-@import '../base/mixin';
-@import '../base/placeholder';
+@import '../utils/reset';
+@import '../utils/variables/variables';
+@import '../utils/mixin/mixin';
+@import '../utils/placeholder/placeholder';
 
 .about-us {
     display: flex;
     flex-direction: column;
     text-align: left;
+
+    @include desktop {
+        &__container-desktop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            &__title-container-desktop {
+                width: 393px;
+                margin-right: 251px;
+            }
+
+            &__content-container-desktop {
+                display: flex;
+                flex-direction: column;
+                width: 812px;
+                margin-top: 230px;
+                margin-right: 100px;
+
+                &__buttons-container {
+                    display: flex;
+                    align-items: end;
+                }
+
+            }
+        }
+    }
+
 
     &__title {
         color: $text-color-secondary;
@@ -18,6 +47,13 @@
         line-height: 23px;
         text-transform: uppercase;
         margin-top: 67px;
+
+        @include desktop {
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 30px;
+            margin: 0px;
+        }
     }
 
     &__heading {
@@ -30,6 +66,14 @@
         line-height: 41px;
         text-transform: uppercase;
         margin-top: 13px;
+
+        @include desktop {
+            font-size: 27px;
+            letter-spacing: 2.7px;
+            line-height: 41px;
+            margin: 0px;
+            margin-top: 11px;
+        }
     }
 
     &__text {
@@ -46,7 +90,46 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        @include desktop {
+            padding: 0;
+
+            &--desktop-margin {
+                margin-top: 30px;
+                display: inline-block;
+
+            }
+        }
     }
+
+
+    &__main-button-desktop {
+        @include primary-button($transition: false, $opacity: false);
+        align-self: start;
+        width: 245px;
+        height: 52px;
+        margin-right: 31px;
+        margin-top: 35px;
+
+        @include mobile {
+            display: none;
+            margin-top: 35px;
+            height: 52px;
+        }
+    }
+
+
+
+    &__secondary-button-desktop {
+        @include secondary-button($transition: false);
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+
+
 
     &__toggle-content {
         display: flex;
@@ -68,6 +151,10 @@
                 background: none;
                 border: none;
 
+                @include desktop {
+                    display: none;
+                }
+
                 &__chevron {
                     filter: brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%);
                     transform: rotate(90deg);
@@ -86,6 +173,10 @@
                 flex-direction: column;
                 align-items: center;
 
+                @include desktop {
+                    display: none;
+                }
+
                 &__main-button {
                     @include primary-button($transition: false, $opacity: false);
                     opacity: 80%;
@@ -96,7 +187,7 @@
                 }
             }
 
-            
+
 
             &__toggle {
                 display: flex;
