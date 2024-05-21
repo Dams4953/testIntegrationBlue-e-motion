@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import 'utils/reset.css';
+@import './utils/reset.css';
 .customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
   width: 16.16px;
   height: 30px;

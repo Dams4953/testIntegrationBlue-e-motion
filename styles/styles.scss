@@ -1,26 +1,26 @@
 // utils
-@import 'utils/reset.css';
-@import 'utils/variables/variables';
-@import 'utils/placeholder/placeholder';
-@import 'utils/mixin/mixin';
+@import './utils/reset.css';
+@import './utils/variables/variables';
+@import './utils/placeholder/placeholder';
+@import './utils/mixin/mixin';
 // header
-@import 'components/modalHeader.scss';
-@import 'components/header.scss';
+@import './components/modalHeader.scss';
+@import './components/header.scss';
 // main
-@import 'components/videoIntroduction.scss';
-@import 'components/aboutUs.scss';
-@import 'components/technoAndFunction.scss';
-@import 'components/dMax.scss';
-@import 'components/nSeries.scss';
-@import 'components/contact.scss';
-@import 'components/openingHours.scss';
-@import 'components/customerReviews.scss';
-@import 'components/photoGalery.scss';
+@import './components/videoIntroduction.scss';
+@import './components/aboutUs.scss';
+@import './components/technoAndFunction.scss';
+@import './components/dMax.scss';
+@import './components/nSeries.scss';
+@import './components/contact.scss';
+@import './components/openingHours.scss';
+@import './components/customerReviews.scss';
+@import './components/photoGalery.scss';
 // footer
-@import 'components/footer.scss';
+@import './components/footer.scss';
 // aside
-@import 'components/options.scss';
-@import 'components/sideMenuDesktop.scss';
+@import './components/options.scss';
+@import './components/sideMenuDesktop.scss';
 
 
 
