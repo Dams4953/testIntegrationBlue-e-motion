@@ -11,6 +11,10 @@
     border: 1px solid $border-color-video;
     z-index: 1;
 
+    @include desktop {
+        height: 1080px;
+    }
+
     &__video {
         position: absolute;
         top: 0;
