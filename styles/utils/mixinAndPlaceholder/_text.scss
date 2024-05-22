@@ -1,0 +1,17 @@
+// text desktop
+@mixin text-property-desktop {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    line-height: 30px;
+    color: $text-color-primary;
+    font-family: $font-family-secondary-regular;
+}
+
+// text mobile
+%text-property-mobile {
+    font-size: 16px;
+    letter-spacing: 1.12px;
+    line-height: 30px;
+    color: $text-color-primary;
+    font-family: $font-family-primary-semiBold;
+}

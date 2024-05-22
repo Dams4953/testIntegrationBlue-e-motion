@@ -1,8 +1,12 @@
 // utils
 @import './utils/reset.css';
 @import './utils/variables';
-@import './utils/placeholder';
-@import './utils/mixin';
+@import './utils/mixinAndPlaceholder/arrows';
+@import './utils/mixinAndPlaceholder/buttons';
+@import './utils/mixinAndPlaceholder/titles';
+@import './utils/mixinAndPlaceholder/text';
+@import './utils/mixinAndPlaceholder/screenSize';
+
 // header
 @import './components/modalHeader.scss';
 @import './components/header.scss';

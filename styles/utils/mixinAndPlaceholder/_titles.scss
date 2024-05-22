@@ -1,0 +1,35 @@
+// h2 desktop
+@mixin h2-property-desktop {
+  letter-spacing: 3.4px;
+  line-height: 50px;
+  font-size: 34px;
+  font-family: $font-family-primary-semiBold;
+  color: $text-color-primary;
+}
+
+// h2 mobile
+%h2-property-mobile {
+  font-size: 27px;
+  letter-spacing: 2.41px;
+  line-height: 41px;
+  font-family: $font-family-primary-semiBold;
+  color: $text-color-primary;
+}
+
+// h3 desktop
+@mixin h3-property-desktop {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-family: $font-family-primary-medium;
+  color: $text-color-secondary;
+}
+
+// h3 mobile
+%h3-property-mobile {
+  font-size: 15px;
+  letter-spacing: 0.75px;
+  line-height: 23px;
+  font-family: $font-family-primary-medium;
+  color: $text-color-secondary;
+}

@@ -2,20 +2,14 @@
     margin-top: 54px;
 
     &__h2 {
+        @extend %h2-property-mobile;
         margin-top: 40px;
         margin-left: 32px;
-        font-size: 27px;
-        letter-spacing: 2.7px;
-        line-height: 41px;
-        font-family: $font-family-primary-semiBold;
-        color: $text-color-primary;
 
         @include desktop {
-            font-size: 34px;
             width: 522px;
             margin-left: 273px;
-            letter-spacing: 3.4px;
-            line-height: 50px;
+            @include h2-property-desktop;
         }
     }
 
@@ -123,13 +117,9 @@
         }
 
         &__text {
+            @extend %text-property-mobile;
             width: 280px;
             margin-top: 20px;
-            font-size: 16px;
-            line-height: 30px;
-            letter-spacing: 1.12px;
-            font-family: $font-family-secondary-semiBold;
-            color: $text-color-primary;
             text-align: center;
 
             @include desktop {
@@ -137,6 +127,7 @@
                 margin-top: 25px;
                 margin-bottom: 20px;
                 width: 492px;
+                @include text-property-desktop;
             }
         }
 
@@ -150,17 +141,20 @@
                 @extend %left-icon-chevron;
 
                 @include desktop {
-                    width: 26.93px;
-                    height: 50px;
+                    @include left-icon-chevron;
                 }
             }
 
             &__right-chevron {
                 @extend %right-icon-chevron;
+
+                @include desktop {
+                    @include right-icon-chevron;
+                }
             }
         }
 
-        &__stars-note-container {
+        .customer-reviews__average-container__stars-note-container {
 
             &__img {
                 width: 27px;

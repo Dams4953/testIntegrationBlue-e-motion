@@ -16,8 +16,8 @@
         display: none;
     }
 
-    nav {
-        ul {
+    &__nav-container {
+        &__list-container {
             list-style: none;
             text-align: end;
 

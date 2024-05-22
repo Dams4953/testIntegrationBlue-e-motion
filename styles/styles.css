@@ -11,6 +11,30 @@
   height: 30px;
 }
 
+.photo-galery__h2, .customer-reviews__h2, .contact__container__h2, .n-series__h2, .techno-and-function__container-content__container-title__h2 {
+  font-size: 27px;
+  letter-spacing: 2.41px;
+  line-height: 41px;
+  font-family: "Kanit Semi-Bold", sans-serif;
+  color: #333333;
+}
+
+.n-series__h3, .about-us__title {
+  font-size: 15px;
+  letter-spacing: 0.75px;
+  line-height: 23px;
+  font-family: "Kanit Medium", sans-serif;
+  color: #6D727B;
+}
+
+.customer-reviews__customer-container__text, .n-series__text, .d-max__selected-content__desktop-container__text, .techno-and-function__desktop-container__text {
+  font-size: 16px;
+  letter-spacing: 1.12px;
+  line-height: 30px;
+  color: #333333;
+  font-family: "Kanit Semi-Bold", sans-serif;
+}
+
 .modal-header {
   position: fixed;
   width: 100%;
@@ -277,22 +301,19 @@ header .navbar__right-side__hamburger__line {
   }
 }
 .about-us__title {
-  color: #6D727B;
-  font-size: 15px;
   padding-left: 35px;
   padding-right: 57px;
-  font-family: "Kanit Medium", sans-serif;
-  letter-spacing: 0.75px;
-  line-height: 23px;
   text-transform: uppercase;
   margin-top: 67px;
 }
 @media only screen and (min-width: 1024px) {
   .about-us__title {
+    margin: 0px;
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 30px;
-    margin: 0px;
+    font-family: "Kanit Medium", sans-serif;
+    color: #6D727B;
   }
 }
 .about-us__heading {
@@ -571,19 +592,19 @@ header .navbar__right-side__hamburger__line {
 .techno-and-function__container-content__container-title__h2 {
   width: 184px;
   height: 82px;
-  font-size: 27px;
-  letter-spacing: 2.7px;
-  line-height: 41px;
   margin-left: 41px;
-  font-family: "Kanit Semi-Bold", sans-serif;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 1024px) {
   .techno-and-function__container-content__container-title__h2 {
     width: 396px;
     margin-left: 59px;
-    letter-spacing: 3.4px;
     text-transform: none;
+    letter-spacing: 3.4px;
+    line-height: 50px;
+    font-size: 34px;
+    font-family: "Kanit Semi-Bold", sans-serif;
+    color: #333333;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -619,18 +640,14 @@ header .navbar__right-side__hamburger__line {
   margin-top: 20px;
   margin-left: 36.2px;
   margin-right: 36.8px;
-  font-size: 16px;
-  letter-spacing: 1.12px;
-  line-height: 30px;
-  font-family: "Kanit Semi-Bold", sans-serif;
-  color: #333333;
 }
 @media only screen and (min-width: 1024px) {
   .techno-and-function__desktop-container__text {
-    font-size: 18px;
     width: 520px;
+    font-size: 18px;
     letter-spacing: 0.54px;
     line-height: 30px;
+    color: #333333;
     font-family: "Open Sans Regular", sans-serif;
   }
 }
@@ -768,11 +785,6 @@ header .navbar__right-side__hamburger__line {
   }
 }
 .d-max__selected-content__desktop-container__text {
-  letter-spacing: 1.12px;
-  line-height: 30px;
-  font-family: "Open Sans Regular", sans-serif;
-  color: #333333;
-  font-size: 16px;
   text-align: left;
   margin-left: 37px;
   margin-right: 52px;
@@ -801,14 +813,14 @@ header .navbar__right-side__hamburger__line {
 .d-max__selected-content .d-max__selected-content__desktop-container__default-container .d-max__selected-content__desktop-container__text-default {
   width: 795px;
   height: 234px;
-  letter-spacing: 0.54px;
-  line-height: 30px;
-  font-family: "Open Sans Regular", sans-serif;
-  color: #333333;
-  font-size: 18px;
   text-align: left;
   margin-left: 186.8px;
   margin-right: 160.12px;
+  font-size: 18px;
+  letter-spacing: 0.54px;
+  line-height: 30px;
+  color: #333333;
+  font-family: "Open Sans Regular", sans-serif;
 }
 .d-max__selected-content__container {
   display: flex;
@@ -921,11 +933,6 @@ header .navbar__right-side__hamburger__line {
 }
 .n-series__h3 {
   margin-top: 21px;
-  font-size: 15px;
-  letter-spacing: 0.75px;
-  line-height: 23px;
-  color: #6D727B;
-  font-family: "Kanit Medium", sans-serif;
   margin-left: 37px;
   margin-right: 57px;
 }
@@ -937,15 +944,12 @@ header .navbar__right-side__hamburger__line {
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 30px;
+    font-family: "Kanit Medium", sans-serif;
+    color: #6D727B;
   }
 }
 .n-series__h2 {
   margin-top: 13px;
-  font-size: 27px;
-  letter-spacing: 2.41px;
-  line-height: 41px;
-  color: #333333;
-  font-family: "Kanit Semi-Bold", sans-serif;
   margin-left: 35px;
   margin-right: 57px;
 }
@@ -954,17 +958,14 @@ header .navbar__right-side__hamburger__line {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 40px;
-    font-size: 34px;
     letter-spacing: 3.4px;
     line-height: 50px;
+    font-size: 34px;
+    font-family: "Kanit Semi-Bold", sans-serif;
+    color: #333333;
   }
 }
 .n-series__text {
-  font-size: 16px;
-  letter-spacing: 1.12px;
-  line-height: 30px;
-  color: #333333;
-  font-family: "Open Sans Regular", sans-serif;
   margin-left: 35px;
   margin-right: 57px;
 }
@@ -973,6 +974,11 @@ header .navbar__right-side__hamburger__line {
     width: 398px;
     margin-left: 0;
     margin-right: 0;
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Open Sans Regular", sans-serif;
   }
 }
 .n-series__buttons-container {
@@ -1055,21 +1061,18 @@ header .navbar__right-side__hamburger__line {
   margin-top: 55px;
   margin-left: 35px;
   margin-right: 36px;
-  font-size: 27px;
-  letter-spacing: 2.7px;
-  line-height: 41px;
-  color: #333333;
-  font-family: "Kanit Semi-Bold", sans-serif;
   word-wrap: break-word;
 }
 @media only screen and (min-width: 1024px) {
   .contact__container__h2 {
     margin: 0px;
-    font-size: 34px;
-    letter-spacing: 3.4px;
-    line-height: 50px;
     margin-bottom: 30px;
     margin-top: -79px;
+    letter-spacing: 3.4px;
+    line-height: 50px;
+    font-size: 34px;
+    font-family: "Kanit Semi-Bold", sans-serif;
+    color: #333333;
   }
 }
 .contact__container__h3 {
@@ -1135,10 +1138,12 @@ header .navbar__right-side__hamburger__line {
 @media only screen and (min-width: 1024px) {
   .contact__container__localisation__text-container__text-header {
     margin-top: 0px;
+    margin-right: 35px;
     font-size: 18px;
     letter-spacing: 0.54px;
     line-height: 30px;
-    margin-right: 35px;
+    color: #333333;
+    font-family: "Open Sans Regular", sans-serif;
   }
 }
 .contact__container__localisation__text-container__text-main {
@@ -1153,11 +1158,13 @@ header .navbar__right-side__hamburger__line {
 }
 @media only screen and (min-width: 1024px) {
   .contact__container__localisation__text-container__text-main {
+    margin-right: 35px;
+    margin-top: 35px;
     font-size: 18px;
     letter-spacing: 0.54px;
     line-height: 30px;
-    margin-right: 35px;
-    margin-top: 35px;
+    color: #333333;
+    font-family: "Open Sans Regular", sans-serif;
   }
 }
 .contact__container__localisation__text-container__text-main__underline {
@@ -1175,11 +1182,13 @@ header .navbar__right-side__hamburger__line {
 }
 @media only screen and (min-width: 1024px) {
   .contact__container__localisation__text-container__text-footer {
+    margin-right: 35px;
+    margin-top: 35px;
     font-size: 18px;
     letter-spacing: 0.54px;
     line-height: 30px;
-    margin-right: 35px;
-    margin-top: 35px;
+    color: #333333;
+    font-family: "Open Sans Regular", sans-serif;
   }
 }
 .contact__container__button-map {
@@ -1291,19 +1300,16 @@ header .navbar__right-side__hamburger__line {
 .customer-reviews__h2 {
   margin-top: 40px;
   margin-left: 32px;
-  font-size: 27px;
-  letter-spacing: 2.7px;
-  line-height: 41px;
-  font-family: "Kanit Semi-Bold", sans-serif;
-  color: #333333;
 }
 @media only screen and (min-width: 1024px) {
   .customer-reviews__h2 {
-    font-size: 34px;
     width: 522px;
     margin-left: 273px;
     letter-spacing: 3.4px;
     line-height: 50px;
+    font-size: 34px;
+    font-family: "Kanit Semi-Bold", sans-serif;
+    color: #333333;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1405,11 +1411,6 @@ header .navbar__right-side__hamburger__line {
 .customer-reviews__customer-container__text {
   width: 280px;
   margin-top: 20px;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 1.12px;
-  font-family: "Open Sans Semi-Bold", sans-serif;
-  color: #333333;
   text-align: center;
 }
 @media only screen and (min-width: 1024px) {
@@ -1418,6 +1419,11 @@ header .navbar__right-side__hamburger__line {
     margin-top: 25px;
     margin-bottom: 20px;
     width: 492px;
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    line-height: 30px;
+    color: #333333;
+    font-family: "Open Sans Regular", sans-serif;
   }
 }
 .customer-reviews__customer-container__chevrons-container {
@@ -1430,9 +1436,16 @@ header .navbar__right-side__hamburger__line {
   .customer-reviews__customer-container__chevrons-container__left-chevron {
     width: 26.93px;
     height: 50px;
+    transform: rotate(180deg);
   }
 }
-.customer-reviews__customer-container__stars-note-container__img {
+@media only screen and (min-width: 1024px) {
+  .customer-reviews__customer-container__chevrons-container__right-chevron {
+    width: 26.93px;
+    height: 50px;
+  }
+}
+.customer-reviews__customer-container .customer-reviews__average-container__stars-note-container__img {
   width: 27px;
   height: 26px;
 }
@@ -1445,19 +1458,16 @@ header .navbar__right-side__hamburger__line {
   margin-left: 35px;
   width: 322px;
   height: 41px;
-  font-size: 27px;
-  letter-spacing: 2.7px;
-  line-height: 41px;
-  font-family: "Kanit Semi-Bold", sans-serif;
-  color: #333333;
 }
 @media only screen and (min-width: 1024px) {
   .photo-galery__h2 {
     margin-left: 278px;
     margin-bottom: 40.6px;
-    font-size: 34px;
     letter-spacing: 3.4px;
     line-height: 50px;
+    font-size: 34px;
+    font-family: "Kanit Semi-Bold", sans-serif;
+    color: #333333;
   }
 }
 .photo-galery__img {
@@ -1843,20 +1853,20 @@ header .navbar__right-side__hamburger__line {
     display: none;
   }
 }
-.lateral-menu-container nav ul {
+.lateral-menu-container__nav-container__list-container {
   list-style: none;
   text-align: end;
 }
-.lateral-menu-container nav ul li {
+.lateral-menu-container__nav-container__list-container li {
   position: relative;
   margin: 11px;
   padding-right: 12px;
   transition: transform 0.3s;
 }
-.lateral-menu-container nav ul li:hover {
+.lateral-menu-container__nav-container__list-container li:hover {
   transform: scale(1.1);
 }
-.lateral-menu-container nav ul li a {
+.lateral-menu-container__nav-container__list-container li a {
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 0.01px;
@@ -1865,10 +1875,10 @@ header .navbar__right-side__hamburger__line {
   font-family: "Kanit Regular", sans-serif;
   transition: color 0.3s;
 }
-.lateral-menu-container nav ul li a:hover {
+.lateral-menu-container__nav-container__list-container li a:hover {
   color: red;
 }
-.lateral-menu-container nav ul li::after {
+.lateral-menu-container__nav-container__list-container li::after {
   content: "▪";
   position: absolute;
   top: 50%;
@@ -1877,7 +1887,7 @@ header .navbar__right-side__hamburger__line {
   margin-left: 8px;
   transition: transform 0.3s;
 }
-.lateral-menu-container nav ul li::after:hover {
+.lateral-menu-container__nav-container__list-container li::after:hover {
   content: "■";
   transform: scale(1.1);
 }

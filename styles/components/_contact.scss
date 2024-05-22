@@ -21,23 +21,17 @@
         }
 
         &__h2 {
+            @extend %h2-property-mobile;
             margin-top: 55px;
             margin-left: 35px;
             margin-right: 36px;
-            font-size: 27px;
-            letter-spacing: 2.7px;
-            line-height: 41px;
-            color: $text-color-primary;
-            font-family: $font-family-primary-semiBold;
             word-wrap: break-word;
 
             @include desktop {
                 margin: 0px;
-                font-size: 34px;
-                letter-spacing: 3.4px;
-                line-height: 50px;
                 margin-bottom: 30px;
                 margin-top: -79px;
+                @include h2-property-desktop;
             }
         }
 
@@ -104,10 +98,8 @@
 
                     @include desktop {
                         margin-top: 0px;
-                        font-size: 18px;
-                        letter-spacing: 0.54px;
-                        line-height: 30px;
                         margin-right: 35px;
+                        @include text-property-desktop;
                     }
                 }
 
@@ -122,11 +114,9 @@
                     line-height: 30px;
 
                     @include desktop {
-                        font-size: 18px;
-                        letter-spacing: 0.54px;
-                        line-height: 30px;
                         margin-right: 35px;
                         margin-top: 35px;
+                        @include text-property-desktop;
                     }
 
                     &__underline {
@@ -145,11 +135,9 @@
                     line-height: 30px;
 
                     @include desktop {
-                        font-size: 18px;
-                        letter-spacing: 0.54px;
-                        line-height: 30px;
                         margin-right: 35px;
                         margin-top: 35px;
+                        @include text-property-desktop;
                     }
                 }
             }

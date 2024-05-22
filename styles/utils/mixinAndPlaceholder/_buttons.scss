@@ -1,0 +1,64 @@
+// bouton principal
+@mixin primary-button($transition: true, $opacity: true) {
+    margin-top: 20px;
+    background-color: $element-color-primary;
+    border-radius: 26px;
+    width: 322px;
+    height: 52px;
+    color: $text-color-tertiary;
+    font-size: 18px;
+    font-family: $font-family-primary-regular;
+    letter-spacing: 1.26px;
+    line-height: 30px;
+    border: 1px solid $element-color-primary;
+    align-self: center;
+  
+    @if $transition {
+      transition: text-indent 0.3s;
+    }
+  
+    &:hover {
+      @if $transition {
+        transform: translateX(1);
+        text-indent: -2px;
+      }
+  
+      @if $opacity {
+        opacity: 0.8;
+      }
+    }
+  }
+  
+  
+  
+  // bouton secondaire
+  @mixin secondary-button($transition: true, $backgroundChange: true) {
+    margin-top: 20px;
+    border-radius: 26px 26px 26px 26px;
+    width: 322px;
+    height: 52px;
+    color: $text-color-primary;
+    font-size: 16px;
+    font-family: $font-family-primary-regular;
+    letter-spacing: 1.26px;
+    line-height: 30px;
+    border: 3px solid $text-color-primary;
+  
+    @if $transition {
+      transition: text-indent 0.3s;
+    }
+  
+    &:hover {
+      @if $transition {
+        transform: translateX(1);
+        text-indent: 20px;
+      }
+  
+      @if $backgroundChange {
+        background-color: $text-color-primary;
+        color: $text-color-tertiary;
+      }
+    }
+  }
+  
+  

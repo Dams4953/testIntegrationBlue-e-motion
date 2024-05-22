@@ -1,0 +1,25 @@
+// arrows desktop
+@mixin left-icon-chevron {
+    width: 26.93px;
+    height: 50px;
+    transform: rotate(180deg);
+}
+
+@mixin right-icon-chevron {
+    width: 26.93px;
+    height: 50px;
+}
+
+
+// arrows mobile
+%left-icon-chevron {
+    width: 16.16px;
+    height: 30px;
+    transform: rotate(180deg);
+}
+
+%right-icon-chevron {
+    width: 16.16px;
+    height: 30px;
+}
+

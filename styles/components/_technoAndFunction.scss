@@ -92,20 +92,17 @@
             }
 
             &__h2 {
+                @extend %h2-property-mobile;
                 width: 184px;
                 height: 82px;
-                font-size: 27px;
-                letter-spacing: 2.7px;
-                line-height: 41px;
                 margin-left: 41px;
-                font-family: $font-family-primary-semiBold;
                 text-transform: uppercase;
 
                 @include desktop {
                     width: 396px;
                     margin-left: 59px;
-                    letter-spacing: 3.4px;
                     text-transform: none;
+                    @include h2-property-desktop;
                 }
             }
 
@@ -148,23 +145,14 @@
         }
 
         &__text {
+            @extend %text-property-mobile;
             margin-top: 20px;
             margin-left: 36.2px;
             margin-right: 36.8px;
-            font-size: 16px;
-            letter-spacing: 1.12px;
-            line-height: 30px;
-            font-family: $font-family-primary-semiBold;
-            color: $text-color-primary;
-
 
             @include desktop {
-
-                font-size: 18px;
                 width: 520px;
-                letter-spacing: 0.54px;
-                line-height: 30px;
-                font-family: $font-family-secondary-regular;
+                @include text-property-desktop;
             }
         }
     }

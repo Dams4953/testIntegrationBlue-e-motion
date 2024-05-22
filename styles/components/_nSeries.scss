@@ -28,12 +28,8 @@
     }
 
     &__h3 {
+        @extend %h3-property-mobile;
         margin-top: 21px;
-        font-size: 15px;
-        letter-spacing: 0.75px;
-        line-height: 23px;
-        color: $text-color-secondary;
-        font-family: $font-family-primary-medium;
         margin-left: 37px;
         margin-right: 57px;
 
@@ -41,19 +37,13 @@
             margin-left: 0;
             margin-right: 0;
             margin-bottom: 11;
-            font-size: 20px;
-            letter-spacing: 2px;
-            line-height: 30px;
+            @include h3-property-desktop;
         }
     }
 
     &__h2 {
+        @extend %h2-property-mobile;
         margin-top: 13px;
-        font-size: 27px;
-        letter-spacing: 2.41px;
-        line-height: 41px;
-        color: $text-color-primary;
-        font-family: $font-family-primary-semiBold;
         margin-left: 35px;
         margin-right: 57px;
 
@@ -61,18 +51,12 @@
             margin-left: 0;
             margin-right: 0;
             margin-bottom: 40px;
-            font-size: 34px;
-            letter-spacing: 3.4px;
-            line-height: 50px;
+            @include h2-property-desktop;
         }
     }
 
     &__text {
-        font-size: 16px;
-        letter-spacing: 1.12px;
-        line-height: 30px;
-        color: $text-color-primary;
-        font-family: $font-family-secondary-regular;
+        @extend %text-property-mobile;
         margin-left: 35px;
         margin-right: 57px;
 
@@ -80,6 +64,7 @@
             width: 398px;
             margin-left: 0;
             margin-right: 0;
+            @include text-property-desktop;
         }
     }
 

@@ -3,21 +3,15 @@
     overflow: hidden;
 
     &__h2 {
+        @extend %h2-property-mobile;
         margin-left: 35px;
         width: 322px;
         height: 41px;
-        font-size: 27px;
-        letter-spacing: 2.7px;
-        line-height: 41px;
-        font-family: $font-family-primary-semiBold;
-        color: $text-color-primary;
 
         @include desktop {
             margin-left: 278px;
             margin-bottom: 40.6px;
-            font-size: 34px;
-            letter-spacing: 3.4px;
-            line-height: 50px;
+            @include h2-property-desktop;
         }
     }
 

@@ -105,11 +105,7 @@
             }
 
             &__text {
-                letter-spacing: 1.12px;
-                line-height: 30px;
-                font-family: $font-family-secondary-regular;
-                color: $text-color-primary;
-                font-size: 16px;
+                @extend %text-property-mobile;
                 text-align: left;
                 margin-left: 37px;
                 margin-right: 52px;
@@ -144,14 +140,10 @@
             .d-max__selected-content__desktop-container__text-default {
                 width: 795px;
                 height: 234px;
-                letter-spacing: 0.54px;
-                line-height: 30px;
-                font-family: $font-family-secondary-regular;
-                color: $text-color-primary;
-                font-size: 18px;
                 text-align: left;
                 margin-left: 186.8px;
                 margin-right: 160.12px;
+                @include text-property-desktop;
             }
         }
 
