@@ -30,6 +30,7 @@ La vidéo impacte la performance, mais j'ai préféré ne pas y toucher pour con
 
 - J'ai rencontré des difficultés pour respecter la transition demandée dans la partie D-MAX (présentation des différents modèles d'Isuzu) selon le modèle présenté sur Adobe XD. Bien que j'aurais pu utiliser facilement la bibliothèque Swiper, j'ai préféré rester dans du JavaScript pur pour ce test. J'ai tenté d'utiliser des classes pour gérer les animations d'entrée et de sortie depuis la gauche et la droite, mais je n'ai pas pu les faire apparaître simultanément.
 
+La partie où j'ai le plus eu de difficultés était les transitions avec javascript, notamment le carousel.
 
 ## remarques
 
