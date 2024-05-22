@@ -17,7 +17,7 @@ J'ai consacré à ce projet 9 jours avec une moyenne de 7h par jour.
 
 ![résultat du lighthouse](lighthouse.png)
 
-La vidéo impacte beaucoup la performance, mais j'ai préféré ne pas y toucher pour conserver la qualité.
+La vidéo impacte la performance, mais j'ai préféré ne pas y toucher pour conserver la qualité.
 
 ## difficultés rencontrées
 - L'ajout de "bloc-sep-1.svg" parmi les images a posé problème. J'avais achevé les versions mobile et desktop, ainsi que l'adaptation au responsive, lorsque j'ai tenté de régler ce problème. J'ai d'abord réussi à contourner le problème avec un transform: rotate() translate(), mais j'ai réalisé que rendre ça responsive nécessiterait une réorganisation complète de la structure. J'ai préféré ne pas perdre de temps là dessus et passer à autre chose.
