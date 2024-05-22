@@ -1,10 +1,12 @@
 # testIntegrationBlue-e-motion
 
-## Langages & outils utilisés
+## Langages, outils et méthodologie utilisés
 - html
 - scss
+- mixin, media, placeholder et variables du scss
 - javascript
 - photoshop
+- méthodologie BEM
 
 ## déroulement & temps consacré
 
