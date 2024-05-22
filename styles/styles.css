@@ -11,71 +11,6 @@
   height: 30px;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron {
-  width: 16.16px;
-  height: 30px;
-}
-
 .modal-header {
   position: fixed;
   width: 100%;
@@ -132,71 +67,6 @@ table {
   letter-spacing: 1.26px;
   line-height: 19px;
   border: 1px solid #E3000B;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron {
-  width: 16.16px;
-  height: 30px;
 }
 
 header {
@@ -279,71 +149,6 @@ header .navbar__right-side__hamburger__line {
   height: 2px;
   background-color: #ffffff;
   font-weight: bold;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron {
-  width: 16.16px;
-  height: 30px;
 }
 
 .intro-video {
@@ -440,71 +245,6 @@ table {
   pointer-events: none;
   max-width: 100%;
   height: auto;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron {
-  width: 16.16px;
-  height: 30px;
 }
 
 .about-us {
@@ -740,71 +480,6 @@ table {
   margin-top: 4px;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron {
-  width: 16.16px;
-  height: 30px;
-}
-
 .techno-and-function {
   position: relative;
   margin-top: 30px;
@@ -987,71 +662,6 @@ table {
     width: 245px;
     height: 52px;
   }
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron {
-  width: 16.16px;
-  height: 30px;
 }
 
 .d-max {
@@ -1260,12 +870,12 @@ table {
     align-self: center;
   }
 }
-.d-max .entering {
-  opacity: 1;
-  transform: translateX(0%);
+.d-max .exiting-left {
+  opacity: 0;
+  transform: translateX(-100%);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.d-max .exiting {
+.d-max .exiting-right {
   opacity: 0;
   transform: translateX(100%);
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -1275,78 +885,10 @@ table {
   transform: translateX(0);
   transition: transform 0.5s ease;
 }
-.d-max #displayed-image.exiting {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.d-max #displayed-image.entering {
+.d-max .entering-from-right {
   opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron {
-  width: 16.16px;
-  height: 30px;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1492,71 +1034,6 @@ table {
   }
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron {
-  width: 16.16px;
-  height: 30px;
-}
-
 .contact__container {
   display: flex;
   flex-direction: column;
@@ -1591,9 +1068,8 @@ table {
     font-size: 34px;
     letter-spacing: 3.4px;
     line-height: 50px;
-    position: absolute;
-    top: 4630px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    margin-top: -79px;
   }
 }
 .contact__container__h3 {
@@ -1720,71 +1196,6 @@ table {
   border: 1px solid #E3000B;
   align-self: center;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron {
-  width: 16.16px;
-  height: 30px;
-}
-
 .opening-hours {
   margin-top: 30px;
   margin-left: 35px;
@@ -1872,71 +1283,6 @@ table {
 }
 .opening-hours__text-footer span {
   display: block;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.customer-reviews__customer-container__chevrons-container__left-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.customer-reviews__customer-container__chevrons-container__right-chevron, .techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron {
-  width: 16.16px;
-  height: 30px;
 }
 
 .customer-reviews {
@@ -2172,13 +1518,11 @@ table {
   left: 0;
   transform: rotate(180deg);
   width: 21.54px;
-  opacity: 50%;
   margin-left: 15px;
 }
 .photo-galery__carousel-container__control.next {
   right: 0;
   width: 21.54px;
-  filter: brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%);
   margin-right: 15px;
 }
 .photo-galery__carousel-container__indicators {
@@ -2199,97 +1543,58 @@ table {
   background-color: #E3000B;
   border-radius: 50%;
   cursor: pointer;
-  opacity: 0.3;
-}
-.photo-galery__carousel-container__indicators .indicator:first-child {
-  opacity: 1;
-}
-.photo-galery__carousel-container__indicators .indicator:nth-child(2) {
-  opacity: 0.3;
-}
-.photo-galery__carousel-container__indicators .indicator:nth-child(3) {
-  opacity: 0.3;
-}
-.photo-galery__carousel-container__indicators .indicator:last-child {
-  opacity: 0.3;
-}
-.photo-galery__carousel-container__indicators .indicator.active {
-  background-color: #E3000B;
-  opacity: 30%;
-}
-.photo-galery__carousel-container .hidden {
-  display: none !important;
 }
 
-.indicator.active {
-  opacity: 1;
+.slide-transition {
+  animation: effect 0.5s ease-in-out;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+@keyframes effect {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  10% {
+    opacity: 0.1;
+    filter: blur(9px);
+  }
+  20% {
+    opacity: 0.2;
+    filter: blur(8px);
+  }
+  30% {
+    opacity: 0.3;
+    filter: blur(7px);
+  }
+  40% {
+    opacity: 0.4;
+    filter: blur(6px);
+  }
+  50% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  60% {
+    opacity: 0.6;
+    filter: blur(4px);
+  }
+  70% {
+    opacity: 0.7;
+    filter: blur(3px);
+  }
+  80% {
+    opacity: 0.8;
+    filter: blur(2px);
+  }
+  90% {
+    opacity: 0.9;
+    filter: blur(1px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
 }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron, .customer-reviews__customer-container__chevrons-container__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron, .customer-reviews__customer-container__chevrons-container__right-chevron {
-  width: 16.16px;
-  height: 30px;
-}
-
 .footer-container {
   margin-top: 60px;
 }
@@ -2474,71 +1779,6 @@ table {
   margin-top: 53.75px;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron, .customer-reviews__customer-container__chevrons-container__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron, .customer-reviews__customer-container__chevrons-container__right-chevron {
-  width: 16.16px;
-  height: 30px;
-}
-
 .options-container {
   display: flex;
   flex-direction: row;
@@ -2582,71 +1822,6 @@ table {
   line-height: 26px;
   color: #ffffff;
   font-family: "Kanit Regular", sans-serif;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__left-chevron, .customer-reviews__customer-container__chevrons-container__left-chevron {
-  width: 16.16px;
-  height: 30px;
-  transform: rotate(180deg);
-}
-
-.techno-and-function__container-content__container-title .techno-and-function__container-content__container-title__right-chevron, .customer-reviews__customer-container__chevrons-container__right-chevron {
-  width: 16.16px;
-  height: 30px;
 }
 
 .lateral-menu-container {

@@ -1,4 +1,5 @@
 export function functionSelectAutoDesktop() {
+    // Données à afficher
     let imageData = [
         {
             src: "./assets/pictures/singleCab.png",
@@ -21,6 +22,7 @@ export function functionSelectAutoDesktop() {
     let existingContainers = container.querySelectorAll('.d-max__selected-content__container');
     let addedElements = existingContainers.length;
 
+    // Ajouter les éléments si la taille de l'écran est suffisante et qu'il n'y a pas déjà 3 éléments
     if (window.innerWidth > desktopSize && addedElements < 3) {
         imageData.forEach(function(data, index) {
             if (!container.querySelector(`[alt="${data.title}"]`)) {
@@ -29,6 +31,7 @@ export function functionSelectAutoDesktop() {
         });
     }
 
+    // FONCTION pour ajouter un élément au conteneur
     function addElementToContainer(data, isSecondElement) {
         let containerElement = document.createElement('div');
         containerElement.className = 'd-max__selected-content__desktop-container';
@@ -44,7 +47,7 @@ export function functionSelectAutoDesktop() {
         if (isSecondElement) {
             titleElement.className += '-default';
         }
-     
+
         let imageElement = document.createElement('img');
         imageElement.className = 'd-max__selected-content__desktop-container__picture';
         imageElement.src = data.src;
@@ -53,7 +56,6 @@ export function functionSelectAutoDesktop() {
         if (isSecondElement) {
             imageElement.className += '-default';
         }
-
 
         containerElement.appendChild(titleElement);
         containerElement.appendChild(imageElement);

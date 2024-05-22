@@ -7,18 +7,14 @@ import { functionSelectAutoDesktop } from './selectAutoDesktop.js'
 import { functionHeaderModal } from './headerModal.js'
 import { functionCarouselPictures } from './carouselPictures.js';
 
-functionCliquableVideo('videoIntroduction');
-functionReadMore();
-functionReadLess();
-functionCliquableMap();
-functionSelectAuto();
-functionHeaderModal();
-functionSelectAutoDesktop()
-functionCarouselPictures(
-    '.photo-galery__carousel-container__carousel-inner',
-    '.photo-galery__carousel-container__control__prev',
-    '.photo-galery__carousel-container__control__next'
-);
+functionCliquableVideo('videoIntroduction'); // Pour la section intro-video
+functionReadMore(); // Pour la section about-us
+functionReadLess(); // Pour la section about-us
+functionCliquableMap(); // Pour la section contact
+functionSelectAuto(); // Pour la section d-max
+functionSelectAutoDesktop() // Pour la section d-max
+functionHeaderModal(); // Pour la section modal-header
+functionCarouselPictures(); // Pour la section photo-galery
 
 
 

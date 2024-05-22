@@ -1,79 +1,45 @@
-const images = [
-    { 
-        src: "./assets/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp", 
-        alt: "ISUZU-D-MAX-Geschaeftskunden-Flottenkunden" 
-    },
-    { 
-        src: "./assets/pictures/ISUZU-D-MAX-Individualisierung-Umbauten.webp", 
-        alt: "ISUZU-D-MAX-Individualisierung-Umbauten" 
-    },
-    { 
-        src: "./assets/pictures/ISUZU-D-MAX-blau-im-wald-nachhaltige-effizienz.webp", 
-        alt: "ISUZU-D-MAX-blau-im-wald-nachhaltige-effizienz" 
-    },
-    { 
-        src: "./assets/pictures/04-home-bild_text-N-Serie 3,5t Koffer City Image.webp", 
-        alt: "04-home-bild_text-N-Serie 3,5t Koffer City Image" 
-    },
-    { 
-        src: "./assets/pictures/isuzu-d-max-Ladefläche-Handwerker-Kipper.webp", 
-        alt: "isuzu-d-max-Ladefläche-Handwerker-Kipper" 
-    },
-    { 
-        src: "./assets/pictures/isuzu-d-max-zubehoer.webp", 
-        alt: "isuzu-d-max-zubehoer" 
-    },
-    { 
-        src: "./assets/pictures/02-D_MAX-image_text_outbreak-20MY ISUZU D-MAX_5_EU_LHD_Crew RBD(Chassis Overlay) wihout Trailer&Talents.webp", 
-        alt: "isuzi-d-max-image_text_outbreak-20MY ISUZU D-MAX_5_EU_LHD_Crew RBD(Chassis Overlay) wihout Trailer&Talents" 
-    },
-    { 
-        src: "./assets/pictures/ISUZU-D-MAX-blue-driving-in-water.webp", 
-        alt: "isuzi-d-max-blue-driving-in-water" 
-    },
-    { 
-        src: "./assets/pictures/02-isuzu-NSerie-carousel-BIG-N-Serie Kofferaufbau 1~-~media--d98c6261--query.webp", 
-        alt: "izusu-NSerie-carousel-BIG-N-Serie Kofferaufbau 1" 
-    },
-    { 
-        src: "./assets/pictures/isuzu-d-max-ueber-uns.webp", 
-        alt: "isuzu-d-max-ueber-uns" 
-    },
-    { 
-        src: "./assets/pictures/isuzu-d-max-zubehoer.webp", 
-        alt: "isuzu-d-max-zubehoer" 
-    },
-    { 
-        src: "./assets/pictures/isuzu-N-Serie-carousel-BIG-N-Serie Absetzkipper~-~media--d98c6261--query.webp", 
-        alt: "isuzi-N-Serie-carousel-BIG-N-Serie Absetzkipper" 
-    },
-    { 
-        src: "./assets/pictures/ISUZU-D-MAX-blue-driving-in-water.webp", 
-        alt: "isuzi-d-max-blue-driving-in-water" 
-    },
-    { 
-        src: "./assets/pictures/isuzu-N-Serie-carousel-BIG-N-Serie-3,5t Pritsche~-~media--d98c6261--query.webp", 
-        alt: "isuzu-N-Serie-carousel-BIG-N-Serie-3,5t Pritsche" 
-    },
-    { 
-        src: "./assets/pictures/ISUZU-D-MAX-blau-im-wald-nachhaltige-effizienz.webp", 
-        alt: "isizu-d-max-blau-im-wald-nachhaltige-effizienz" 
-    },
-    { 
-        src: "./assets/pictures/isuzu-d-max-ueber-uns.webp", 
-        alt: "isuzu-d-max-ueber-uns" 
-    }
-];
+import { images } from './images.js'
 
 export function functionCarouselPictures() {
-    const carouselContainer = document.querySelector(".photo-galery__carousel-container__carousel-inner");
-    const prevBtn = document.getElementById("prevButton");
-    const nextBtn = document.getElementById("nextButton");
-    const indicators = document.querySelectorAll(".indicator");
 
+    let carouselContainer = document.querySelector(".photo-galery__carousel-container__carousel-inner");
+    let prevBtn = document.getElementById("prevButton");
+    let nextBtn = document.getElementById("nextButton");
+    let indicators = document.querySelectorAll(".indicator");
+
+    // Index actuel et nombre d'éléments par page
     let currentIndex = 0;
-    const itemsPerPage = 4;
+    let itemsPerPage = 4;
 
+    // FONCTION pour mettre à jour les flèches en fonction de sur quel indicateur on se trouve
+    function updateArrows() {
+        let activeIndicatorIndex = 0;
+        indicators.forEach((indicator, index) => {
+            if (indicator.classList.contains("active")) {
+                activeIndicatorIndex = index;
+            }
+        });
+
+        if (activeIndicatorIndex === 0) {
+            prevBtn.style.filter = "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%)";
+            prevBtn.style.opacity = "0.5";
+            nextBtn.style.filter = "brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%)";
+            nextBtn.style.opacity = "1";
+        } else if (activeIndicatorIndex === indicators.length - 1) {
+            prevBtn.style.filter = "brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%)";
+            prevBtn.style.opacity = "1";
+            nextBtn.style.filter = "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%)";
+            nextBtn.style.opacity = "0.5";
+        } else {
+            prevBtn.style.filter = "brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%)";
+            prevBtn.style.opacity = "1";
+            nextBtn.style.filter = "brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(6519%) hue-rotate(351deg) brightness(84%) contrast(115%)";
+            nextBtn.style.opacity = "1";
+        }
+
+    }
+
+    // FONCTION pour mettre à jour les indicateurs
     function updateIndicators() {
         indicators.forEach((indicator, index) => {
             if (index === Math.floor(currentIndex / itemsPerPage)) {
@@ -84,26 +50,53 @@ export function functionCarouselPictures() {
                 indicator.style.opacity = "0.3";
             }
         });
+        updateArrows();
     }
 
+    // FONCTION pour afficher une diapositive
+    let isAnimating = false;
+
     function showSlide(startIndex) {
+
+        if (isAnimating) {
+            return;
+        }
+
+        isAnimating = true;
+
+
+        carouselContainer.classList.add('slide-transition');
         carouselContainer.innerHTML = '';
         for (let i = 0; i < itemsPerPage; i++) {
-            const newIndex = (startIndex + i) % images.length;
-            const carouselItem = document.createElement("div");
+            let newIndex = (startIndex + i) % images.length;
+            let carouselItem = document.createElement("div");
             carouselItem.classList.add("photo-galery__carousel-container__carousel-inner__carousel-item");
             carouselItem.innerHTML = `<img src="${images[newIndex].src}" alt="${images[newIndex].alt}">`;
             carouselContainer.appendChild(carouselItem);
         }
+
+        setTimeout(() => {
+            carouselContainer.classList.remove('slide-transition');
+            isAnimating = false;
+        }, 500);
+
         updateIndicators();
     }
 
+    // FONCTION pour afficher la diapositive suivante
     function showNextSlide() {
+        if (currentIndex === images.length - itemsPerPage) {
+            return;
+        }
         currentIndex = (currentIndex + itemsPerPage) % images.length;
         showSlide(currentIndex);
     }
 
+    // FONCTION pour afficher la diapositive précédente
     function showPrevSlide() {
+        if (currentIndex === 0) {
+            return;
+        }
         currentIndex = (currentIndex - itemsPerPage + images.length) % images.length;
         showSlide(currentIndex);
     }

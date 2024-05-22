@@ -1,8 +1,3 @@
-@import '../utils/reset';
-@import '../utils/variables/variables';
-@import '../utils/mixin/mixin';
-@import '../utils/placeholder/placeholder';
-
 .contact {
 
     &__container {
@@ -41,9 +36,8 @@
                 font-size: 34px;
                 letter-spacing: 3.4px;
                 line-height: 50px;
-                position: absolute;
-                top: 4630px;
-                margin-bottom: 60px;
+                margin-bottom: 30px;
+                margin-top: -79px;
             }
         }
 

@@ -1,8 +1,3 @@
-@import '../utils/reset';
-@import '../utils/variables/variables';
-@import '../utils/mixin/mixin';
-@import '../utils/placeholder/placeholder';
-
 .d-max {
     text-align: center;
     display: flex;
@@ -208,17 +203,18 @@
     }
 
     // js
-    .entering {
-        opacity: 1;
-        transform: translateX(0%);
+    .exiting-left {
+        opacity: 0;
+        transform: translateX(-100%);
         transition: opacity 0.5s ease, transform 0.5s ease;
     }
 
-    .exiting {
+    .exiting-right {
         opacity: 0;
         transform: translateX(100%);
         transition: opacity 0.5s ease, transform 0.5s ease;
     }
+
 
     .entering-from-left {
         opacity: 1;
@@ -226,15 +222,9 @@
         transition: transform 0.5s ease;
     }
 
-    #displayed-image {
-        &.exiting {
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        &.entering {
-            opacity: 1;
-            transition: opacity 0.5s ease;
-        }
+    .entering-from-right {
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 0.5s ease;
     }
 }

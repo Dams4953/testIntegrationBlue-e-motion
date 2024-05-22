@@ -1,8 +1,8 @@
 // utils
 @import './utils/reset.css';
-@import './utils/variables/variables';
-@import './utils/placeholder/placeholder';
-@import './utils/mixin/mixin';
+@import './utils/variables';
+@import './utils/placeholder';
+@import './utils/mixin';
 // header
 @import './components/modalHeader.scss';
 @import './components/header.scss';
