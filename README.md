@@ -26,6 +26,9 @@ La vidéo impacte la performance, mais j'ai préféré ne pas y toucher pour con
 
 - J'ai rencontré un problème pour afficher la note avec les étoiles 4.6. N'ayant pas trouvé de solution en CSS, j'ai utilisé Photoshop pour superposer une étoile jaune sur une étoile grise et en ai découpé une partie.
 
+- J'ai rencontré des difficultés pour respecter la transition demandée dans la partie D-MAX (présentation des différents modèles d'Isuzu) selon le modèle présenté sur Adobe XD. Bien que j'aurais pu utiliser facilement la bibliothèque Swiper, j'ai préféré rester dans du JavaScript pur pour ce test. J'ai tenté d'utiliser des classes pour gérer les animations d'entrée et de sortie depuis la gauche et la droite, mais je n'ai pas pu les faire apparaître simultanément.
+
+
 ## remarques
 
-Dans ce test, tout le HTML est contenu dans index.html. Habituellement, j'aurais divisé le contenu en plusieurs fichiers : index.html, main.html, header.html, footer.html, et aside.html.
+Dans ce test, tout le HTML est contenu dans index.html. Habituellement, j'aurais divisé le contenu en plusieurs fichiers.
